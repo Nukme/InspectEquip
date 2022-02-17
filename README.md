@@ -9,7 +9,7 @@ Notes: I don't play any Classic versions of WoW and I don't have any interest or
 ## Credits
 This addon is a continuation of [InspectEquip](https://www.curseforge.com/wow/addons/inspect-equip) and was created when the original project lacked maintenance around year 2015. Thanks to the original authors and contributors for all the work they put into the original addon.
 
-To my knowledge, there's another version of this addon that's been actively maintained. Choose to your likings!
+To my knowledge, there's another version of this addon that's been actively maintained. Choose to your liking!
 
 ## Bugs & Suggestions
 I've been posting updates on the Chinese forum NGA since Nov 2015. You can provide feedback on this [NGA page](https://bbs.nga.cn/read.php?tid=8749947) if you want.
