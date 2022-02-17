@@ -1,0 +1,54 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+
+	<Frame name="InspectEquip_InfoWindow" inherits="BackdropTemplate" toplevel="true" enableMouse="true" framestrata="BACKGROUND">
+		<Size x="350" y="450" />
+		<Scripts>
+        	<OnLoad inherit="prepend">
+            	self:SetBackdrop({
+					bgFile = "Interface\\TutorialFrame\\TutorialFrameBackground",
+					edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+					tile = true,
+					tileSize = 32,
+					edgeSize = 16,
+					insets = { left=5, right=5, top=5, bottom=5 }
+				})
+        	</OnLoad>
+    	</Scripts>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentTitle" inherits="GameFontNormal">
+					<Anchors>
+						<Anchor point="TOP" relativePoint="TOP">
+							<Offset x="0" y="-17"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString name="$parentAvgItemLevel" inherits="GameFontHighlightSmall">
+					<Anchors>
+						<Anchor point="BOTTOM" relativePoint="BOTTOM">
+							<Offset x="0" y="12"/>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		
+		<Frames>
+			<Button name="$parent_CloseButton" inherits="UIPanelCloseButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset x="-1" y="0"/>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						self:GetParent():Hide()
+					</OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+		
+	</Frame>
+</Ui>
