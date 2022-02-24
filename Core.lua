@@ -213,7 +213,12 @@ local options = {
 }
 
 LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", options, "/inspectequip")
-LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
+InspectEquip.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
+local version = GetAddOnMetadata("InspectEquip", "Version")
+local versionText = "|cFF808080 "..version .."|r"
+InspectEquip.Version = InspectEquip.ConfigPanel:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
+InspectEquip.Version:SetPoint("TOPRIGHT", InspectEquip.ConfigPanel, "TOPRIGHT", -15, -15)
+InspectEquip.Version:SetText(versionText)
 
 --------------------------------------------------------------------------------------
 
