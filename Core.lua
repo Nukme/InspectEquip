@@ -1,6 +1,6 @@
 -- InspectEquip
 -- Original Author: emelio_
--- Maintainer: melcaracara
+-- Maintainer: Nukme
 
 InspectEquip = LibStub("AceAddon-3.0"):NewAddon("InspectEquip", "AceConsole-3.0", "AceHook-3.0", "AceTimer-3.0", "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
