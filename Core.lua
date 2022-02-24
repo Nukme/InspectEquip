@@ -212,17 +212,20 @@ local options = {
 	},
 }
 
-LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", options, "/inspectequip")
-InspectEquip.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
-local version = GetAddOnMetadata("InspectEquip", "Version")
-local versionText = "|cFF808080 "..version .."|r"
-InspectEquip.Version = InspectEquip.ConfigPanel:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
-InspectEquip.Version:SetPoint("TOPRIGHT", InspectEquip.ConfigPanel, "TOPRIGHT", -15, -15)
-InspectEquip.Version:SetText(versionText)
-
 --------------------------------------------------------------------------------------
 
 function IE:OnInitialize()
+	LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", options)
+	InspectEquip.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
+	self:RegisterChatCommand("inspectequip", function()
+		InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
+	  end)
+	local version = GetAddOnMetadata("InspectEquip", "Version")
+	local versionText = "|cFF808080 "..version .."|r"
+	InspectEquip.Version = InspectEquip.ConfigPanel:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
+	InspectEquip.Version:SetPoint("TOPRIGHT", InspectEquip.ConfigPanel, "TOPRIGHT", -15, -15)
+	InspectEquip.Version:SetText(versionText)
+
 	setmetatable(InspectEquipConfig, {__index = defaults})
 
 	self:SetParent(InspectFrame)
