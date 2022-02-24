@@ -1,6 +1,8 @@
 # InspectEquip
 InspectEquip is a WoW addon which could summarize and show a player's gear info based on item drop sources.
 
+Use command /inspectequip in game to open the configuration panel.
+
 ## Supported Game Version
 Only guaranteed to work in **Retail WoW**.
 
