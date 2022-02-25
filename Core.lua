@@ -816,6 +816,7 @@ function IE:IsPvPItem(item)
 		L["Corrupted"], 	-- BFA Season 4
 		L["Sinful"], 		-- Shadowlands Season 1
 		L["Unchained"],		-- Shadowlands Season 2
+		L["Cosmic"],		-- Shadowlands Season 3
 	}
 	local subAffix = {
 		L["Aspirant"],
