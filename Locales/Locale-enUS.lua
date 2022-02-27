@@ -75,5 +75,22 @@ L["World events"] = "World events"
 L["World PvP"] = "World PvP"
 L["Wrath of the Lich King"] = "Wrath of the Lich King"
 
-
-
+-- Added by Nukme
+L["Artifact"] = true
+L["Heirloom"] = true
+L["Legendary"] = true
+L["Mythic"] = true
+L["Dread"] = true
+L["Sinister"] = true
+L["Notorious"] = true
+L["Corrupted"] = true
+L["Sinful"] = true
+L["Unchained"] = true
+L["Cosmic"] = true
+L["Aspirant"] = true
+L["Gladiator"] = true
+L["PvP Reward"] = true
+L["Kyrian Nathrian Weapon Vendors"] = true
+L["Venthyr Nathrian Weapon Vendors"] = true
+L["Necrolord Nathrian Weapon Vendors"] = true
+L["Night Fae Nathrian Weapon Vendors"] = true
