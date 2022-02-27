@@ -1,6 +1,5 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("InspectEquip", "frFR")
 if not L then return end
-
 -- Translation by polluxtroy3758 + LaMaG + lastdans + TorTue + Pettigrow
 L["Accessories"] = "Accessoires"
 L["Add drop information to tooltips"] = "Ajouter les information de loot au tooltip"
@@ -76,3 +75,22 @@ L["World events"] = "Evènements mondiaux"
 L["World PvP"] = "JcJ mondial"
 L["Wrath of the Lich King"] = "Wrath of the Lich King"
 
+-- Added by Nukme
+--L["Artifact"] = ""
+--L["Heirloom"] = ""
+--L["Legendary"] = ""
+--L["Mythic"] = ""
+--L["Dread"] = ""
+--L["Sinister"] = ""
+--L["Notorious"] = ""
+--L["Corrupted"] = ""
+--L["Sinful"] = ""
+--L["Unchained"] = ""
+--L["Cosmic"] = ""
+--L["Aspirant"] = ""
+--L["Gladiator"] = ""
+--L["PvP Reward"] = ""
+--L["Kyrian Nathrian Weapon Vendors"] = ""
+--L["Venthyr Nathrian Weapon Vendors"] = ""
+--L["Necrolord Nathrian Weapon Vendors"] = ""
+--L["Night Fae Nathrian Weapon Vendors"] = ""
