@@ -20,7 +20,7 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
 
 ## Major updates and fixes
 - Update item level system
-    - Revise the formula to calculate average item levels to make it in accordance with in-game panel.
+    - Revise the formula to calculate average-item-level to make it the same as the one shown in character panel.
         - Fixes for off-piece artifact item level.
         - Fixes for dual-wielding two-haned weapons.
     - Use API `GetDetailedItemLevelInfo()` to retrieve item level info instead of functions provided by `LibItemUpgradeInfo-1.0`
@@ -32,7 +32,7 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
     - `Unknown` category always at bottom
 - Update item source system
     - Optimize Encounter Journal Scanning procedure
-        - Prevent the validation process after scanning from causing freezes and errors to the game
+        - Prevent the validation process from causing freezes and errors to the game
         - Visualize the validation process
         - Reduce scan cycles
         - Change method to deactivate EJ during scanning to prevent tainting
