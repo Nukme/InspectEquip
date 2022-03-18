@@ -94,3 +94,6 @@ L["Kyrian Nathrian Weapon Vendors"] = true
 L["Venthyr Nathrian Weapon Vendors"] = true
 L["Necrolord Nathrian Weapon Vendors"] = true
 L["Night Fae Nathrian Weapon Vendors"] = true
+L["Class Tier Set"] = true
+L["The Great Vault"] = true
+L["Creation Catalyst"] = true

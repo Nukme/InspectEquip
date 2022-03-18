@@ -1,6 +1,5 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("InspectEquip", "zhCN")
 if not L then return end
-
 -- Translation by laincat + wowuicn + pauleldwan
 L["Accessories"] = "饰品"
 L["Add drop information to tooltips"] = "显示物品掉落提示信息"
@@ -95,3 +94,6 @@ L["Kyrian Nathrian Weapon Vendors"] = "格里恩纳斯利亚武器商"
 L["Venthyr Nathrian Weapon Vendors"] = "温西尔纳斯利亚武器商"
 L["Necrolord Nathrian Weapon Vendors"] = "通灵领主纳斯利亚武器商"
 L["Night Fae Nathrian Weapon Vendors"] = "法夜纳斯利亚武器商"
+L["Class Tier Set"] = "职业套装"
+L["The Great Vault"] = "宏伟宝库"
+L["Creation Catalyst"] = "造物化生台"
