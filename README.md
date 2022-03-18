@@ -29,6 +29,7 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
     - Add `Artifact` category
     - Add `Heirloom` category
     - Add `PVP Gear` category
+    - Add `Class Tier Set` category
     - `Unknown` category always at bottom
 - Update item source system
     - Optimize Encounter Journal Scanning procedure
@@ -50,6 +51,7 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
         - Castle Nathria weapons
         - etc.
     - Add `PVP Gear` source info since BFA season 1
+    - Add source info for all tier set pieces (Raid Boss/The Great Vault/Creation Catalyst) in Shadowlands S3
     - Fixes for discrepancy between EJ and actual in-game item ids.
 - Update enchantment-detection system
     - Update valid slots according to current game expansion
