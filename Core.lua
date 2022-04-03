@@ -112,6 +112,7 @@ local defaults = {
     checkEnchants = true,
     listItemLevels = true,
     showAvgItemLevel = true,
+    _CLassColorCategory_ = true,
     ttR = 1.0,
     ttG = 0.75,
     ttB = 0.0,
@@ -216,8 +217,21 @@ local options = {
                 InspectEquipConfig.showAvgItemLevel = v
             end
         },
-        tooltipcolor = {
+        _classcolorcategory_ = {
             order = 8,
+            type = "toggle",
+            width = "full",
+            name = L["Color Class Tier Set category"],
+            desc = L["Show Class Tier Set category with class color"],
+            get = function()
+                return InspectEquipConfig._CLassColorCategory_
+            end,
+            set = function(_, v)
+                InspectEquipConfig._CLassColorCategory_ = v
+            end
+        },
+        tooltipcolor = {
+            order = 18,
             type = "color",
             name = L["Tooltip text color"],
             width = "full",
@@ -231,7 +245,7 @@ local options = {
             end
         },
         maxsourcecount = {
-            order = 9,
+            order = 19,
             type = "range",
             min = 1,
             max = 20,
@@ -248,7 +262,7 @@ local options = {
             end
         },
         database = {
-            order = 10,
+            order = 20,
             type = "group",
             inline = true,
             name = L["Database"],
@@ -665,7 +679,7 @@ function IE:Inspect(unit, entry)
         local sourceKnown = true
         if itemLink then
             -- get source
-            local source = self:GetItemSourceCategories(itemLink)
+            local source = self:GetItemSourceCategories(itemLink, unit)
             local _, _, rar = GetItemInfo(itemLink)
 
             if rar and rar >= 2 then
@@ -943,7 +957,7 @@ function IE:GetBossName(id)
     return IS.Bosses[id] or InspectEquipLocalDB.Bosses[id]
 end
 
-function IE:GetItemSourceCategories(itemLink)
+function IE:GetItemSourceCategories(itemLink, unit)
     local data = IE:GetItemData(itemLink)
     if data then
         for entry in gmatch(data, "[^;]+") do
@@ -1007,7 +1021,11 @@ function IE:GetItemSourceCategories(itemLink)
                 return {L["PvP"]}
             elseif cat == "t" then
                 -- class tier set
-                return {L["Class Tier Set"]}
+                if InspectEquipConfig._CLassColorCategory_ then
+                    return {"|c" .. RAID_CLASS_COLORS[select(2, UnitClass(unit))].colorStr .. L["Class Tier Set"] .. "|r"}
+                else
+                    return {L["Class Tier Set"]}
+                end
             end
         end
     end
