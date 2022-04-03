@@ -97,3 +97,5 @@ L["Night Fae Nathrian Weapon Vendors"] = true
 L["Class Tier Set"] = true
 L["The Great Vault"] = true
 L["Creation Catalyst"] = true
+L["Color Class Tier Set category label"] = true
+L["Show Class Tier Set category label with class color"] = true

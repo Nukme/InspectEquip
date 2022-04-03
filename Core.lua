@@ -221,8 +221,8 @@ local options = {
             order = 8,
             type = "toggle",
             width = "full",
-            name = L["Color Class Tier Set category"],
-            desc = L["Show Class Tier Set category with class color"],
+            name = L["Color Class Tier Set category label"],
+            desc = L["Show Class Tier Set category label with class color"],
             get = function()
                 return InspectEquipConfig._CLassColorCategory_
             end,
