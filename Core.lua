@@ -127,7 +127,7 @@ local defaults = {
     checkEnchants = true,
     listItemLevels = true,
     showAvgItemLevel = true,
-    _CLassColorCategory_ = true,
+    _StylizeClassTierCategory_ = true,
     ttR = 1.0,
     ttG = 0.75,
     ttB = 0.0,
@@ -232,17 +232,17 @@ local options = {
                 InspectEquipConfig.showAvgItemLevel = v
             end
         },
-        _classcolorcategory_ = {
+        stylizeclasstiercategory = {
             order = 8,
             type = "toggle",
             width = "full",
-            name = L["Color Class Tier Set category label"],
-            desc = L["Show Class Tier Set category label with class color"],
+            name = L["Stylize Class Tier Set category label"],
+            desc = L["Show Class Tier Set category label with class color and class icon"],
             get = function()
-                return InspectEquipConfig._CLassColorCategory_
+                return InspectEquipConfig._StylizeClassTierCategory_
             end,
             set = function(_, v)
-                InspectEquipConfig._CLassColorCategory_ = v
+                InspectEquipConfig._StylizeClassTierCategory_ = v
             end
         },
         tooltipcolor = {
@@ -1036,7 +1036,7 @@ function IE:GetItemSourceCategories(itemLink, unit)
                 return {L["PvP"]}
             elseif cat == "t" then
                 -- class tier set
-                if InspectEquipConfig._CLassColorCategory_ then
+                if InspectEquipConfig._StylizeClassTierCategory_ then
                     local className, classFilename = UnitClass(unit)
                     return {"|T" .. CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
                 else
