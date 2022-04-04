@@ -3,7 +3,7 @@
 ## Notes: Shows where the equipment of inspected users or yourself is from.
 ## Notes-deDE: Zeigt an, wo die Ausrüstung betrachteter Spieler (oder deine eigene) her ist.
 ## Notes-zhCN: 显示被观察者或自己装备的出处。
-## Version: 9.2.0.7
+## Version: 9.2.0.8
 ## Author: emelio
 ## X-Maintainer: Nukme 
 ## X-Repository: https://github.com/Nukme/InspectEquip
