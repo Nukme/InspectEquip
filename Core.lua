@@ -71,6 +71,21 @@ local primaryStats = {
     ["73"] = LE_UNIT_STAT_STRENGTH -- Protection
 }
 
+local CLASS_ICONS = {
+    ["WARRIOR"] = 626008, 
+    ["PALADIN"] = 626003,
+    ["HUNTER"] = 626000,
+    ["ROGUE"] = 626005,
+    ["PRIEST"] = 626004,
+    ["DEATHKNIGHT"] = 625998,
+    ["SHAMAN"] = 626006,
+    ["MAGE"] = 626001,
+    ["WARLOCK"] = 626007,
+    ["MONK"] = 626002,
+    ["DRUID"] = 625999,
+    ["DEMONHUNTER"] = 1260827,
+}
+
 local lines = {}
 local numlines = 0
 local curline = 0
@@ -1022,7 +1037,8 @@ function IE:GetItemSourceCategories(itemLink, unit)
             elseif cat == "t" then
                 -- class tier set
                 if InspectEquipConfig._CLassColorCategory_ then
-                    return {"|c" .. RAID_CLASS_COLORS[select(2, UnitClass(unit))].colorStr .. L["Class Tier Set"] .. "|r"}
+                    local className, classFilename = UnitClass(unit)
+                    return {"|T" .. CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
                 else
                     return {L["Class Tier Set"]}
                 end
