@@ -350,6 +350,8 @@ addSource = function(tip, item, source, level)
         elseif acquisition == "cc" then
             str = L["Creation Catalyst"]
         end
+    elseif cat == "cc" then -- creation catalyst
+        str = L["Creation Catalyst"]
     end
 
     -- add line

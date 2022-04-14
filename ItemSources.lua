@@ -258,7 +258,7 @@ InspectEquip_ItemSources = {
         [190628] = "r_1195_15360_0",
         [190624] = "r_1195_15360_0",
         [190625] = "r_1195_15360_0",
-        -- Sepulcher of the First Ones : Tier Sets
+        -- Sepulcher of the First Ones : Tier set pieces
         -- Death Knight
 		[188868] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188867] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
@@ -331,6 +331,67 @@ InspectEquip_ItemSources = {
         [188938] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188940] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
         [188937] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        -- Sepulcher of the First Ones : Tier set off-pieces
+        -- Death Knight
+        [188873] = "cc", -- cloak
+        [188869] = "cc", -- bracers
+        [188870] = "cc", -- belt
+        [188865] = "cc", -- boots        
+        -- Demon Hunter
+        [188900] = "cc", -- cloak
+        [188895] = "cc", -- bracers
+        [188897] = "cc", -- belt
+        [188899] = "cc", -- boots   
+        -- Warlock
+        [188891] = "cc", -- cloak
+        [188885] = "cc", -- bracers
+        [188886] = "cc", -- belt
+        [188883] = "cc", -- boots   
+        -- Druid
+        [188871] = "cc", -- cloak
+        [188850] = "cc", -- bracers
+        [188852] = "cc", -- belt
+        [188854] = "cc", -- boots   
+        -- Hunter
+        [188872] = "cc", -- cloak
+        [188855] = "cc", -- bracers
+        [188857] = "cc", -- belt
+        [188862] = "cc", -- boots   
+        -- Mage
+        [188846] = "cc", -- cloak
+        [188840] = "cc", -- bracers
+        [188841] = "cc", -- belt
+        [188838] = "cc", -- boots   
+        -- Paladin
+        [188936] = "cc", -- cloak
+        [188934] = "cc", -- bracers
+        [188935] = "cc", -- belt
+        [188930] = "cc", -- boots   
+        -- Priest
+        [188882] = "cc", -- cloak
+        [188876] = "cc", -- bracers
+        [188877] = "cc", -- belt
+        [188874] = "cc", -- boots   
+        -- Shaman
+        [188927] = "cc", -- cloak
+        [188919] = "cc", -- bracers
+        [188921] = "cc", -- belt
+        [188926] = "cc", -- boots   
+        -- Monk
+        [188918] = "cc", -- cloak
+        [188913] = "cc", -- bracers
+        [188915] = "cc", -- belt
+        [188917] = "cc", -- boots   
+        -- Rogue
+        [188909] = "cc", -- cloak
+        [188904] = "cc", -- bracers
+        [188906] = "cc", -- belt
+        [188908] = "cc", -- boots   
+        -- Warrior
+        [188945] = "cc", -- cloak
+        [188943] = "cc", -- bracers
+        [188944] = "cc", -- belt
+        [188939] = "cc", -- boots   
     }
 }
 
