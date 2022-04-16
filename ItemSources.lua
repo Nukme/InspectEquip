@@ -258,6 +258,7 @@ InspectEquip_ItemSources = {
         [190628] = "r_1195_15360_0",
         [190624] = "r_1195_15360_0",
         [190625] = "r_1195_15360_0",
+        [190334] = "r_1195_15360_0",
         -- Sepulcher of the First Ones : Tier set pieces
         -- Death Knight
 		[188868] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
