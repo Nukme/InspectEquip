@@ -1,6 +1,10 @@
 -- InspectEquip
 -- Original Author: emelio_
 -- Maintainer: Nukme
+
+local _, _table_ = ...
+
+
 InspectEquip = LibStub("AceAddon-3.0"):NewAddon("InspectEquip", "AceConsole-3.0", "AceHook-3.0", "AceTimer-3.0",
     "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
@@ -20,71 +24,6 @@ local slots = {"HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", 
 local expansionLevel = GetExpansionLevel()
 local noEnchantWarningSlots = {}
 local WeaponEnchantOnly = true
-local primaryStats = {
-    -- Death Knight
-    ["250"] = LE_UNIT_STAT_STRENGTH, -- Blood
-    ["251"] = LE_UNIT_STAT_STRENGTH, -- Frost
-    ["252"] = LE_UNIT_STAT_STRENGTH, -- Unholy
-    -- Demon Hunter
-    ["577"] = LE_UNIT_STAT_AGILITY, -- Havoc
-    ["581"] = LE_UNIT_STAT_AGILITY, -- Vengeance
-    -- Druid
-    ["102"] = LE_UNIT_STAT_INTELLECT, -- Balance
-    ["103"] = LE_UNIT_STAT_AGILITY, -- Feral
-    ["104"] = LE_UNIT_STAT_AGILITY, -- Guardian
-    ["105"] = LE_UNIT_STAT_INTELLECT, -- Restoration
-    -- Hunter
-    ["253"] = LE_UNIT_STAT_AGILITY, -- Beast Mastery
-    ["254"] = LE_UNIT_STAT_AGILITY, -- Marksmanship
-    ["255"] = LE_UNIT_STAT_AGILITY, -- Survival
-    -- Mage
-    ["62"] = LE_UNIT_STAT_INTELLECT, -- Arcane
-    ["63"] = LE_UNIT_STAT_INTELLECT, -- Fire
-    ["64"] = LE_UNIT_STAT_INTELLECT, -- Frost
-    -- Monk
-    ["268"] = LE_UNIT_STAT_AGILITY, -- Brewmaster
-    ["270"] = LE_UNIT_STAT_INTELLECT, -- Mistweaver
-    ["269"] = LE_UNIT_STAT_AGILITY, -- Windwalker
-    -- Paladin
-    ["65"] = LE_UNIT_STAT_INTELLECT, -- Holy
-    ["66"] = LE_UNIT_STAT_STRENGTH, -- Protection
-    ["70"] = LE_UNIT_STAT_STRENGTH, -- Retribution
-    -- Priest
-    ["256"] = LE_UNIT_STAT_INTELLECT, -- Discipline
-    ["257"] = LE_UNIT_STAT_INTELLECT, -- Holy
-    ["258"] = LE_UNIT_STAT_INTELLECT, -- Shadow
-    -- Rogue
-    ["259"] = LE_UNIT_STAT_AGILITY, -- Assassination
-    ["260"] = LE_UNIT_STAT_AGILITY, -- Outlaw
-    ["261"] = LE_UNIT_STAT_AGILITY, -- Subtlety
-    -- Shaman
-    ["262"] = LE_UNIT_STAT_INTELLECT, -- Elemental
-    ["263"] = LE_UNIT_STAT_AGILITY, -- Enhancement
-    ["264"] = LE_UNIT_STAT_INTELLECT, -- Restoration
-    -- Warlock
-    ["265"] = LE_UNIT_STAT_INTELLECT, -- Affliction
-    ["266"] = LE_UNIT_STAT_INTELLECT, -- Demonology
-    ["267"] = LE_UNIT_STAT_INTELLECT, -- Destruction
-    -- Warrior
-    ["71"] = LE_UNIT_STAT_STRENGTH, -- Arms
-    ["72"] = LE_UNIT_STAT_STRENGTH, -- Fury
-    ["73"] = LE_UNIT_STAT_STRENGTH -- Protection
-}
-
-local CLASS_ICONS = {
-    ["WARRIOR"] = 626008, 
-    ["PALADIN"] = 626003,
-    ["HUNTER"] = 626000,
-    ["ROGUE"] = 626005,
-    ["PRIEST"] = 626004,
-    ["DEATHKNIGHT"] = 625998,
-    ["SHAMAN"] = 626006,
-    ["MAGE"] = 626001,
-    ["WARLOCK"] = 626007,
-    ["MONK"] = 626002,
-    ["DRUID"] = 625999,
-    ["DEMONHUNTER"] = 1260827,
-}
 
 local lines = {}
 local numlines = 0
@@ -590,15 +529,15 @@ function IE:Inspect(unit, entry)
         elseif unit == "target" then
             curSpecID = GetInspectSpecialization(unit)
         end
-        if primaryStats[tostring(curSpecID)] ~= nil and primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_STRENGTH then
+        if _table_.primaryStats[tostring(curSpecID)] ~= nil and _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_STRENGTH then
             noEnchantWarningSlots["HandsSlot"] = true
             noEnchantWarningSlots["FeetSlot"] = false
             noEnchantWarningSlots["WristSlot"] = false
-        elseif primaryStats[tostring(curSpecID)] ~= nil and primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_AGILITY then
+        elseif _table_.primaryStats[tostring(curSpecID)] ~= nil and _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_AGILITY then
             noEnchantWarningSlots["HandsSlot"] = false
             noEnchantWarningSlots["FeetSlot"] = true
             noEnchantWarningSlots["WristSlot"] = false
-        elseif primaryStats[tostring(curSpecID)] ~= nil and primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_INTELLECT then
+        elseif _table_.primaryStats[tostring(curSpecID)] ~= nil and _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_INTELLECT then
             noEnchantWarningSlots["HandsSlot"] = false
             noEnchantWarningSlots["FeetSlot"] = false
             noEnchantWarningSlots["WristSlot"] = true
@@ -915,30 +854,6 @@ function IE:AddItems(tab, padding, extra)
     end
 end
 
-function IE:IsPvPItem(item)
-    local seasonAffix = {L["Dread"], -- BFA Season 1
-    L["Sinister"], -- BFA Season 2
-    L["Notorious"], -- BFA Season 3
-    L["Corrupted"], -- BFA Season 4
-    L["Sinful"], -- Shadowlands Season 1
-    L["Unchained"], -- Shadowlands Season 2
-    L["Cosmic"] -- Shadowlands Season 3
-    }
-    local subAffix = {L["Aspirant"], L["Gladiator"]}
-
-    for i, affix1 in pairs(seasonAffix) do
-        for j, affix2 in pairs(subAffix) do
-            local itemName = GetItemInfo(item)
-            local match1 = string.match(itemName, affix1)
-            local match2 = string.match(itemName, affix2)
-            if match1 and match2 then
-                return true
-            end
-        end
-    end
-
-    return false
-end
 
 function IE:GetItemData(item)
     local id
@@ -1038,7 +953,7 @@ function IE:GetItemSourceCategories(itemLink, unit)
                 -- class tier set
                 if InspectEquipConfig._StylizeClassTierCategory_ then
                     local className, classFilename = UnitClass(unit)
-                    return {"|T" .. CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
+                    return {"|T" .. _table_.CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
                 else
                     return {L["Class Tier Set"]}
                 end

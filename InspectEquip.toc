@@ -23,3 +23,7 @@ InfoWindow.xml
 Core.lua
 Tooltips.lua
 LocalDatabase.lua
+
+Utilities\PrimaryStatsTable.lua
+Utilities\ClassIconsTable.lua
+Utilities\PvPItemCheck.lua
