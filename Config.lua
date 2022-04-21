@@ -148,9 +148,9 @@ local options = {
                 return IE.configDB.profile.ttR, IE.configDB.profile.ttG, IE.configDB.profile.ttB, 1.0
             end,
             set = function(_, r, g, b, a)
-                InspectEquipConfig.ttR = r
-                InspectEquipConfig.ttG = g
-                InspectEquipConfig.ttB = b
+                IE.configDB.profile.ttR = r
+                IE.configDB.profile.ttG = g
+                IE.configDB.profile.ttB = b
             end
         },
         maxsourcecount = {

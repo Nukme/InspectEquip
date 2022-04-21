@@ -357,7 +357,7 @@ addSource = function(tip, item, source, level)
     -- add line
     if str then
         local label
-        local r, g, b = InspectEquipConfig.ttR, InspectEquipConfig.ttG, InspectEquipConfig.ttB
+        local r, g, b = IE.configDB.profile.ttR, IE.configDB.profile.ttG, IE.configDB.profile.ttB
         if level == 0 then
             label = L["Source"] .. ": "
         else
@@ -388,7 +388,7 @@ addItemData = function(tip, item, level)
 
         local sourceCount = 0
         local skippedSourceCount = 0
-        local maxSourceCount = InspectEquipConfig.maxSourceCount
+        local maxSourceCount = IE.configDB.profile.maxSourceCount
 
         for entry in gmatch(data, "[^;]+") do
             if sourceCount < maxSourceCount then
@@ -400,7 +400,7 @@ addItemData = function(tip, item, level)
         end
 
         if skippedSourceCount > 0 then
-            local r, g, b = InspectEquipConfig.ttR, InspectEquipConfig.ttG, InspectEquipConfig.ttB
+            local r, g, b = IE.configDB.profile.ttR, IE.configDB.profile.ttG, IE.configDB.profile.ttB
             tip:AddLine(strformat(L["... and %d other sources"], skippedSourceCount), r, g, b)
         end
 
@@ -408,7 +408,7 @@ addItemData = function(tip, item, level)
 end
 
 function IE:AddToTooltip(tip, itemLink)
-    if InspectEquipConfig.tooltips == false then
+    if IE.configDB.profile.tooltips == false then
         return
     end
 
