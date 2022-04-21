@@ -152,7 +152,7 @@ end
 -- Ugly hack, but some addons override the OnTooltipSetItem handler on
 -- ItemRefTooltip, breaking IE. Using this timer, IE hopefully hooks after them.
 function IE:ScheduleTooltipHook()
-    if IE.configDB.profile.tooltips then
+    if IE.configDB.global.tooltips then
         if tooltipTimer then
             self:CancelTimer(tooltipTimer, true)
         end
@@ -242,7 +242,7 @@ end
 function IE:InspectUnit(unit)
 	origInspectUnit(unit)
 
-	if IE.configDB.profile.inspectWindow then
+	if IE.configDB.global.inspectWindow then
 		self:SetParent(InspectFrame)
 		WIN:Hide()
 		if not hooked and InspectFrame_UnitChanged then
@@ -255,7 +255,7 @@ function IE:InspectUnit(unit)
 end
 --]]
 function IE:InspectFrame_UnitChanged()
-    if InspectFrame.unit and IE.configDB.profile.inspectWindow then
+    if InspectFrame.unit and IE.configDB.global.inspectWindow then
         self:InspectUnit(InspectFrame.unit)
     else
         WIN:Hide()
@@ -264,7 +264,7 @@ end
 
 ------------ TAINT REWORK ------------------
 function IE:InspectPaperDollFrame_OnShow()
-    if IE.configDB.profile.inspectWindow then
+    if IE.configDB.global.inspectWindow then
         self:SetParent(InspectFrame)
         WIN:Hide()
         if not hooked and InspectFrame_UnitChanged then
@@ -285,7 +285,7 @@ end
 --------------------------------------------
 
 function IE:PaperDollFrame_OnShow()
-    if IE.configDB.profile.charWindow then
+    if IE.configDB.global.charWindow then
         IE:SetParent(CharacterFrame)
         IE:Inspect("player")
     end
@@ -402,7 +402,7 @@ function IE:Inspect(unit, entry)
         end
     end
 
-    local calciv = IE.configDB.profile.showAvgItemLevel
+    local calciv = IE.configDB.global.showAvgItemLevel
     local iLevelSum, iCount = 0, 16
 
     local ArtifactWeaponEquipped = false
@@ -431,7 +431,7 @@ function IE:Inspect(unit, entry)
                 elseif rar == 7 then
                     source = {L["Heirloom"]}
                 else
-                    if (not source) and IE.configDB.profile.showUnknown then
+                    if (not source) and IE.configDB.global.showUnknown then
                         source = {L["Unknown"]}
                         sourceKnown = false
                     end
@@ -618,7 +618,7 @@ function IE:AddItems(tab, padding, extra)
         local prefix = ""
         local isArtifactWeapon = false
         local itemClassID = select(12, GetItemInfo(item.link))
-        if IE.configDB.profile.listItemLevels then
+        if IE.configDB.global.listItemLevels then
             -- local ilvl = ItemUpgradeInfo:GetUpgradedItemLevel(item.link)
             local ilvl, plvl = GetDetailedItemLevelInfo(item.link)
             if item.slot == "MainHandSlot" then
@@ -635,7 +635,7 @@ function IE:AddItems(tab, padding, extra)
             end
         end
         if
-            IE.configDB.profile.checkEnchants and (item.enchant == nil) and noEnchantWarningSlots[item.slot] and
+            IE.configDB.global.checkEnchants and (item.enchant == nil) and noEnchantWarningSlots[item.slot] and
                 not isArtifactWeapon
          then
             if WeaponEnchantOnly then
@@ -695,7 +695,7 @@ function IE:FixWindowSize()
         end
     end
     local height = (curline * 15) + 55
-    if IE.configDB.profile.showAvgItemLevel then
+    if IE.configDB.global.showAvgItemLevel then
         height = height + 15
     end
     WIN:SetWidth(maxwidth + 40)
@@ -722,9 +722,9 @@ function IE.Line_OnEnter(row)
             row.link = GetInventoryItemLink(curUnit, GetInventorySlotInfo(row.item.slot)) or row.link
         end
         GameTooltip:SetHyperlink(row.link)
-        -- if row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and noEnchantWarningSlots[row.item.slot] then
+        -- if row.item and IE.configDB.global.checkEnchants and (row.item.enchant == nil) and noEnchantWarningSlots[row.item.slot] then
         if
-            row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and
+            row.item and IE.configDB.global.checkEnchants and (row.item.enchant == nil) and
                 noEnchantWarningSlots[row.item.slot] and
                 not isArtifactWeapon
          then

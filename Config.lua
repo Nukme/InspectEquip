@@ -8,7 +8,7 @@ local IE = InspectEquip
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 
 local defaults = {
-    profile = {
+    global = {
         tooltips = true,
         showUnknown = true,
         inspectWindow = true,
@@ -35,10 +35,10 @@ local options = {
             name = L["Add drop information to tooltips"],
             desc = L["Add item drop information to all item tooltips"],
             get = function()
-                return IE.configDB.profile.tooltips
+                return IE.configDB.global.tooltips
             end,
             set = function(_, v)
-                IE.configDB.profile.tooltips = v
+                IE.configDB.global.tooltips = v
                 if v then
                     IE:HookTooltips()
                 end
@@ -51,10 +51,10 @@ local options = {
             name = L["Include unknown items in overview"],
             desc = L["Show items that cannot be categorized in a seperate category"],
             get = function()
-                return IE.configDB.profile.showUnknown
+                return IE.configDB.global.showUnknown
             end,
             set = function(_, v)
-                IE.configDB.profile.showUnknown = v
+                IE.configDB.global.showUnknown = v
             end
         },
         inspectwindow = {
@@ -64,10 +64,10 @@ local options = {
             name = L["Attach to inspect window"],
             desc = L["Show the equipment list when inspecting other characters"],
             get = function()
-                return IE.configDB.profile.inspectWindow
+                return IE.configDB.global.inspectWindow
             end,
             set = function(_, v)
-                IE.configDB.profile.inspectWindow = v
+                IE.configDB.global.inspectWindow = v
             end
         },
         charwindow = {
@@ -77,10 +77,10 @@ local options = {
             name = L["Attach to character window"],
             desc = L["Also show the InspectEquip panel when opening the character window"],
             get = function()
-                return IE.configDB.profile.charWindow
+                return IE.configDB.global.charWindow
             end,
             set = function(_, v)
-                IE.configDB.profile.charWindow = v
+                IE.configDB.global.charWindow = v
             end
         },
         checkenchants = {
@@ -90,10 +90,10 @@ local options = {
             name = L["Check for unenchanted items"],
             desc = L["Display a warning for unenchanted items"],
             get = function()
-                return IE.configDB.profile.checkEnchants
+                return IE.configDB.global.checkEnchants
             end,
             set = function(_, v)
-                IE.configDB.profile.checkEnchants = v
+                IE.configDB.global.checkEnchants = v
             end
         },
         listitemlevels = {
@@ -103,10 +103,10 @@ local options = {
             name = L["Show item level in equipment list"],
             desc = L["Show the item level of each item in the equipment panel"],
             get = function()
-                return IE.configDB.profile.listItemLevels
+                return IE.configDB.global.listItemLevels
             end,
             set = function(_, v)
-                IE.configDB.profile.listItemLevels = v
+                IE.configDB.global.listItemLevels = v
             end
         },
         showavgitemlevel = {
@@ -116,10 +116,10 @@ local options = {
             name = L["Show average item level in equipment list"],
             desc = L["Show the average item level of all items in the equipment panel"],
             get = function()
-                return IE.configDB.profile.showAvgItemLevel
+                return IE.configDB.global.showAvgItemLevel
             end,
             set = function(_, v)
-                IE.configDB.profile.showAvgItemLevel = v
+                IE.configDB.global.showAvgItemLevel = v
             end
         },
         stylizeclasstiercategory = {
@@ -129,10 +129,10 @@ local options = {
             name = L["Stylize Class Tier Set category label"],
             desc = L["Show Class Tier Set category label with class color and class icon"],
             get = function()
-                return IE.configDB.profile._StylizeClassTierCategory_
+                return IE.configDB.global._StylizeClassTierCategory_
             end,
             set = function(_, v)
-                IE.configDB.profile._StylizeClassTierCategory_ = v
+                IE.configDB.global._StylizeClassTierCategory_ = v
             end
         },
         tooltipcolor = {
@@ -141,12 +141,12 @@ local options = {
             name = L["Tooltip text color"],
             width = "full",
             get = function()
-                return IE.configDB.profile.ttR, IE.configDB.profile.ttG, IE.configDB.profile.ttB, 1.0
+                return IE.configDB.global.ttR, IE.configDB.global.ttG, IE.configDB.global.ttB, 1.0
             end,
             set = function(_, r, g, b, a)
-                IE.configDB.profile.ttR = r
-                IE.configDB.profile.ttG = g
-                IE.configDB.profile.ttB = b
+                IE.configDB.global.ttR = r
+                IE.configDB.global.ttG = g
+                IE.configDB.global.ttB = b
             end
         },
         maxsourcecount = {
@@ -160,10 +160,10 @@ local options = {
             name = L["Max. amount of sources in tooltips"],
             desc = L["The maximum amount of sources that are displayed in item tooltips"],
             get = function()
-                return IE.configDB.profile.maxSourceCount
+                return IE.configDB.global.maxSourceCount
             end,
             set = function(_, v)
-                IE.configDB.profile.maxSourceCount = v
+                IE.configDB.global.maxSourceCount = v
             end
         },
         database = {

@@ -78,7 +78,7 @@ function IE:GetItemSourceCategories(itemLink, unit)
                 return {L["PvP"]}
             elseif cat == "t" then
                 -- class tier set
-                if IE.configDB.profile._StylizeClassTierCategory_ then
+                if IE.configDB.global._StylizeClassTierCategory_ then
                     local className, classFilename = UnitClass(unit)
                     return {"|T" .. _table_.CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
                 else
