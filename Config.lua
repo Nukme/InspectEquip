@@ -7,9 +7,6 @@ end
 local IE = InspectEquip
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 
-
-
-
 local defaults = {
     profile = {
         tooltips = true,
@@ -27,7 +24,6 @@ local defaults = {
     }
 }
 
-
 local options = {
     name = "InspectEquip",
     type = "group",
@@ -42,7 +38,7 @@ local options = {
                 return IE.configDB.profile.tooltips
             end,
             set = function(_, v)
-                IE.configDB.profile.tooltips = v;
+                IE.configDB.profile.tooltips = v
                 if v then
                     IE:HookTooltips()
                 end
@@ -190,7 +186,6 @@ local options = {
         }
     }
 }
-
 
 _table_.defaults = defaults
 _table_.options = options

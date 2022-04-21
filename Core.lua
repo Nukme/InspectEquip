@@ -4,9 +4,8 @@
 
 local _, _table_ = ...
 
-
-InspectEquip = LibStub("AceAddon-3.0"):NewAddon("InspectEquip", "AceConsole-3.0", "AceHook-3.0", "AceTimer-3.0",
-    "AceEvent-3.0")
+InspectEquip =
+    LibStub("AceAddon-3.0"):NewAddon("InspectEquip", "AceConsole-3.0", "AceHook-3.0", "AceTimer-3.0", "AceEvent-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 local IE = InspectEquip
 local IS = InspectEquip_ItemSources -- > ItemSources.lua
@@ -16,9 +15,24 @@ local AVGIL = InspectEquip_InfoWindowAvgItemLevel
 
 local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 
-local slots = {"HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot",
-               "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot",
-               "SecondaryHandSlot"} -- TabardSlot, ShirtSlot
+local slots = {
+    "HeadSlot",
+    "NeckSlot",
+    "ShoulderSlot",
+    "BackSlot",
+    "ChestSlot",
+    "WristSlot",
+    "HandsSlot",
+    "WaistSlot",
+    "LegsSlot",
+    "FeetSlot",
+    "Finger0Slot",
+    "Finger1Slot",
+    "Trinket0Slot",
+    "Trinket1Slot",
+    "MainHandSlot",
+    "SecondaryHandSlot"
+} -- TabardSlot, ShirtSlot
 
 local noEnchantWarningSlots = {}
 local WeaponEnchantOnly = false
@@ -53,20 +67,21 @@ local band = bit.band
 local tooltipTimer = nil
 local retryTimer = nil
 
-
 function IE:OnInitialize()
     self.configDB = LibStub("AceDB-3.0"):New("InspectEquipConfigDB", _table_.defaults, true)
     LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", _table_.options)
     InspectEquip.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
-    self:RegisterChatCommand("inspectequip", function()
-        InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
-    end)
+    self:RegisterChatCommand(
+        "inspectequip",
+        function()
+            InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
+        end
+    )
     local version = GetAddOnMetadata("InspectEquip", "Version")
     local versionText = "|cFF808080 " .. version .. "|r"
-    InspectEquip.Version = InspectEquip.ConfigPanel:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
+    InspectEquip.Version = InspectEquip.ConfigPanel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     InspectEquip.Version:SetPoint("TOPRIGHT", InspectEquip.ConfigPanel, "TOPRIGHT", -15, -15)
     InspectEquip.Version:SetText(versionText)
-
 
     self:SetParent(InspectFrame)
     WIN:Hide()
@@ -86,7 +101,7 @@ function IE:OnEnable()
         self:SecureHookScript(PaperDollFrame, "OnShow", "PaperDollFrame_OnShow")
         self:SecureHookScript(PaperDollFrame, "OnHide", "PaperDollFrame_OnHide")
     end
-    if GearManagerDialog then -- 4.0		
+    if GearManagerDialog then -- 4.0
         self:SecureHookScript(GearManagerDialog, "OnShow", "GearManagerDialog_OnShow")
         self:SecureHookScript(GearManagerDialog, "OnHide", "GearManagerDialog_OnHide")
     end
@@ -141,7 +156,7 @@ function IE:ScheduleTooltipHook()
         if tooltipTimer then
             self:CancelTimer(tooltipTimer, true)
         end
-        tooltipTimer = self:ScheduleTimer('HookTooltips', 3)
+        tooltipTimer = self:ScheduleTimer("HookTooltips", 3)
     end
 end
 
@@ -239,7 +254,6 @@ function IE:InspectUnit(unit)
 	end
 end
 --]]
-
 function IE:InspectFrame_UnitChanged()
     if InspectFrame.unit and IE.configDB.profile.inspectWindow then
         self:InspectUnit(InspectFrame.unit)
@@ -316,7 +330,6 @@ function IE:INSPECT_READY(event, guid)
 end
 
 function IE:Inspect(unit, entry)
-
     noEnchantWarningSlots, WeaponEnchantOnly = IE:GetEnchantmentCheckSlots(unit)
 
     local unitName, unitRealm
@@ -430,8 +443,10 @@ function IE:Inspect(unit, entry)
                 if rar and rar == 6 then
                     ArtifactWeaponEquipped = true
                 end
-                if equiploc == "INVTYPE_2HWEAPON" or equiploc == "INVTYPE_RANGED" or
-                    (equiploc == "INVTYPE_RANGEDRIGHT" and subclassid ~= 19) then
+                if
+                    equiploc == "INVTYPE_2HWEAPON" or equiploc == "INVTYPE_RANGED" or
+                        (equiploc == "INVTYPE_RANGEDRIGHT" and subclassid ~= 19)
+                 then
                     TwohandWeaponEquipped = true
                 end
             end
@@ -544,8 +559,11 @@ function IE:Inspect(unit, entry)
             AVGIL:Hide()
         end
         self:FixWindowSize()
-        if WIN:GetParent() == CharacterFrame and
-            ((GearManagerDialog and GearManagerDialog:IsVisible()) or (OutfitterFrame and OutfitterFrame:IsVisible())) then
+        if
+            WIN:GetParent() == CharacterFrame and
+                ((GearManagerDialog and GearManagerDialog:IsVisible()) or
+                    (OutfitterFrame and OutfitterFrame:IsVisible()))
+         then
             autoHidden = true
         else
             WIN:Show()
@@ -564,20 +582,26 @@ function IE:AddCategory(cat, padding, extra)
     -- sort subcategories by item count
     local t = {}
     for name, subcat in pairs(cat.cats) do
-        tinsert(t, {
-            name = name,
-            subcat = subcat
-        })
+        tinsert(
+            t,
+            {
+                name = name,
+                subcat = subcat
+            }
+        )
     end
     -- tsort(t, function(a,b) return a.subcat.count > b.subcat.count end)
     -- tsort(t, function(a,b) return a.subcat.catlevel < b.subcat.catlevel end)
-    tsort(t, function(a, b)
-        if a.subcat.catlevel == b.subcat.catlevel then
-            return a.subcat.count > b.subcat.count
-        else
-            return a.subcat.catlevel < b.subcat.catlevel
+    tsort(
+        t,
+        function(a, b)
+            if a.subcat.catlevel == b.subcat.catlevel then
+                return a.subcat.count > b.subcat.count
+            else
+                return a.subcat.catlevel < b.subcat.catlevel
+            end
         end
-    end)
+    )
 
     -- add subcategories
     for i = 1, #t do
@@ -610,8 +634,10 @@ function IE:AddItems(tab, padding, extra)
                 prefix = "|cffaaaaaa[" .. ilvl .. "]|r "
             end
         end
-        if IE.configDB.profile.checkEnchants and (item.enchant == nil) and noEnchantWarningSlots[item.slot] and
-            not isArtifactWeapon then
+        if
+            IE.configDB.profile.checkEnchants and (item.enchant == nil) and noEnchantWarningSlots[item.slot] and
+                not isArtifactWeapon
+         then
             if WeaponEnchantOnly then
                 if item.slot == "MainHandSlot" or item.slot == "SecondaryHandSlot" then
                     if itemClassID == 2 then
@@ -627,7 +653,6 @@ function IE:AddItems(tab, padding, extra)
         self:AddLine(padding, prefix .. item.link .. suffix, item.link, item)
     end
 end
-
 
 function IE:GetItemData(item)
     local id
@@ -660,8 +685,6 @@ end
 function IE:GetBossName(id)
     return IS.Bosses[id] or InspectEquipLocalDB.Bosses[id]
 end
-
-
 
 function IE:FixWindowSize()
     local maxwidth = TITLE:GetStringWidth()
@@ -700,8 +723,11 @@ function IE.Line_OnEnter(row)
         end
         GameTooltip:SetHyperlink(row.link)
         -- if row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and noEnchantWarningSlots[row.item.slot] then
-        if row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and
-            noEnchantWarningSlots[row.item.slot] and not isArtifactWeapon then
+        if
+            row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and
+                noEnchantWarningSlots[row.item.slot] and
+                not isArtifactWeapon
+         then
             if WeaponEnchantOnly then
                 if row.item.slot == "MainHandSlot" or row.item.slot == "SecondaryHandSlot" then
                     if itemClassID == 2 then
