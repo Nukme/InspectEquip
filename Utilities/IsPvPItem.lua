@@ -1,3 +1,7 @@
+--[[
+    @param  item    - item link
+    @return boolean flag
+--]]
 if not InspectEquip then
     return
 end

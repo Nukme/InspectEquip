@@ -9,7 +9,7 @@
 ## X-Repository: https://github.com/Nukme/InspectEquip
 ## X-NGA_Feedback: https://bbs.nga.cn/read.php?tid=8749947
 ## OptionalDeps: Ace3, LibBabble-SubZone-3.0, LibBabble-Boss-3.0, LibItemUpgradeInfo-1.0, Examiner, Outfitter, Links, LinkWrangler, AtlasLoot
-## SavedVariables: InspectEquipConfig, InspectEquipLocalDB
+## SavedVariables: InspectEquipConfigDB, InspectEquipLocalDB
 
 
 #@no-lib-strip@
@@ -21,9 +21,12 @@ Locales\Locales.xml
 ItemSources.lua
 InfoWindow.xml
 Core.lua
+Config.lua
 Tooltips.lua
 LocalDatabase.lua
 
-Utilities\PrimaryStatsTable.lua
-Utilities\ClassIconsTable.lua
-Utilities\PvPItemCheck.lua
+Utilities\primaryStats.lua
+Utilities\CLASS_ICONS.lua
+Utilities\IsPvPItem.lua
+Utilities\GetEnchantmentCheckSlots.lua
+Utilities\GetItemSourceCategories.lua

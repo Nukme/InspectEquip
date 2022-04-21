@@ -20,10 +20,8 @@ local slots = {"HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", 
                "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot",
                "SecondaryHandSlot"} -- TabardSlot, ShirtSlot
 
--- slots with combat related enchants change over expansions
-local expansionLevel = GetExpansionLevel()
 local noEnchantWarningSlots = {}
-local WeaponEnchantOnly = true
+local WeaponEnchantOnly = false
 
 local lines = {}
 local numlines = 0
@@ -55,191 +53,10 @@ local band = bit.band
 local tooltipTimer = nil
 local retryTimer = nil
 
---------------------------------------------------------------------------------------
-
-InspectEquipConfig = {}
-local defaults = {
-    tooltips = true,
-    showUnknown = true,
-    inspectWindow = true,
-    charWindow = true,
-    checkEnchants = true,
-    listItemLevels = true,
-    showAvgItemLevel = true,
-    _StylizeClassTierCategory_ = true,
-    ttR = 1.0,
-    ttG = 0.75,
-    ttB = 0.0,
-    maxSourceCount = 5
-}
-
-local options = {
-    name = "InspectEquip",
-    type = "group",
-    args = {
-        tooltips = {
-            order = 1,
-            type = "toggle",
-            width = "full",
-            name = L["Add drop information to tooltips"],
-            desc = L["Add item drop information to all item tooltips"],
-            get = function()
-                return InspectEquipConfig.tooltips
-            end,
-            set = function(_, v)
-                InspectEquipConfig.tooltips = v;
-                if v then
-                    IE:HookTooltips()
-                end
-            end
-        },
-        showunknown = {
-            order = 2,
-            type = "toggle",
-            width = "full",
-            name = L["Include unknown items in overview"],
-            desc = L["Show items that cannot be categorized in a seperate category"],
-            get = function()
-                return InspectEquipConfig.showUnknown
-            end,
-            set = function(_, v)
-                InspectEquipConfig.showUnknown = v
-            end
-        },
-        inspectwindow = {
-            order = 3,
-            type = "toggle",
-            width = "full",
-            name = L["Attach to inspect window"],
-            desc = L["Show the equipment list when inspecting other characters"],
-            get = function()
-                return InspectEquipConfig.inspectWindow
-            end,
-            set = function(_, v)
-                InspectEquipConfig.inspectWindow = v
-            end
-        },
-        charwindow = {
-            order = 4,
-            type = "toggle",
-            width = "full",
-            name = L["Attach to character window"],
-            desc = L["Also show the InspectEquip panel when opening the character window"],
-            get = function()
-                return InspectEquipConfig.charWindow
-            end,
-            set = function(_, v)
-                InspectEquipConfig.charWindow = v
-            end
-        },
-        checkenchants = {
-            order = 5,
-            type = "toggle",
-            width = "full",
-            name = L["Check for unenchanted items"],
-            desc = L["Display a warning for unenchanted items"],
-            get = function()
-                return InspectEquipConfig.checkEnchants
-            end,
-            set = function(_, v)
-                InspectEquipConfig.checkEnchants = v
-            end
-        },
-        listitemlevels = {
-            order = 6,
-            type = "toggle",
-            width = "full",
-            name = L["Show item level in equipment list"],
-            desc = L["Show the item level of each item in the equipment panel"],
-            get = function()
-                return InspectEquipConfig.listItemLevels
-            end,
-            set = function(_, v)
-                InspectEquipConfig.listItemLevels = v
-            end
-        },
-        showavgitemlevel = {
-            order = 7,
-            type = "toggle",
-            width = "full",
-            name = L["Show average item level in equipment list"],
-            desc = L["Show the average item level of all items in the equipment panel"],
-            get = function()
-                return InspectEquipConfig.showAvgItemLevel
-            end,
-            set = function(_, v)
-                InspectEquipConfig.showAvgItemLevel = v
-            end
-        },
-        stylizeclasstiercategory = {
-            order = 8,
-            type = "toggle",
-            width = "full",
-            name = L["Stylize Class Tier Set category label"],
-            desc = L["Show Class Tier Set category label with class color and class icon"],
-            get = function()
-                return InspectEquipConfig._StylizeClassTierCategory_
-            end,
-            set = function(_, v)
-                InspectEquipConfig._StylizeClassTierCategory_ = v
-            end
-        },
-        tooltipcolor = {
-            order = 18,
-            type = "color",
-            name = L["Tooltip text color"],
-            width = "full",
-            get = function()
-                return InspectEquipConfig.ttR, InspectEquipConfig.ttG, InspectEquipConfig.ttB, 1.0
-            end,
-            set = function(_, r, g, b, a)
-                InspectEquipConfig.ttR = r
-                InspectEquipConfig.ttG = g
-                InspectEquipConfig.ttB = b
-            end
-        },
-        maxsourcecount = {
-            order = 19,
-            type = "range",
-            min = 1,
-            max = 20,
-            softMax = 10,
-            step = 1,
-            width = "double",
-            name = L["Max. amount of sources in tooltips"],
-            desc = L["The maximum amount of sources that are displayed in item tooltips"],
-            get = function()
-                return InspectEquipConfig.maxSourceCount
-            end,
-            set = function(_, v)
-                InspectEquipConfig.maxSourceCount = v
-            end
-        },
-        database = {
-            order = 20,
-            type = "group",
-            inline = true,
-            name = L["Database"],
-            args = {
-                resetdb = {
-                    order = 1,
-                    type = "execute",
-                    width = "double",
-                    name = L["Reset database"],
-                    desc = L["Recreate the database"],
-                    func = function()
-                        IE:CreateLocalDatabase()
-                    end
-                }
-            }
-        }
-    }
-}
-
---------------------------------------------------------------------------------------
 
 function IE:OnInitialize()
-    LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", options)
+    self.configDB = LibStub("AceDB-3.0"):New("InspectEquipConfigDB", _table_.defaults, true)
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", _table_.options)
     InspectEquip.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
     self:RegisterChatCommand("inspectequip", function()
         InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
@@ -250,9 +67,6 @@ function IE:OnInitialize()
     InspectEquip.Version:SetPoint("TOPRIGHT", InspectEquip.ConfigPanel, "TOPRIGHT", -15, -15)
     InspectEquip.Version:SetText(versionText)
 
-    setmetatable(InspectEquipConfig, {
-        __index = defaults
-    })
 
     self:SetParent(InspectFrame)
     WIN:Hide()
@@ -323,7 +137,7 @@ end
 -- Ugly hack, but some addons override the OnTooltipSetItem handler on
 -- ItemRefTooltip, breaking IE. Using this timer, IE hopefully hooks after them.
 function IE:ScheduleTooltipHook()
-    if InspectEquipConfig.tooltips then
+    if IE.configDB.profile.tooltips then
         if tooltipTimer then
             self:CancelTimer(tooltipTimer, true)
         end
@@ -413,7 +227,7 @@ end
 function IE:InspectUnit(unit)
 	origInspectUnit(unit)
 
-	if InspectEquipConfig.inspectWindow then
+	if IE.configDB.profile.inspectWindow then
 		self:SetParent(InspectFrame)
 		WIN:Hide()
 		if not hooked and InspectFrame_UnitChanged then
@@ -427,7 +241,7 @@ end
 --]]
 
 function IE:InspectFrame_UnitChanged()
-    if InspectFrame.unit and InspectEquipConfig.inspectWindow then
+    if InspectFrame.unit and IE.configDB.profile.inspectWindow then
         self:InspectUnit(InspectFrame.unit)
     else
         WIN:Hide()
@@ -436,7 +250,7 @@ end
 
 ------------ TAINT REWORK ------------------
 function IE:InspectPaperDollFrame_OnShow()
-    if InspectEquipConfig.inspectWindow then
+    if IE.configDB.profile.inspectWindow then
         self:SetParent(InspectFrame)
         WIN:Hide()
         if not hooked and InspectFrame_UnitChanged then
@@ -457,7 +271,7 @@ end
 --------------------------------------------
 
 function IE:PaperDollFrame_OnShow()
-    if InspectEquipConfig.charWindow then
+    if IE.configDB.profile.charWindow then
         IE:SetParent(CharacterFrame)
         IE:Inspect("player")
     end
@@ -503,47 +317,7 @@ end
 
 function IE:Inspect(unit, entry)
 
-    if expansionLevel == 7 then
-        -- BFA: Mainhand, Offhand(weapon only), Finger0, Finger1
-        noEnchantWarningSlots = {
-            ["MainHandSlot"] = true,
-            ["SecondaryHandSlot"] = true,
-            ["Finger0Slot"] = true,
-            ["Finger1Slot"] = true
-        }
-        WeaponEnchantOnly = true
-    elseif expansionLevel == 8 then
-        -- Shadowlands: Mainhand, Offhand(weapon only), Finger0, Finger1, Chest, Cloak, Boots, Gloves, Bracers
-        noEnchantWarningSlots = {
-            ["MainHandSlot"] = true,
-            ["SecondaryHandSlot"] = true,
-            ["Finger0Slot"] = true,
-            ["Finger1Slot"] = true,
-            ["BackSlot"] = true,
-            ["ChestSlot"] = true
-        }
-        local curSpecID = nil
-        if unit == "player" then
-            local curSpec = GetSpecialization()
-            curSpecID = GetSpecializationInfo(curSpec)
-        elseif unit == "target" then
-            curSpecID = GetInspectSpecialization(unit)
-        end
-        if _table_.primaryStats[tostring(curSpecID)] ~= nil and _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_STRENGTH then
-            noEnchantWarningSlots["HandsSlot"] = true
-            noEnchantWarningSlots["FeetSlot"] = false
-            noEnchantWarningSlots["WristSlot"] = false
-        elseif _table_.primaryStats[tostring(curSpecID)] ~= nil and _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_AGILITY then
-            noEnchantWarningSlots["HandsSlot"] = false
-            noEnchantWarningSlots["FeetSlot"] = true
-            noEnchantWarningSlots["WristSlot"] = false
-        elseif _table_.primaryStats[tostring(curSpecID)] ~= nil and _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_INTELLECT then
-            noEnchantWarningSlots["HandsSlot"] = false
-            noEnchantWarningSlots["FeetSlot"] = false
-            noEnchantWarningSlots["WristSlot"] = true
-        end
-        WeaponEnchantOnly = true
-    end
+    noEnchantWarningSlots, WeaponEnchantOnly = IE:GetEnchantmentCheckSlots(unit)
 
     local unitName, unitRealm
     cached = (unit == "cache")
@@ -615,7 +389,7 @@ function IE:Inspect(unit, entry)
         end
     end
 
-    local calciv = InspectEquipConfig.showAvgItemLevel
+    local calciv = IE.configDB.profile.showAvgItemLevel
     local iLevelSum, iCount = 0, 16
 
     local ArtifactWeaponEquipped = false
@@ -644,7 +418,7 @@ function IE:Inspect(unit, entry)
                 elseif rar == 7 then
                     source = {L["Heirloom"]}
                 else
-                    if (not source) and InspectEquipConfig.showUnknown then
+                    if (not source) and IE.configDB.profile.showUnknown then
                         source = {L["Unknown"]}
                         sourceKnown = false
                     end
@@ -820,7 +594,7 @@ function IE:AddItems(tab, padding, extra)
         local prefix = ""
         local isArtifactWeapon = false
         local itemClassID = select(12, GetItemInfo(item.link))
-        if InspectEquipConfig.listItemLevels then
+        if IE.configDB.profile.listItemLevels then
             -- local ilvl = ItemUpgradeInfo:GetUpgradedItemLevel(item.link)
             local ilvl, plvl = GetDetailedItemLevelInfo(item.link)
             if item.slot == "MainHandSlot" then
@@ -836,7 +610,7 @@ function IE:AddItems(tab, padding, extra)
                 prefix = "|cffaaaaaa[" .. ilvl .. "]|r "
             end
         end
-        if InspectEquipConfig.checkEnchants and (item.enchant == nil) and noEnchantWarningSlots[item.slot] and
+        if IE.configDB.profile.checkEnchants and (item.enchant == nil) and noEnchantWarningSlots[item.slot] and
             not isArtifactWeapon then
             if WeaponEnchantOnly then
                 if item.slot == "MainHandSlot" or item.slot == "SecondaryHandSlot" then
@@ -887,84 +661,7 @@ function IE:GetBossName(id)
     return IS.Bosses[id] or InspectEquipLocalDB.Bosses[id]
 end
 
-function IE:GetItemSourceCategories(itemLink, unit)
-    local data = IE:GetItemData(itemLink)
-    if data then
-        for entry in gmatch(data, "[^;]+") do
-            local next_field = gmatch(entry, "[^_]+")
-            local cat = next_field()
 
-            if cat == "r" or cat == "d" then
-                -- raid/dungeon
-                local zone = IE:GetZoneName(tonumber(next_field()))
-                local mode = next_field()
-                local zoneType
-                if cat == "r" then
-                    zoneType = L["Raid"]
-                else
-                    zoneType = L["Instances"]
-                end
-                return {zoneType, zone}
-            elseif cat == "v" or cat == "g" then
-                -- vendor
-                local mainCat
-                if cat == "v" then
-                    mainCat = L["Vendor"]
-                else
-                    mainCat = L["Guild Vendor"]
-                end
-                local typ = next_field()
-                while typ do
-                    if typ == "c" then
-                        -- currency
-                        local currency = tonumber(next_field())
-                        next_field()
-                        local curName = GetCurrencyInfo(currency)
-                        return {mainCat, curName}
-                    elseif typ == "i" then
-                        -- item
-                        next_field()
-                    elseif typ == "m" then
-                        -- money
-                        next_field()
-                    end
-                    typ = next_field()
-                end
-                return {mainCat}
-            elseif cat == "f" then
-                -- reputation rewards
-                return {L["Reputation rewards"]}
-            elseif cat == "m" then
-                -- darkmoon cards
-                return {L["Darkmoon Faire"]}
-            elseif cat == "w" then
-                -- world drops
-                return {L["World drops"]}
-            elseif cat == "c" then
-                -- crafted
-                return {L["Crafted"]}
-            elseif cat == "q" then
-                -- quest rewards
-                return {L["Quest Reward"]}
-            elseif cat == "p" then
-                -- pvp rewards
-                return {L["PvP"]}
-            elseif cat == "t" then
-                -- class tier set
-                if InspectEquipConfig._StylizeClassTierCategory_ then
-                    local className, classFilename = UnitClass(unit)
-                    return {"|T" .. _table_.CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
-                else
-                    return {L["Class Tier Set"]}
-                end
-            elseif cat == "cc" then
-                -- class tier set off-pieces
-                return {L["Creation Catalyst"]}
-            end
-        end
-    end
-    return nil
-end
 
 function IE:FixWindowSize()
     local maxwidth = TITLE:GetStringWidth()
@@ -975,7 +672,7 @@ function IE:FixWindowSize()
         end
     end
     local height = (curline * 15) + 55
-    if InspectEquipConfig.showAvgItemLevel then
+    if IE.configDB.profile.showAvgItemLevel then
         height = height + 15
     end
     WIN:SetWidth(maxwidth + 40)
@@ -1002,8 +699,8 @@ function IE.Line_OnEnter(row)
             row.link = GetInventoryItemLink(curUnit, GetInventorySlotInfo(row.item.slot)) or row.link
         end
         GameTooltip:SetHyperlink(row.link)
-        -- if row.item and InspectEquipConfig.checkEnchants and (row.item.enchant == nil) and noEnchantWarningSlots[row.item.slot] then
-        if row.item and InspectEquipConfig.checkEnchants and (row.item.enchant == nil) and
+        -- if row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and noEnchantWarningSlots[row.item.slot] then
+        if row.item and IE.configDB.profile.checkEnchants and (row.item.enchant == nil) and
             noEnchantWarningSlots[row.item.slot] and not isArtifactWeapon then
             if WeaponEnchantOnly then
                 if row.item.slot == "MainHandSlot" or row.item.slot == "SecondaryHandSlot" then

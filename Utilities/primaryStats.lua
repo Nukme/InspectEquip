@@ -1,3 +1,9 @@
+--[[
+    Table Format :
+        Key     - specialization id
+        Value   - corresponding primary stat
+--]]
+
 local _, _table_ = ...
 
 local primaryStats = {

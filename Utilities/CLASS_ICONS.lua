@@ -1,3 +1,9 @@
+--[[
+    Table Format:
+        Key     - english class name, independent of game-client
+        Value   - class icon fileid
+--]]
+
 local _, _table_ = ...
 
 local CLASS_ICONS = {
