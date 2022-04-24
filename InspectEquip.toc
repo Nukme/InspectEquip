@@ -25,8 +25,9 @@ Config.lua
 Tooltips.lua
 LocalDatabase.lua
 
-Utilities\primaryStats.lua
-Utilities\CLASS_ICONS.lua
-Utilities\IsPvPItem.lua
-Utilities\GetEnchantmentCheckSlots.lua
-Utilities\GetItemSourceCategories.lua
+Utilities\data\primarystats.lua
+Utilities\data\classicons.lua
+Utilities\data\seasonaffixes.lua
+Utilities\func\ispvpitem.lua
+Utilities\func\getenchantmentcheckslots.lua
+Utilities\func\getitemsourcecategories.lua
