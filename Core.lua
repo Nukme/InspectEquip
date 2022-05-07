@@ -68,20 +68,20 @@ local tooltipTimer = nil
 local retryTimer = nil
 
 function IE:OnInitialize()
-    self.configDB = LibStub("AceDB-3.0"):New("InspectEquipConfigDB", _table_.defaults, true)
-    LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", _table_.options)
-    InspectEquip.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip")
+    -- Register Config Values
+    self:RegisterConfigs()
+
+    -- Register Option Menus
+    self:RegisterMenus()
+
+    -- Register Slash Command
     self:RegisterChatCommand(
         "inspectequip",
         function()
             InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
         end
     )
-    local version = GetAddOnMetadata("InspectEquip", "Version")
-    local versionText = "|cFF808080 " .. version .. "|r"
-    InspectEquip.Version = InspectEquip.ConfigPanel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-    InspectEquip.Version:SetPoint("TOPRIGHT", InspectEquip.ConfigPanel, "TOPRIGHT", -15, -15)
-    InspectEquip.Version:SetText(versionText)
+
 
     self:SetParent(InspectFrame)
     WIN:Hide()

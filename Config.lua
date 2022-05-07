@@ -7,6 +7,10 @@ end
 local IE = InspectEquip
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 
+--[[ **********************************************************************
+        Configuration Default Values
+     **********************************************************************]]
+
 local defaults = {
     global = {
         tooltips = true,
@@ -24,8 +28,53 @@ local defaults = {
     }
 }
 
-local options = {
+--[[ **********************************************************************
+        Configuration Options Table
+     **********************************************************************]]
+
+local introOptions = {
+    type = "group",
     name = "InspectEquip",
+    args = {
+        intro = {
+            order = 0,
+            type = "description",
+            name = L["Gear Item Information Management Addon\n\n"]
+        },
+        version = {
+            order = 1,
+            type = "description",
+            name = string.format("%s\n    %s\n\n", "|cFFFFD700" .. L["Version"] .. "|r",
+                GetAddOnMetadata("InspectEquip", "Version"))
+        },
+        author = {
+            order = 2,
+            type = "description",
+            name = string.format("%s\n    %s\n\n", "|cFFFFD700" .. L["Author"] .. "|r", "emelio (original), Nukme")
+        },
+        repo = {
+            order = 3,
+            type = "input",
+            name = L["Github Repo"],
+            width = "double",
+            get = function()
+                return GetAddOnMetadata("InspectEquip", "X-Repository")
+            end
+        },
+        feedback = {
+            order = 4,
+            type = "input",
+            name = L["NGA Feedback"],
+            width = "double",
+            get = function()
+                return GetAddOnMetadata("InspectEquip", "X-NGA_Feedback")
+            end
+        }
+    }
+}
+
+local generalOptions = {
+    name = L["General Settings"],
     type = "group",
     args = {
         tooltips = {
@@ -188,4 +237,19 @@ local options = {
 }
 
 _table_.defaults = defaults
-_table_.options = options
+_table_.introOptions = introOptions
+_table_.generalOptions = generalOptions
+
+function InspectEquip:RegisterConfigs()
+    -- General Settings Defaults DBObj
+    self.configDB = LibStub("AceDB-3.0"):New("InspectEquipConfigDB", _table_.defaults, true)
+end
+
+function InspectEquip:RegisterMenus()
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", _table_.introOptions)
+    self.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip", "InspectEquip")
+
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip General Settings", _table_.generalOptions)
+    self.GeneralSettings = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip General Settings",
+        L["General Settings"], "InspectEquip")
+end
