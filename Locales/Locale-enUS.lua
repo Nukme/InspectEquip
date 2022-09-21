@@ -87,6 +87,7 @@ L["Corrupted"] = true
 L["Sinful"] = true
 L["Unchained"] = true
 L["Cosmic"] = true
+L["Eternal"] = true
 L["Aspirant"] = true
 L["Gladiator"] = true
 L["PvP Reward"] = true

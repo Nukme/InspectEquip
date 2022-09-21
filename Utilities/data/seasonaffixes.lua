@@ -10,10 +10,11 @@ local seasonAffix = {
     L["Sinful"], -- Shadowlands Season 1
     L["Unchained"], -- Shadowlands Season 2
     L["Cosmic"], -- Shadowlands Season 3
+    L["Eternal"], -- Shadowlands Season 4
 }
 
 local subAffix = {
-    L["Aspirant"], 
+    L["Aspirant"],
     L["Gladiator"],
 }
 
