@@ -54,7 +54,9 @@ local primaryStats = {
     -- Warrior
     ["71"] = LE_UNIT_STAT_STRENGTH, -- Arms
     ["72"] = LE_UNIT_STAT_STRENGTH, -- Fury
-    ["73"] = LE_UNIT_STAT_STRENGTH -- Protection
+    ["73"] = LE_UNIT_STAT_STRENGTH, -- Protection
+    -- Evoker
+
 }
 
 _table_.primaryStats = primaryStats

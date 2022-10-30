@@ -7,7 +7,7 @@
 local _, _table_ = ...
 
 local CLASS_ICONS = {
-    ["WARRIOR"] = 626008, 
+    ["WARRIOR"] = 626008,
     ["PALADIN"] = 626003,
     ["HUNTER"] = 626000,
     ["ROGUE"] = 626005,
@@ -19,6 +19,7 @@ local CLASS_ICONS = {
     ["MONK"] = 626002,
     ["DRUID"] = 625999,
     ["DEMONHUNTER"] = 1260827,
+    ["EVOKER"] = 4574311,
 }
 
 _table_.CLASS_ICONS = CLASS_ICONS
