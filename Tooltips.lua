@@ -206,7 +206,7 @@ addSource = function(tip, item, source, level)
 		return addSource(tip, item, "v_c_392_" .. next_field(), level)
 	elseif cat == "C" then -- Conquest Points
 		return addSource(tip, item, "v_c_390_" .. next_field(), level)
-	]] --
+	]]      --
 
     elseif cat == "f" then -- Reputation rewards
         str = L["Reputation rewards"]
@@ -493,4 +493,3 @@ function IE:HookTooltips()
         end, "item")
     end
 end
-

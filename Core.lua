@@ -14,9 +14,9 @@ local AVGIL = InspectEquip_InfoWindowAvgItemLevel
 
 local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 
-local slots = {"HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot",
-               "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot",
-               "SecondaryHandSlot"} -- TabardSlot, ShirtSlot
+local slots = { "HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot",
+    "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot",
+    "SecondaryHandSlot" } -- TabardSlot, ShirtSlot
 
 local noEnchantWarningSlots = {}
 local WeaponEnchantOnly = false
@@ -262,6 +262,7 @@ function IE:InspectPaperDollFrame_OnHide()
         autoHidden = false
     end
 end
+
 --------------------------------------------
 
 function IE:PaperDollFrame_OnShow()
@@ -405,14 +406,14 @@ function IE:Inspect(unit, entry)
 
             if rar and rar >= 2 then
                 if rar == 5 then
-                    source = {L["Legendary"]}
+                    source = { L["Legendary"] }
                 elseif rar == 6 then
-                    source = {L["Artifact"]}
+                    source = { L["Artifact"] }
                 elseif rar == 7 then
-                    source = {L["Heirloom"]}
+                    source = { L["Heirloom"] }
                 else
                     if (not source) and IE.configDB.global.showUnknown then
-                        source = {L["Unknown"]}
+                        source = { L["Unknown"] }
                         sourceKnown = false
                     end
                 end

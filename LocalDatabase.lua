@@ -277,9 +277,9 @@ local function AddToDB(tempDB, itemID, zoneID, bossID, mode)
                 return
             end
         end
-        tinsert(sources, {zoneID, bossID, mode})
+        tinsert(sources, { zoneID, bossID, mode })
     else
-        tempDB[itemID] = {{zoneID, bossID, mode}}
+        tempDB[itemID] = { { zoneID, bossID, mode } }
     end
 end
 
@@ -339,9 +339,9 @@ local function GetTotalLootCount()
                 local difficulties
                 if leg then
                     if isRaid then
-                        difficulties = {3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33}
+                        difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
                     else
-                        difficulties = {1, 2, 23, 24}
+                        difficulties = { 1, 2, 23, 24 }
                     end
                 end
                 for _, diff in ipairs(difficulties) do
@@ -461,9 +461,9 @@ local function UpdateFunction(recursive)
                 local difficulties
                 if leg then
                     if isRaid then
-                        difficulties = {3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33}
+                        difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
                     else
-                        difficulties = {1, 2, 23, 24}
+                        difficulties = { 1, 2, 23, 24 }
                     end
                 end
                 for _, diff in ipairs(difficulties) do

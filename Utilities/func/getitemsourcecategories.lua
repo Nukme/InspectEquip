@@ -31,7 +31,7 @@ function IE:GetItemSourceCategories(itemLink, unit)
                 else
                     zoneType = L["Instances"]
                 end
-                return {zoneType, zone}
+                return { zoneType, zone }
             elseif cat == "v" or cat == "g" then
                 -- vendor
                 local mainCat
@@ -47,7 +47,7 @@ function IE:GetItemSourceCategories(itemLink, unit)
                         local currency = tonumber(next_field())
                         next_field()
                         local curName = GetCurrencyInfo(currency)
-                        return {mainCat, curName}
+                        return { mainCat, curName }
                     elseif typ == "i" then
                         -- item
                         next_field()
@@ -57,36 +57,38 @@ function IE:GetItemSourceCategories(itemLink, unit)
                     end
                     typ = next_field()
                 end
-                return {mainCat}
+                return { mainCat }
             elseif cat == "f" then
                 -- reputation rewards
-                return {L["Reputation rewards"]}
+                return { L["Reputation rewards"] }
             elseif cat == "m" then
                 -- darkmoon cards
-                return {L["Darkmoon Faire"]}
+                return { L["Darkmoon Faire"] }
             elseif cat == "w" then
                 -- world drops
-                return {L["World drops"]}
+                return { L["World drops"] }
             elseif cat == "c" then
                 -- crafted
-                return {L["Crafted"]}
+                return { L["Crafted"] }
             elseif cat == "q" then
                 -- quest rewards
-                return {L["Quest Reward"]}
+                return { L["Quest Reward"] }
             elseif cat == "p" then
                 -- pvp rewards
-                return {L["PvP"]}
+                return { L["PvP"] }
             elseif cat == "t" then
                 -- class tier set
                 if IE.configDB.global._StylizeClassTierCategory_ then
                     local className, classFilename = UnitClass(unit)
-                    return {"|T" .. _table_.CLASS_ICONS[classFilename] .. ":0|t " .."|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r"}
+                    return { "|T" ..
+                        _table_.CLASS_ICONS[classFilename] ..
+                        ":0|t " .. "|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r" }
                 else
-                    return {L["Class Tier Set"]}
+                    return { L["Class Tier Set"] }
                 end
             elseif cat == "cc" then
                 -- class tier set off-pieces
-                return {L["Creation Catalyst"]}
+                return { L["Creation Catalyst"] }
             end
         end
     end

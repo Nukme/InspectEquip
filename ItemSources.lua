@@ -31,7 +31,7 @@ InspectEquip_ItemSources = {
         [142301] = "d_860_4_10001",
         [142303] = "d_860_4_10001",
         [142552] = "d_860_4_10001",
-        -- Emerald Nightmare : Trash loot	
+        -- Emerald Nightmare : Trash loot
         [140993] = "r_768_15360_0",
         [140996] = "r_768_15360_0",
         [141694] = "r_768_15360_0",
@@ -261,138 +261,137 @@ InspectEquip_ItemSources = {
         [190334] = "r_1195_15360_0",
         -- Sepulcher of the First Ones : Tier set pieces
         -- Death Knight
-		[188868] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188868] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188867] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188864] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188866] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188863] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188866] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188863] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Demon Hunter
-		[188892] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188892] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188896] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188894] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188893] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188898] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188893] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188898] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Warlock
-		[188889] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188889] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188888] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188884] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188887] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188890] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188887] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188890] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Druid
-		[188847] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188847] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188851] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188849] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188848] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188853] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188848] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188853] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Hunter
-		[188859] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188859] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188856] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188858] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188860] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188861] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188860] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188861] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Mage
-		[188844] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188844] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188843] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188839] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188842] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188845] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188842] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188845] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Paladin
-		[188933] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188933] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188932] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188929] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188931] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188928] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188931] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188928] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Priest
-		[188880] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188880] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188879] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188875] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188878] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188881] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188878] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188881] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Shaman
-		[188923] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188923] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188920] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188922] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188924] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188925] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188924] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188925] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Monk
         [188910] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188914] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188912] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188911] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188916] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188911] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188916] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Rogue
-		[188901] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188901] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188905] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188903] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188902] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188907] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188902] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188907] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Warrior
-		[188942] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
+        [188942] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
         [188941] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
         [188938] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
-        [188940] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus 
-        [188937] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim 
+        [188940] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
+        [188937] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Sepulcher of the First Ones : Tier set off-pieces
         -- Death Knight
         [188873] = "cc", -- cloak
         [188869] = "cc", -- bracers
         [188870] = "cc", -- belt
-        [188865] = "cc", -- boots        
+        [188865] = "cc", -- boots
         -- Demon Hunter
         [188900] = "cc", -- cloak
         [188895] = "cc", -- bracers
         [188897] = "cc", -- belt
-        [188899] = "cc", -- boots   
+        [188899] = "cc", -- boots
         -- Warlock
         [188891] = "cc", -- cloak
         [188885] = "cc", -- bracers
         [188886] = "cc", -- belt
-        [188883] = "cc", -- boots   
+        [188883] = "cc", -- boots
         -- Druid
         [188871] = "cc", -- cloak
         [188850] = "cc", -- bracers
         [188852] = "cc", -- belt
-        [188854] = "cc", -- boots   
+        [188854] = "cc", -- boots
         -- Hunter
         [188872] = "cc", -- cloak
         [188855] = "cc", -- bracers
         [188857] = "cc", -- belt
-        [188862] = "cc", -- boots   
+        [188862] = "cc", -- boots
         -- Mage
         [188846] = "cc", -- cloak
         [188840] = "cc", -- bracers
         [188841] = "cc", -- belt
-        [188838] = "cc", -- boots   
+        [188838] = "cc", -- boots
         -- Paladin
         [188936] = "cc", -- cloak
         [188934] = "cc", -- bracers
         [188935] = "cc", -- belt
-        [188930] = "cc", -- boots   
+        [188930] = "cc", -- boots
         -- Priest
         [188882] = "cc", -- cloak
         [188876] = "cc", -- bracers
         [188877] = "cc", -- belt
-        [188874] = "cc", -- boots   
+        [188874] = "cc", -- boots
         -- Shaman
         [188927] = "cc", -- cloak
         [188919] = "cc", -- bracers
         [188921] = "cc", -- belt
-        [188926] = "cc", -- boots   
+        [188926] = "cc", -- boots
         -- Monk
         [188918] = "cc", -- cloak
         [188913] = "cc", -- bracers
         [188915] = "cc", -- belt
-        [188917] = "cc", -- boots   
+        [188917] = "cc", -- boots
         -- Rogue
         [188909] = "cc", -- cloak
         [188904] = "cc", -- bracers
         [188906] = "cc", -- belt
-        [188908] = "cc", -- boots   
+        [188908] = "cc", -- boots
         -- Warrior
         [188945] = "cc", -- cloak
         [188943] = "cc", -- bracers
         [188944] = "cc", -- belt
-        [188939] = "cc", -- boots   
+        [188939] = "cc", -- boots
     }
 }
-

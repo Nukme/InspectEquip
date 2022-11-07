@@ -59,24 +59,21 @@ function IE:GetEnchantmentCheckSlots(unit)
         elseif unit == "target" then
             curSpecID = GetInspectSpecialization(unit)
         end
-        if
-            _table_.primaryStats[tostring(curSpecID)] ~= nil and
-                _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_STRENGTH
-         then
+        if _table_.primaryStats[tostring(curSpecID)] ~= nil and
+            _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_STRENGTH
+        then
             noEnchantWarningSlots["HandsSlot"] = true
             noEnchantWarningSlots["FeetSlot"] = false
             noEnchantWarningSlots["WristSlot"] = false
-        elseif
-            _table_.primaryStats[tostring(curSpecID)] ~= nil and
-                _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_AGILITY
-         then
+        elseif _table_.primaryStats[tostring(curSpecID)] ~= nil and
+            _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_AGILITY
+        then
             noEnchantWarningSlots["HandsSlot"] = false
             noEnchantWarningSlots["FeetSlot"] = true
             noEnchantWarningSlots["WristSlot"] = false
-        elseif
-            _table_.primaryStats[tostring(curSpecID)] ~= nil and
-                _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_INTELLECT
-         then
+        elseif _table_.primaryStats[tostring(curSpecID)] ~= nil and
+            _table_.primaryStats[tostring(curSpecID)] == LE_UNIT_STAT_INTELLECT
+        then
             noEnchantWarningSlots["HandsSlot"] = false
             noEnchantWarningSlots["FeetSlot"] = false
             noEnchantWarningSlots["WristSlot"] = true
