@@ -11,7 +11,7 @@ Notes: I don't play any Classic versions of WoW and I don't have any interest or
 ## Credits
 This addon is a continuation of [InspectEquip](https://www.curseforge.com/wow/addons/inspect-equip) and was created when the original project lacked maintenance around year 2015. Thanks to the original authors and contributors for all the work they put into the original addon.
 
-To my knowledge, there's another version of this addon that's been actively maintained. Choose to your liking!
+To my knowledge, there's another fork of this addon that's been actively maintained. Choose to your liking!
 
 ## Bugs & Suggestions
 I've been posting updates on the Chinese forum NGA since Nov 2015. You can provide feedback on this [NGA page](https://bbs.nga.cn/read.php?tid=8749947) if you want.
@@ -22,7 +22,7 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
 - Update item level system
     - Revise the formula to calculate average-item-level to make it the same as the one shown in character panel.
         - Fixes for off-piece artifact item level.
-        - Fixes for dual-wielding two-haned weapons.
+        - Fixes for dual-wielding two-handed weapons.
     - Use API `GetDetailedItemLevelInfo()` to retrieve item level info instead of functions provided by `LibItemUpgradeInfo-1.0`
 - Update item categories system
     - Add `Legendary` category
