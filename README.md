@@ -18,7 +18,7 @@ I've been posting updates on the Chinese forum NGA since Nov 2015. You can provi
 
 Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issues) here on Github.
 
-## Major updates and fixes
+## Major Updates and Fixes
 - Update item level system
     - Revise the formula to calculate average-item-level to make it the same as the one shown in character panel.
         - Fixes for off-piece artifact item level.
