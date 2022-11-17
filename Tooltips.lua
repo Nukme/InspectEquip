@@ -449,14 +449,16 @@ local function hookCompareTip(tooltip)
     end)
 end
 
+-- Fix for DF 10.0.2 api change @ 20221117
+
+local function OnTooltipSetItem(tooltip, data)
+    if data and data.id and GetItemInfo(data.id) then
+        IE:AddToTooltip(tooltip, data.id)
+    end
+end
+
 local function hookTipScript(tooltip)
     if tooltip and tooltip.HookScript then
-        tooltip:HookScript('OnTooltipSetItem', function(tip, ...)
-            local _, link = tip:GetItem()
-            if link and GetItemInfo(link) then
-                IE:AddToTooltip(tip, link)
-            end
-        end)
         tooltip:HookScript('OnTooltipCleared', clearTip)
     end
 end
@@ -467,29 +469,20 @@ function IE:HookTooltips()
     end
     IE.tooltipsHooked = true
 
+    TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
+
     hookTipScript(GameTooltip)
     hookTipScript(ItemRefTooltip)
 
-    if leg then
+    if _retail_ then
         hookTipScript(ShoppingTooltip1)
         hookTipScript(ShoppingTooltip2)
     else
-        hookCompareTip(ShoppingTooltip1)
-        hookCompareTip(ShoppingTooltip2)
-        hookCompareTip(ShoppingTooltip3)
-        hookCompareTip(ItemRefShoppingTooltip1)
-        hookCompareTip(ItemRefShoppingTooltip2)
-        hookCompareTip(ItemRefShoppingTooltip3)
-    end
-
-    -- Not really needed, but... :-)
-    if AtlasLootTooltipTEMP then
-        hookTipScript(AtlasLootTooltipTEMP)
-    end
-
-    if LinkWrangler and LinkWrangler.RegisterCallback then
-        LinkWrangler.RegisterCallback("InspectEquip", function(frame, link)
-            IE:AddToTooltip(frame, link)
-        end, "item")
+        -- hookCompareTip(ShoppingTooltip1)
+        -- hookCompareTip(ShoppingTooltip2)
+        -- hookCompareTip(ShoppingTooltip3)
+        -- hookCompareTip(ItemRefShoppingTooltip1)
+        -- hookCompareTip(ItemRefShoppingTooltip2)
+        -- hookCompareTip(ItemRefShoppingTooltip3)
     end
 end
