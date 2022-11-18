@@ -25,6 +25,8 @@ addSource = function(tip, item, source, level)
     if cat == "r" or cat == "d" then
         -- raid/dungeon, drops and quest items
         local zone = IE:GetZoneName(tonumber(next_field()))
+        if not zone then
+        end
 
         -- if cat == "r" then
         -- str = L["Raid"] .. ": " .. zone
@@ -40,7 +42,8 @@ addSource = function(tip, item, source, level)
             -- drop
             mode = tonumber(mode)
             local boss = IE:GetBossName(tonumber(next_field() or 0))
-            if boss then
+
+            if zone and boss then
                 str = zone .. " - " .. boss
             end
             -- mode
@@ -411,55 +414,20 @@ function IE:AddToTooltip(tip, itemLink)
     if IE.configDB.global.tooltips == false then
         return
     end
-
-    -- prevent adding information twice for recipe links
-    if tip.InspectEquipItem == itemLink then
-        return
-    end
-    tip.InspectEquipItem = itemLink
-
     addItemData(tip, itemLink, 0)
 end
 
-local function clearTip(tooltip)
-    tooltip.InspectEquipItem = nil
-end
-
-local function hookTip(tooltip, method, action)
-    if not tooltip then
-        return
-    end
-    hooksecurefunc(tooltip, method, function(tip, ...)
-        local link, count = action(...)
-        if link then
-            IE:AddToTooltip(tip, link)
-        end
-    end)
-end
-
-local function hookCompareTip(tooltip)
-    if not tooltip then
-        return
-    end
-    hooksecurefunc(tooltip, 'SetHyperlinkCompareItem', function(tip, mainLink)
-        local _, link = tip:GetItem()
-        if link then
-            IE:AddToTooltip(tip, link)
-        end
-    end)
-end
-
 -- Fix for DF 10.0.2 api change @ 20221117
+-- More Fixes @ 20221118
 
-local function OnTooltipSetItem(tooltip, data)
+function IE:ParseItem(tooltip, data)
+    if not IE.dbInitialized then
+        return
+    end
+
     if data and data.id and GetItemInfo(data.id) then
         IE:AddToTooltip(tooltip, data.id)
-    end
-end
-
-local function hookTipScript(tooltip)
-    if tooltip and tooltip.HookScript then
-        tooltip:HookScript('OnTooltipCleared', clearTip)
+        tooltip:Show()
     end
 end
 
@@ -467,22 +435,10 @@ function IE:HookTooltips()
     if IE.tooltipsHooked then
         return
     end
+
+    TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(tooltip, data)
+        self:ParseItem(tooltip, data)
+    end)
+
     IE.tooltipsHooked = true
-
-    TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, OnTooltipSetItem)
-
-    hookTipScript(GameTooltip)
-    hookTipScript(ItemRefTooltip)
-
-    if _retail_ then
-        hookTipScript(ShoppingTooltip1)
-        hookTipScript(ShoppingTooltip2)
-    else
-        -- hookCompareTip(ShoppingTooltip1)
-        -- hookCompareTip(ShoppingTooltip2)
-        -- hookCompareTip(ShoppingTooltip3)
-        -- hookCompareTip(ItemRefShoppingTooltip1)
-        -- hookCompareTip(ItemRefShoppingTooltip2)
-        -- hookCompareTip(ItemRefShoppingTooltip3)
-    end
 end

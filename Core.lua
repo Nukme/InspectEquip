@@ -67,6 +67,8 @@ function IE:OnInitialize()
     WIN:Hide()
     TITLE:SetText("InspectEquip")
 
+    self:ResetTooltipHookFlags()
+
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
     self:RegisterEvent("ADDON_LOADED")
 
@@ -106,6 +108,11 @@ function IE:OnDisable()
     WIN:Hide()
 end
 
+function IE:ResetTooltipHookFlags()
+    IE.dbInitialized = false;
+    IE.tooltipsHooked = false;
+end
+
 local entered = false
 
 function IE:PLAYER_ENTERING_WORLD()
@@ -131,13 +138,10 @@ end
 
 -- Ugly hack, but some addons override the OnTooltipSetItem handler on
 -- ItemRefTooltip, breaking IE. Using this timer, IE hopefully hooks after them.
+-- Note: After 10.0.2, OnTooltipSetItem is removed from the game, so no need to worry about
+-- other addons breaking IE.
 function IE:ScheduleTooltipHook()
-    if IE.configDB.global.tooltips then
-        if tooltipTimer then
-            self:CancelTimer(tooltipTimer, true)
-        end
-        tooltipTimer = self:ScheduleTimer("HookTooltips", 3)
-    end
+    self:HookTooltips()
 end
 
 function IE:SetParent(frame)

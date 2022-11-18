@@ -13,7 +13,7 @@ local strfind = string.find
 local max = math.max
 
 -- check for 5.0+ client, because EJ api was changed
-local leg = select(4, GetBuildInfo()) >= 70000
+local _retail_ = select(4, GetBuildInfo()) >= 70000
 
 -- Database
 InspectEquipLocalDB = {}
@@ -25,7 +25,6 @@ local DATA_RECEIVED_WC = 1 -- 7
 
 local newDataReceived
 local newDataCycles = 0
-local dbInitialized = false
 
 -- GUI
 local bar, barText
@@ -33,7 +32,7 @@ local coUpdate
 local bar2
 
 function IE:InitLocalDatabase()
-    if dbInitialized then
+    if IE.dbInitialized then
         return
     end
 
@@ -56,8 +55,9 @@ function IE:InitLocalDatabase()
         (InspectEquipLocalDB.IEVersion ~= ieVersion) or (InspectEquipLocalDB.Expansion ~= GetExpansionLevel()) then
         -- self:CreateLocalDatabase()
         self:ScheduleTimer("CreateLocalDatabase", 5)
+    else
+        IE.dbInitialized = true
     end
-    dbInitialized = true
 end
 
 local function createUpdateGUI()
@@ -178,6 +178,7 @@ local function EndUpdate()
     EnableEJ()
     coUpdate = nil
     IE:UnregisterEvent("EJ_LOOT_DATA_RECIEVED")
+    IE.dbInitialized = true;
 end
 
 local function UpdateTick()
@@ -324,7 +325,7 @@ local function GetTotalLootCount()
     local tierCount = EJ_GetNumTiers()
     local tier, i
     for tier = 1, tierCount do
-        if leg then
+        if _retail_ then
             EJ_SelectTier(tier)
         end
 
@@ -337,7 +338,7 @@ local function GetTotalLootCount()
                 EJ_SelectInstance(insID)
                 local diff
                 local difficulties
-                if leg then
+                if _retail_ then
                     if isRaid then
                         difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
                     else
@@ -375,7 +376,7 @@ local function UpdateFunction(recursive)
     DisableEJ()
     EJ_EndSearch()
     EJ_ClearSearch()
-    if leg then
+    if _retail_ then
         EJ_ResetLootFilter()
         C_EncounterJournal.ResetSlotFilter()
     else
@@ -395,7 +396,7 @@ local function UpdateFunction(recursive)
     -- count total number of instances
     local insCount = 0
     local tierCount = 1
-    if leg then
+    if _retail_ then
         -- as of 5.x there are multiple tiers (classic, bc, wotlk, cata, mop...)
         tierCount = EJ_GetNumTiers()
         for tier = 1, tierCount do
@@ -433,7 +434,7 @@ local function UpdateFunction(recursive)
     local waitCycles = 0
     -- get loot
     for tier = 1, tierCount do
-        if leg then
+        if _retail_ then
             EJ_SelectTier(tier)
         end
 
@@ -459,7 +460,7 @@ local function UpdateFunction(recursive)
                 EJ_SelectInstance(insID)
                 local diff
                 local difficulties
-                if leg then
+                if _retail_ then
                     if isRaid then
                         difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
                     else

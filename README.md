@@ -60,5 +60,5 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
 - UI Updates
     - Fix and restore gear info frame border style due to `SetBackDrop()` API changes
     - Fix the tainting which prevents player from inspecting others while in combat
-    - Fix for 10.0.2 Tooltip API chagne
+    - Fix for 10.0.2 Tooltip API change
 
