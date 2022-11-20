@@ -55,6 +55,12 @@ function IE:OnInitialize()
     -- Register Config Values
     self:RegisterConfigs()
 
+    -- Register Metas
+    self:RegisterMetas()
+
+    -- Register Items
+    self:RegisterItems()
+
     -- Register Option Menus
     self:RegisterMenus()
 
@@ -67,7 +73,7 @@ function IE:OnInitialize()
     WIN:Hide()
     TITLE:SetText("InspectEquip")
 
-    self:ResetTooltipHookFlags()
+    self:ResetPOSTFlags()
 
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
     self:RegisterEvent("ADDON_LOADED")
@@ -108,7 +114,7 @@ function IE:OnDisable()
     WIN:Hide()
 end
 
-function IE:ResetTooltipHookFlags()
+function IE:ResetPOSTFlags()
     IE.dbInitialized = false;
     IE.tooltipsHooked = false;
 end
@@ -117,8 +123,8 @@ local entered = false
 
 function IE:PLAYER_ENTERING_WORLD()
     entered = true
+    self:DatabasePOST()
     self:ScheduleTooltipHook()
-    self:InitLocalDatabase()
     self:UnregisterEvent("PLAYER_ENTERING_WORLD")
 end
 
@@ -636,7 +642,7 @@ function IE:GetItemData(item)
 
     if id then
         local isSrc = IS.Items[id]
-        local locSrc = InspectEquipLocalDB.Items[id]
+        local locSrc = self.itemDB.global.Items[id]
         if isSrc and locSrc then
             -- combine results
             return locSrc .. ";" .. isSrc
@@ -651,11 +657,11 @@ function IE:GetItemData(item)
 end
 
 function IE:GetZoneName(id)
-    return IS.Zones[id] or InspectEquipLocalDB.Zones[id]
+    return IS.Zones[id] or self.itemDB.global.Zones[id]
 end
 
 function IE:GetBossName(id)
-    return IS.Bosses[id] or InspectEquipLocalDB.Bosses[id]
+    return IS.Bosses[id] or self.itemDB.global.Bosses[id]
 end
 
 function IE:FixWindowSize()

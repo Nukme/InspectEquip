@@ -414,6 +414,7 @@ function IE:AddToTooltip(tip, itemLink)
     if IE.configDB.global.tooltips == false then
         return
     end
+
     addItemData(tip, itemLink, 0)
 end
 

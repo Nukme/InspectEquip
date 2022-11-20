@@ -15,9 +15,6 @@ local max = math.max
 -- check for 5.0+ client, because EJ api was changed
 local _retail_ = select(4, GetBuildInfo()) >= 70000
 
--- Database
-InspectEquipLocalDB = {}
-local ieVersion
 
 -- Max wait cycles for database update
 local MAX_WC = 1 -- 5
@@ -31,32 +28,64 @@ local bar, barText
 local coUpdate
 local bar2
 
-function IE:InitLocalDatabase()
+local defaults_meta = {
+    global = {
+        ClientBuild = nil,
+        IEVersion = nil,
+        Locale = nil,
+        Expansion = nil
+    }
+}
+
+local defaults_item = {
+    global = {
+        Zones = {},
+        Bosses = {},
+        Items = {}
+    }
+}
+
+function IE:RegisterMetas()
+    -- InspectEquip Meta Infomation DBObj
+    self.metaDB = LibStub("AceDB-3.0"):New("InspectEquipMetaDB", defaults_meta, true)
+end
+
+function IE:AreMetasMatching(clientbuild, ieversion, locale, expansion)
+    if self.metaDB.global.ClientBuild == clientbuild and self.metaDB.global.IEVersion == ieversion and
+        self.metaDB.global.Locale == locale and self.metaDB.global.Expansion == expansion then
+        return true
+    else
+        return false
+    end
+end
+
+function IE:UpdateMetas(clientbuild, ieversion, locale, expansion)
+    self.metaDB.global.ClientBuild = clientbuild
+    self.metaDB.global.IEVersion = ieversion
+    self.metaDB.global.Locale = locale
+    self.metaDB.global.Expansion = expansion
+end
+
+function IE:RegisterItems()
+    -- InspectEquip Item Information DBObj
+    self.itemDB = LibStub("AceDB-3.0"):New("InspectEquipItemDB", defaults_item, true)
+end
+
+function IE:DatabasePOST()
     if IE.dbInitialized then
         return
     end
 
-    if not InspectEquipLocalDB then
-        InspectEquipLocalDB = {}
-    end
-    setmetatable(InspectEquipLocalDB, {
-        __index = {
-            Zones = {},
-            Bosses = {},
-            Items = {}
-        }
-    })
+    local _, clientbuild = GetBuildInfo()
+    local ieversion = GetAddOnMetadata("InspectEquip", "Version")
+    local locale = GetLocale()
+    local expansion = GetExpansionLevel()
 
-    local _, currentBuild = GetBuildInfo()
-    ieVersion = GetAddOnMetadata("InspectEquip", "Version")
-
-    -- create database if not present or outdated (or wrong locale)
-    if (InspectEquipLocalDB.ClientBuild ~= currentBuild) or (InspectEquipLocalDB.Locale ~= GetLocale()) or
-        (InspectEquipLocalDB.IEVersion ~= ieVersion) or (InspectEquipLocalDB.Expansion ~= GetExpansionLevel()) then
-        -- self:CreateLocalDatabase()
-        self:ScheduleTimer("CreateLocalDatabase", 5)
-    else
+    if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
         IE.dbInitialized = true
+    else
+        self:ScheduleTimer("CreateLocalDatabase", 5)
+        self:UpdateMetas(clientbuild, ieversion, locale, expansion)
     end
 end
 
@@ -178,7 +207,6 @@ local function EndUpdate()
     EnableEJ()
     coUpdate = nil
     IE:UnregisterEvent("EJ_LOOT_DATA_RECIEVED")
-    IE.dbInitialized = true;
 end
 
 local function UpdateTick()
@@ -287,7 +315,7 @@ end
 local function SaveToDB(tempDB, entryType)
     local itemID, sources, entry
     for itemID, sources in pairs(tempDB) do
-        local str = InspectEquipLocalDB.Items[itemID]
+        local str = IE.itemDB.global.Items[itemID]
         local isEntry = IS.Items[itemID]
 
         -- loop through sources we found
@@ -305,7 +333,7 @@ local function SaveToDB(tempDB, entryType)
 
         end
 
-        InspectEquipLocalDB.Items[itemID] = str
+        IE.itemDB.global.Items[itemID] = str
     end
 end
 
@@ -386,12 +414,10 @@ local function UpdateFunction(recursive)
     IE:RegisterEvent("EJ_LOOT_DATA_RECIEVED")
 
     -- init/reset database
-    local db = InspectEquipLocalDB
+    local db = IE.itemDB.global
     db.Zones = {}
     db.Bosses = {}
     db.Items = {}
-    db.NextZoneID = 1000
-    db.NextBossID = 1000
 
     -- count total number of instances
     local insCount = 0
@@ -608,11 +634,6 @@ local function UpdateFunction(recursive)
 
     SaveToDB(tempDungeonDB, "d")
     SaveToDB(tempRaidDB, "r")
-    local _, currentBuild = GetBuildInfo()
-    db.ClientBuild = currentBuild
-    db.Locale = GetLocale()
-    db.IEVersion = ieVersion
-    db.Expansion = GetExpansionLevel()
 
     UpdateBar()
 
@@ -667,5 +688,7 @@ function IE:CreateLocalDatabase()
         EndUpdate()
         message("[InspectEquip] Could not update database: " .. msg)
     end
+
+    IE.dbInitialized = true;
 
 end
