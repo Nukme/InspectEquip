@@ -20,6 +20,8 @@ Locales\Locales.xml
 
 ItemSources.lua
 InfoWindow.xml
+
+Infrastructure.lua
 Core.lua
 Config.lua
 Tooltips.lua

@@ -87,7 +87,7 @@ function IE:RegisterItems()
 end
 
 function IE:DatabasePOST()
-    if IE.dbInitialized then
+    if IE.DatabaseInitialized then
         return
     end
 
@@ -97,7 +97,7 @@ function IE:DatabasePOST()
     local expansion = GetExpansionLevel()
 
     if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
-        IE.dbInitialized = true
+        IE.DatabaseInitialized = true
     else
         self:ScheduleTimer("CreateLocalDatabase", 5)
         self:UpdateMetas(clientbuild, ieversion, locale, expansion)
@@ -704,6 +704,6 @@ function IE:CreateLocalDatabase()
         message("[InspectEquip] Could not update database: " .. msg)
     end
 
-    IE.dbInitialized = true;
+    IE.DatabaseInitialized = true;
 
 end

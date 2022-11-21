@@ -1,17 +1,21 @@
 -- InspectEquip
 -- Original Author: emelio_
 -- Maintainer: Nukme
+
+if not InspectEquip then
+    return
+end
+
 local _, _table_ = ...
 
-InspectEquip = LibStub("AceAddon-3.0"):NewAddon("InspectEquip", "AceConsole-3.0", "AceHook-3.0", "AceTimer-3.0",
-    "AceEvent-3.0")
-local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
+
 local IE = InspectEquip
 local IS = InspectEquip_ItemSources -- > ItemSources.lua
 local WIN = InspectEquip_InfoWindow -- > InfoWindow.xml
 local TITLE = InspectEquip_InfoWindowTitle
 local AVGIL = InspectEquip_InfoWindowAvgItemLevel
 
+local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 
 local slots = { "HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot",
@@ -34,7 +38,6 @@ local headers = {}
 local numheaders = 0
 
 local yoffset = -40
-local hooked = false
 local autoHidden = false
 
 -- local origInspectUnit
@@ -44,79 +47,78 @@ local gmatch = string.gmatch
 local tinsert = table.insert
 local tsort = table.sort
 local band = bit.band
--- local Examiner = Examiner
 
--- local _,_,_,gameToc = GetBuildInfo()
 
 local tooltipTimer = nil
 local retryTimer = nil
 
-function IE:OnInitialize()
-    -- Register Config Values
-    self:RegisterConfigs()
+-- function IE:OnInitialize()
+--     -- Register Config Values
+--     self:RegisterConfigs()
 
-    -- Register Metas
-    self:RegisterMetas()
+--     -- Register Metas
+--     self:RegisterMetas()
 
-    -- Register Items
-    self:RegisterItems()
+--     -- Register Items
+--     self:RegisterItems()
 
-    -- Register Option Menus
-    self:RegisterMenus()
+--     -- Register Option Menus
+--     self:RegisterMenus()
 
-    -- Register Slash Command
-    self:RegisterChatCommand("inspectequip", function()
-        InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
-    end)
+--     -- Register Slash Command
+--     self:RegisterChatCommand("inspectequip", function()
+--         InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
+--     end)
 
-    self:SetParent(InspectFrame)
-    WIN:Hide()
-    TITLE:SetText("InspectEquip")
+--     self:SetParent(InspectFrame)
+--     WIN:Hide()
+--     TITLE:SetText("InspectEquip")
 
-    self:ResetPOSTFlags()
+--     self:ResetPOSTFlags()
 
-    self:RegisterEvent("PLAYER_ENTERING_WORLD")
-    self:RegisterEvent("ADDON_LOADED")
+--     self:RegisterEvent("PLAYER_ENTERING_WORLD")
+--     self:RegisterEvent("ADDON_LOADED")
 
-    -- self:InitLocalDatabase()
-end
+--     -- self:InitLocalDatabase()
+-- end
 
-function IE:OnEnable()
-    -- origInspectUnit = origInspectUnit or InspectUnit
-    -- InspectUnit = function(...) IE:InspectUnit(...) end
-    if PaperDollFrame then
-        -- self:Print("PaperDollFrame Hooked.")
-        self:SecureHookScript(PaperDollFrame, "OnShow", "PaperDollFrame_OnShow")
-        self:SecureHookScript(PaperDollFrame, "OnHide", "PaperDollFrame_OnHide")
-    end
-    if GearManagerDialog then -- 4.0
-        self:SecureHookScript(GearManagerDialog, "OnShow", "GearManagerDialog_OnShow")
-        self:SecureHookScript(GearManagerDialog, "OnHide", "GearManagerDialog_OnHide")
-    end
-    if OutfitterFrame then
-        self:SecureHookScript(OutfitterFrame, "OnShow", "GearManagerDialog_OnShow")
-        self:SecureHookScript(OutfitterFrame, "OnHide", "GearManagerDialog_OnHide")
-    end
-    self:RegisterEvent("UNIT_INVENTORY_CHANGED")
-    self:RegisterEvent("INSPECT_READY")
-end
+-- function IE:OnEnable()
+--     -- origInspectUnit = origInspectUnit or InspectUnit
+--     -- InspectUnit = function(...) IE:InspectUnit(...) end
+--     if PaperDollFrame then
+--         -- self:Print("PaperDollFrame Hooked.")
+--         self:SecureHookScript(PaperDollFrame, "OnShow", "PaperDollFrame_OnShow")
+--         self:SecureHookScript(PaperDollFrame, "OnHide", "PaperDollFrame_OnHide")
+--     end
+--     if GearManagerDialog then -- 4.0
+--         self:SecureHookScript(GearManagerDialog, "OnShow", "GearManagerDialog_OnShow")
+--         self:SecureHookScript(GearManagerDialog, "OnHide", "GearManagerDialog_OnHide")
+--     end
+--     if OutfitterFrame then
+--         self:SecureHookScript(OutfitterFrame, "OnShow", "GearManagerDialog_OnShow")
+--         self:SecureHookScript(OutfitterFrame, "OnHide", "GearManagerDialog_OnHide")
+--     end
+--     self:RegisterEvent("UNIT_INVENTORY_CHANGED")
+--     self:RegisterEvent("INSPECT_READY")
+-- end
 
-function IE:OnDisable()
-    -- InspectUnit = origInspectUnit
-    if hooked then
-        hooked = false
-        self:Unhook("InspectFrame_UnitChanged")
-    end
-    self:UnhookAll()
-    self:UnregisterEvent("UNIT_INVENTORY_CHANGED")
-    self:UnregisterEvent("INSPECT_READY")
-    self:CancelAllTimers()
-    WIN:Hide()
-end
+-- function IE:OnDisable()
+--     -- InspectUnit = origInspectUnit
+--     if IE.InspectFrame_UnitChangedHooked then
+--         IE.InspectFrame_UnitChangedHooked = false
+--         self:Unhook("InspectFrame_UnitChanged")
+--     end
+--     self:UnhookAll()
+--     self:UnregisterEvent("UNIT_INVENTORY_CHANGED")
+--     self:UnregisterEvent("INSPECT_READY")
+--     self:CancelAllTimers()
+--     WIN:Hide()
+-- end
 
-function IE:ResetPOSTFlags()
-    IE.dbInitialized = false;
-    IE.tooltipsHooked = false;
+function IE:ResetFlags()
+    IE.DatabaseInitialized = false;
+    IE.ItemTooltipHooked = false;
+    IE.InspectFrame_UnitChangedHooked = false;
 end
 
 local entered = false
@@ -235,8 +237,8 @@ function IE:InspectUnit(unit)
 	if IE.configDB.global.inspectWindow then
 		self:SetParent(InspectFrame)
 		WIN:Hide()
-		if not hooked and InspectFrame_UnitChanged then
-			hooked = true
+		if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
+			IE.InspectFrame_UnitChangedHooked = true
 			self:SecureHook("InspectFrame_UnitChanged")
 		end
 
@@ -257,8 +259,8 @@ function IE:InspectPaperDollFrame_OnShow()
     if IE.configDB.global.inspectWindow then
         self:SetParent(InspectFrame)
         WIN:Hide()
-        if not hooked and InspectFrame_UnitChanged then
-            hooked = true
+        if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
+            IE.InspectFrame_UnitChangedHooked = true
             self:SecureHook("InspectFrame_UnitChanged")
         end
 

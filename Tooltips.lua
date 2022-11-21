@@ -422,7 +422,7 @@ end
 -- More Fixes @ 20221118
 
 function IE:ParseItem(tooltip, data)
-    if not IE.dbInitialized then
+    if not IE.DatabaseInitialized then
         return
     end
 
@@ -433,7 +433,7 @@ function IE:ParseItem(tooltip, data)
 end
 
 function IE:HookTooltips()
-    if IE.tooltipsHooked then
+    if IE.ItemTooltipHooked then
         return
     end
 
@@ -441,5 +441,5 @@ function IE:HookTooltips()
         self:ParseItem(tooltip, data)
     end)
 
-    IE.tooltipsHooked = true
+    IE.ItemTooltipHooked = true
 end
