@@ -7,7 +7,7 @@ local _, _table_ = ...
 local IE = InspectEquip
 
 function IE:ResetFlags()
-    IE.DatabaseLoaded = false;
+    IE.DatabaseChecked = false;
     IE.ItemTooltipHooked = false;
     IE.InspectFrame_UnitChangedHooked = false;
     IE.PlayerEntered = false
@@ -15,7 +15,7 @@ end
 
 function IE:PLAYER_ENTERING_WORLD()
     IE.PlayerEntered = true
-    self:LoadDatabase()
+    self:CheckDatabase()
     self:HookTooltips()
     self:UnregisterEvent("PLAYER_ENTERING_WORLD")
 end

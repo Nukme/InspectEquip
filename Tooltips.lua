@@ -421,7 +421,7 @@ end
 -- More Fixes @ 20221118
 
 function IE:ParseItem(tooltip, data)
-    if not IE.DatabaseLoaded then
+    if not IE.DatabaseChecked then
         return
     end
 

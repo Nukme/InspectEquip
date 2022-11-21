@@ -91,8 +91,8 @@ function IE:RegisterItems()
     self.manDB = _table_.ManualItemSources
 end
 
-function IE:LoadDatabase()
-    if IE.DatabaseLoaded then
+function IE:CheckDatabase()
+    if IE.DatabaseChecked then
         return
     end
 
@@ -102,7 +102,7 @@ function IE:LoadDatabase()
     local expansion = GetExpansionLevel()
 
     if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
-        IE.DatabaseLoaded = true
+        IE.DatabaseChecked = true
     else
         self:ScheduleTimer("CreateEJDatabase", 5)
         self:UpdateMetas(clientbuild, ieversion, locale, expansion)
@@ -709,6 +709,6 @@ function IE:CreateEJDatabase()
         message("[InspectEquip] Could not update database: " .. msg)
     end
 
-    IE.DatabaseLoaded = true;
+    IE.DatabaseChecked = true;
 
 end
