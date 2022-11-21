@@ -1,8 +1,8 @@
-local _, _table_ = ...
-
 if not InspectEquip then
     return
 end
+
+local _, _table_ = ...
 
 local IE = InspectEquip
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
