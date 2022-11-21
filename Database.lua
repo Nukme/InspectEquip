@@ -104,7 +104,7 @@ function IE:LoadDatabase()
     if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
         IE.DatabaseLoaded = true
     else
-        self:ScheduleTimer("CreateLocalDatabase", 5)
+        self:ScheduleTimer("CreateEJDatabase", 5)
         self:UpdateMetas(clientbuild, ieversion, locale, expansion)
     end
 end
@@ -680,7 +680,7 @@ function IE:EJ_LOOT_DATA_RECIEVED(event, itemID)
     newDataReceived = true
 end
 
-function IE:CreateLocalDatabase()
+function IE:CreateEJDatabase()
 
     if coUpdate then
         -- update already in progress
