@@ -3,7 +3,6 @@ if not InspectEquip then
 end
 
 local IE = InspectEquip
-local IS = InspectEquip_ItemSources
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 
 local band = bit.band
@@ -422,7 +421,7 @@ end
 -- More Fixes @ 20221118
 
 function IE:ParseItem(tooltip, data)
-    if not IE.DatabaseInitialized then
+    if not IE.DatabaseLoaded then
         return
     end
 

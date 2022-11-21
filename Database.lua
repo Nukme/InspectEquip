@@ -2,8 +2,10 @@ if not InspectEquip then
     return
 end
 
+local _, _table_ = ...
+
+
 local IE = InspectEquip
-local IS = InspectEquip_ItemSources
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 
 local band = bit.band
@@ -82,12 +84,15 @@ function IE:UpdateMetas(clientbuild, ieversion, locale, expansion)
 end
 
 function IE:RegisterItems()
-    -- InspectEquip Item Information DBObj
-    self.itemDB = LibStub("AceDB-3.0"):New("InspectEquipItemDB", defaults_item, true)
+    -- InspectEquip EJ Item Information DBObj
+    self.ejDB = LibStub("AceDB-3.0"):New("InspectEquipItemDB", defaults_item, true)
+
+    -- InspectEquip Manual Item Information DBObj
+    self.manDB = _table_.ManualItemSources
 end
 
-function IE:DatabasePOST()
-    if IE.DatabaseInitialized then
+function IE:LoadDatabase()
+    if IE.DatabaseLoaded then
         return
     end
 
@@ -97,7 +102,7 @@ function IE:DatabasePOST()
     local expansion = GetExpansionLevel()
 
     if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
-        IE.DatabaseInitialized = true
+        IE.DatabaseLoaded = true
     else
         self:ScheduleTimer("CreateLocalDatabase", 5)
         self:UpdateMetas(clientbuild, ieversion, locale, expansion)
@@ -331,13 +336,13 @@ local function SaveToDB(tempDB, entryType)
     local itemID, sources, entry
     for itemID, sources in pairs(tempDB) do
         local str = IE.itemDB.global.Items[itemID]
-        local isEntry = IS.Items[itemID]
+        local isEntry = self.manDB.Items[itemID]
 
         -- loop through sources we found
         for _, entry in pairs(sources) do
             local entryStr = entryType .. "_" .. entry[1] .. "_" .. entry[3] .. "_" .. entry[2]
 
-            -- skip if already in IS DB
+            -- skip if already in self.manDB DB
             if not (isEntry and (strfind(";" .. isEntry .. ";", ";" .. entryStr .. ";"))) then
                 if str then
                     str = str .. ";" .. entryStr
@@ -461,9 +466,9 @@ local function UpdateFunction(recursive)
     bar:SetMinMaxValues(0, startValue + insCount + 2)
     bar2:SetMinMaxValues(0, startValue + insCount)
 
-    -- get IS mapping for zone/boss name -> zone/boss id
-    local zoneMap = GetReverseMapping(IS.Zones)
-    local bossMap = GetReverseMapping(IS.Bosses)
+    -- get self.manDB mapping for zone/boss name -> zone/boss id
+    local zoneMap = GetReverseMapping(self.manDB.Zones)
+    local bossMap = GetReverseMapping(self.manDB.Bosses)
 
     UpdateBar()
 
@@ -704,6 +709,6 @@ function IE:CreateLocalDatabase()
         message("[InspectEquip] Could not update database: " .. msg)
     end
 
-    IE.DatabaseInitialized = true;
+    IE.DatabaseLoaded = true;
 
 end
