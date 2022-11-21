@@ -51,12 +51,27 @@ function IE:RegisterMetas()
 end
 
 function IE:AreMetasMatching(clientbuild, ieversion, locale, expansion)
-    if self.metaDB.global.ClientBuild == clientbuild and self.metaDB.global.IEVersion == ieversion and
-        self.metaDB.global.Locale == locale and self.metaDB.global.Expansion == expansion then
-        return true
-    else
+    -- game client build
+    if self.metaDB.global.ClientBuild ~= clientbuild then
         return false
     end
+
+    -- addon version
+    if self.metaDB.global.IEVersion ~= ieversion then
+        return false
+    end
+
+    -- game client locale
+    if self.metaDB.global.Locale ~= locale then
+        return false
+    end
+
+    -- game content expansion
+    if self.metaDB.global.Expansion ~= expansion then
+        return false
+    end
+
+    return true
 end
 
 function IE:UpdateMetas(clientbuild, ieversion, locale, expansion)
