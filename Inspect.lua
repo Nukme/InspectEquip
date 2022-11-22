@@ -110,27 +110,6 @@ function IE:FullUnitName(name, realm)
     end
 end
 
--- function IE:GetExaminerCache(unit)
---	local name, realm = UnitName(unit)
---	return Examiner_Cache and Examiner_Cache[self:FullUnitName(name, realm)]
--- end
-
---[[
-function IE:InspectUnit(unit)
-	origInspectUnit(unit)
-
-	if IE.configDB.global.inspectWindow then
-		self:SetParent(InspectFrame)
-		IE.InfoWindow:Hide()
-		if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
-			IE.InspectFrame_UnitChangedHooked = true
-			self:SecureHook("InspectFrame_UnitChanged")
-		end
-
-		self:Inspect(unit)
-	end
-end
---]]
 function IE:InspectFrame_UnitChanged()
     if InspectFrame.unit and IE.configDB.global.inspectWindow then
         self:InspectUnit(InspectFrame.unit)
@@ -192,8 +171,7 @@ end
 
 function IE:UNIT_INVENTORY_CHANGED(event, unit)
     if (unit == "player") and (IE.InfoWindow:IsVisible() or autoHidden) and
-        (IE.InfoWindow:GetParent() == CharacterFrame
-        ) then
+        (IE.InfoWindow:GetParent() == CharacterFrame) then
         IE:Inspect("player")
     elseif (unit == curUnit) and (UnitName(unit) == curUnitName) and (IE.InfoWindow:IsVisible()) then
         IE:Inspect(curUnit)
