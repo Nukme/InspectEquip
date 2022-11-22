@@ -6,32 +6,24 @@ local WIN = InspectEquip_InfoWindow -- > InfoWindow.xml
 local TITLE = InspectEquip_InfoWindowTitle
 
 function IE:OnInitialize()
-    -- Register Config Values
     self:RegisterConfigs()
 
-    -- Register Metas
     self:RegisterMetas()
 
-    -- Register Items
     self:RegisterItems()
 
-    -- Register Option Menus
     self:RegisterMenus()
 
-    -- Register Slash Command
     self:RegisterChatCommand("inspectequip", function()
         InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
     end)
 
-    -- Register Info Window
     self:SetParent(InspectFrame)
     WIN:Hide()
     TITLE:SetText("InspectEquip")
 
-    -- Register Control FLAGs
     self:RegisterFlags()
 
-    -- Register Events to listen
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
     self:RegisterEvent("ADDON_LOADED")
 end
@@ -55,8 +47,8 @@ end
 
 function IE:OnDisable()
     if IE.InspectFrame_UnitChangedHooked then
-        IE.InspectFrame_UnitChangedHooked = false
         self:Unhook("InspectFrame_UnitChanged")
+        IE.InspectFrame_UnitChangedHooked = false
     end
     self:UnhookAll()
     self:UnregisterEvent("UNIT_INVENTORY_CHANGED")
