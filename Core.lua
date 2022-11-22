@@ -6,6 +6,16 @@ local _, _table_ = ...
 
 local IE = InspectEquip
 
+function IE:RegisterInfoWindow()
+    IE.InfoWindow = InspectEquip_InfoWindow
+    IE.InfoWindowTitle = InspectEquip_InfoWindowTitle
+    IE.InfoWindowAVGIL = InspectEquip_InfoWindowAvgItemLevel
+
+    self:InfoWindowSetParent(InspectFrame)
+    IE.InfoWindowTitle:SetText("InspectEquip")
+    IE.InfoWindow:Hide()
+end
+
 function IE:RegisterFlags()
     IE.DatabaseChecked = false;
     IE.ItemTooltipHooked = false;

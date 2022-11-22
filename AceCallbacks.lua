@@ -2,8 +2,6 @@ InspectEquip = LibStub("AceAddon-3.0"):NewAddon("InspectEquip", "AceConsole-3.0"
     "AceEvent-3.0")
 
 local IE = InspectEquip
-local WIN = InspectEquip_InfoWindow -- > InfoWindow.xml
-local TITLE = InspectEquip_InfoWindowTitle
 
 function IE:OnInitialize()
     self:RegisterConfigs()
@@ -14,18 +12,16 @@ function IE:OnInitialize()
 
     self:RegisterMenus()
 
-    self:RegisterChatCommand("inspectequip", function()
-        InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
-    end)
-
-    self:SetParent(InspectFrame)
-    WIN:Hide()
-    TITLE:SetText("InspectEquip")
+    self:RegisterInfoWindow()
 
     self:RegisterFlags()
 
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
     self:RegisterEvent("ADDON_LOADED")
+
+    self:RegisterChatCommand("inspectequip", function()
+        InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
+    end)
 end
 
 function IE:OnEnable()
@@ -54,5 +50,5 @@ function IE:OnDisable()
     self:UnregisterEvent("UNIT_INVENTORY_CHANGED")
     self:UnregisterEvent("INSPECT_READY")
     self:CancelAllTimers()
-    WIN:Hide()
+    IE.InfoWindow:Hide()
 end

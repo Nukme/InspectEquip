@@ -5,10 +5,6 @@ end
 local _, _table_ = ...
 
 local IE = InspectEquip
-local WIN = InspectEquip_InfoWindow -- > InfoWindow.xml
-local TITLE = InspectEquip_InfoWindowTitle
-local AVGIL = InspectEquip_InfoWindowAvgItemLevel
-
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 
@@ -45,18 +41,14 @@ local tooltipTimer = nil
 local retryTimer = nil
 
 
-function IE:SetParent(frame)
-    WIN:SetParent(frame)
-    WIN:ClearAllPoints()
-    -- if not (frame == Examiner) then
-    WIN:SetPoint("TOPLEFT", frame, "TOPRIGHT", 5, 0)
-    -- else
-    --	WIN:SetPoint("TOPLEFT", frame, "TOPRIGHT", -25, -13)
-    -- end
+function IE:InfoWindowSetParent(frame)
+    IE.InfoWindow:SetParent(frame)
+    IE.InfoWindow:ClearAllPoints()
+    IE.InfoWindow:SetPoint("TOPLEFT", frame, "TOPRIGHT", 5, 0)
 end
 
 function IE:NewLine()
-    local row = CreateFrame("Frame", nil, WIN)
+    local row = CreateFrame("Frame", nil, IE.InfoWindow)
     row:SetHeight(12)
     row:SetWidth(200)
 
@@ -82,7 +74,7 @@ end
 function IE:SetLinePadding(line, padding)
     local padWidth = select(2, line.text:GetFont()) * padding * 0.6
 
-    line:SetPoint("TOPLEFT", WIN, "TOPLEFT", 15 + padWidth, line.yoffset)
+    line:SetPoint("TOPLEFT", IE.InfoWindow, "TOPLEFT", 15 + padWidth, line.yoffset)
     line.padLeft = padWidth
 end
 
@@ -106,7 +98,7 @@ function IE:AddLine(padding, text, link, item)
     line.text:SetText(text)
     line:SetWidth(line.text:GetStringWidth())
     IE:SetLinePadding(line, padding)
-    line:SetFrameLevel(WIN:GetFrameLevel() + 1)
+    line:SetFrameLevel(IE.InfoWindow:GetFrameLevel() + 1)
     line:Show()
 end
 
@@ -129,7 +121,7 @@ function IE:InspectUnit(unit)
 
 	if IE.configDB.global.inspectWindow then
 		self:SetParent(InspectFrame)
-		WIN:Hide()
+		IE.InfoWindow:Hide()
 		if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
 			IE.InspectFrame_UnitChangedHooked = true
 			self:SecureHook("InspectFrame_UnitChanged")
@@ -143,7 +135,7 @@ function IE:InspectFrame_UnitChanged()
     if InspectFrame.unit and IE.configDB.global.inspectWindow then
         self:InspectUnit(InspectFrame.unit)
     else
-        WIN:Hide()
+        IE.InfoWindow:Hide()
     end
 end
 
@@ -151,7 +143,7 @@ end
 function IE:InspectPaperDollFrame_OnShow()
     if IE.configDB.global.inspectWindow then
         self:SetParent(InspectFrame)
-        WIN:Hide()
+        IE.InfoWindow:Hide()
         if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
             IE.InspectFrame_UnitChangedHooked = true
             self:SecureHook("InspectFrame_UnitChanged")
@@ -162,8 +154,8 @@ function IE:InspectPaperDollFrame_OnShow()
 end
 
 function IE:InspectPaperDollFrame_OnHide()
-    if WIN:GetParent() == InspectFrame then
-        WIN:Hide()
+    if IE.InfoWindow:GetParent() == InspectFrame then
+        IE.InfoWindow:Hide()
         autoHidden = false
     end
 end
@@ -172,36 +164,38 @@ end
 
 function IE:PaperDollFrame_OnShow()
     if IE.configDB.global.charWindow then
-        IE:SetParent(CharacterFrame)
+        IE:InfoWindowSetParent(CharacterFrame)
         IE:Inspect("player")
     end
 end
 
 function IE:PaperDollFrame_OnHide()
-    if WIN:GetParent() == CharacterFrame then
-        WIN:Hide()
+    if IE.InfoWindow:GetParent() == CharacterFrame then
+        IE.InfoWindow:Hide()
         autoHidden = false
     end
 end
 
 function IE:GearManagerDialog_OnShow()
-    if WIN:GetParent() == CharacterFrame and WIN:IsShown() then
-        WIN:Hide()
+    if IE.InfoWindow:GetParent() == CharacterFrame and IE.InfoWindow:IsShown() then
+        IE.InfoWindow:Hide()
         autoHidden = true
     end
 end
 
 function IE:GearManagerDialog_OnHide()
-    if autoHidden and WIN:GetParent() == CharacterFrame then
-        WIN:Show()
+    if autoHidden and IE.InfoWindow:GetParent() == CharacterFrame then
+        IE.InfoWindow:Show()
         autoHidden = false
     end
 end
 
 function IE:UNIT_INVENTORY_CHANGED(event, unit)
-    if (unit == "player") and (WIN:IsVisible() or autoHidden) and (WIN:GetParent() == CharacterFrame) then
+    if (unit == "player") and (IE.InfoWindow:IsVisible() or autoHidden) and
+        (IE.InfoWindow:GetParent() == CharacterFrame
+        ) then
         IE:Inspect("player")
-    elseif (unit == curUnit) and (UnitName(unit) == curUnitName) and (WIN:IsVisible()) then
+    elseif (unit == curUnit) and (UnitName(unit) == curUnitName) and (IE.InfoWindow:IsVisible()) then
         IE:Inspect(curUnit)
     end
 end
@@ -228,7 +222,7 @@ function IE:Inspect(unit, entry)
     end
 
     if (cached and (not entry)) or (not self:IsEnabled()) then
-        WIN:Hide()
+        IE.InfoWindow:Hide()
         return
     end
 
@@ -261,7 +255,7 @@ function IE:Inspect(unit, entry)
     curUnit = unit
     curUnitName = unitName
     curUser = self:FullUnitName(unitName, unitRealm)
-    TITLE:SetText("InspectEquip: " .. curUser .. (cached and " (Cache)" or ""))
+    IE.InfoWindowTitle:SetText("InspectEquip: " .. curUser .. (cached and " (Cache)" or ""))
 
     self:ResetDisplay()
 
@@ -437,20 +431,20 @@ function IE:Inspect(unit, entry)
         if calciv and iCount > 0 then
             local avgLvl = iLevelSum / iCount
             -- local _,avgLvl = GetAverageItemLevel()
-            AVGIL:SetText(L["Avg. Item Level"] .. ": " .. string.format("%.2f", avgLvl))
-            AVGIL:Show()
+            IE.InfoWindowAVGIL:SetText(L["Avg. Item Level"] .. ": " .. string.format("%.2f", avgLvl))
+            IE.InfoWindowAVGIL:Show()
         else
-            AVGIL:Hide()
+            IE.InfoWindowAVGIL:Hide()
         end
         self:FixWindowSize()
-        if WIN:GetParent() == CharacterFrame and
+        if IE.InfoWindow:GetParent() == CharacterFrame and
             ((GearManagerDialog and GearManagerDialog:IsVisible()) or (OutfitterFrame and OutfitterFrame:IsVisible())) then
             autoHidden = true
         else
-            WIN:Show()
+            IE.InfoWindow:Show()
         end
     else
-        WIN:Hide()
+        IE.InfoWindow:Hide()
     end
 end
 
@@ -560,7 +554,7 @@ function IE:GetBossName(id)
 end
 
 function IE:FixWindowSize()
-    local maxwidth = TITLE:GetStringWidth()
+    local maxwidth = IE.InfoWindowTitle:GetStringWidth()
     for i = 1, numlines do
         local width = lines[i].text:GetStringWidth() + lines[i].padLeft
         if maxwidth < width then
@@ -571,8 +565,8 @@ function IE:FixWindowSize()
     if IE.configDB.global.showAvgItemLevel then
         height = height + 15
     end
-    WIN:SetWidth(maxwidth + 40)
-    WIN:SetHeight(height)
+    IE.InfoWindow:SetWidth(maxwidth + 40)
+    IE.InfoWindow:SetHeight(height)
 end
 
 function IE.Line_OnEnter(row)
