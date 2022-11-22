@@ -536,7 +536,7 @@ function IE:GetItemData(item)
     end
 
     if id then
-        local isSrc = self.manDB.Items[id]
+        local isSrc = IE.manDB.Items[id]
         local locSrc = self.ejDB.global.Items[id]
         if isSrc and locSrc then
             -- combine results
@@ -552,11 +552,11 @@ function IE:GetItemData(item)
 end
 
 function IE:GetZoneName(id)
-    return self.manDB.Zones[id] or self.ejDB.global.Zones[id]
+    return IE.manDB.Zones[id] or self.ejDB.global.Zones[id]
 end
 
 function IE:GetBossName(id)
-    return self.manDB.Bosses[id] or self.ejDB.global.Bosses[id]
+    return IE.manDB.Bosses[id] or self.ejDB.global.Bosses[id]
 end
 
 function IE:FixWindowSize()

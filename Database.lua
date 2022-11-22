@@ -88,7 +88,7 @@ function IE:RegisterItems()
     self.ejDB = LibStub("AceDB-3.0"):New("InspectEquipEJItemDB", defaults_item, true)
 
     -- InspectEquip Manual Item Information DBObj
-    self.manDB = _table_.ManualItemDB
+    IE.manDB = _table_.ManualItemDB
 end
 
 function IE:CheckDatabase()
@@ -335,14 +335,14 @@ end
 local function SaveToDB(tempDB, entryType)
     local itemID, sources, entry
     for itemID, sources in pairs(tempDB) do
-        local str = IE.itemDB.global.Items[itemID]
-        local isEntry = self.manDB.Items[itemID]
+        local str = IE.ejDB.global.Items[itemID]
+        local isEntry = IE.manDB.Items[itemID]
 
         -- loop through sources we found
         for _, entry in pairs(sources) do
             local entryStr = entryType .. "_" .. entry[1] .. "_" .. entry[3] .. "_" .. entry[2]
 
-            -- skip if already in self.manDB DB
+            -- skip if already in IE.manDB DB
             if not (isEntry and (strfind(";" .. isEntry .. ";", ";" .. entryStr .. ";"))) then
                 if str then
                     str = str .. ";" .. entryStr
@@ -353,7 +353,7 @@ local function SaveToDB(tempDB, entryType)
 
         end
 
-        IE.itemDB.global.Items[itemID] = str
+        IE.ejDB.global.Items[itemID] = str
     end
 end
 
@@ -434,7 +434,7 @@ local function UpdateFunction(recursive)
     IE:RegisterEvent("EJ_LOOT_DATA_RECIEVED")
 
     -- init/reset database
-    local db = IE.itemDB.global
+    local db = IE.ejDB.global
     db.Zones = {}
     db.Bosses = {}
     db.Items = {}
@@ -466,9 +466,9 @@ local function UpdateFunction(recursive)
     bar:SetMinMaxValues(0, startValue + insCount + 2)
     bar2:SetMinMaxValues(0, startValue + insCount)
 
-    -- get self.manDB mapping for zone/boss name -> zone/boss id
-    local zoneMap = GetReverseMapping(self.manDB.Zones)
-    local bossMap = GetReverseMapping(self.manDB.Bosses)
+    -- get IE.manDB mapping for zone/boss name -> zone/boss id
+    local zoneMap = GetReverseMapping(IE.manDB.Zones)
+    local bossMap = GetReverseMapping(IE.manDB.Bosses)
 
     UpdateBar()
 
