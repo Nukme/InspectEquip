@@ -9,7 +9,7 @@ local BB = LibStub("LibBabble-Boss-3.0"):GetUnstrictLookupTable()
 local BZ = LibStub("LibBabble-SubZone-3.0"):GetUnstrictLookupTable()
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
 
-local InspectEquip_ItemSources = {
+_table_.ManualItemDB = {
     Zones = {},
     Bosses = {
         [-1] = L["Quest"],
@@ -402,5 +402,3 @@ local InspectEquip_ItemSources = {
         [188939] = "cc", -- boots
     }
 }
-
-_table_.ManualItemSources = InspectEquip_ItemSources

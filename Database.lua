@@ -85,10 +85,10 @@ end
 
 function IE:RegisterItems()
     -- InspectEquip EJ Item Information DBObj
-    self.ejDB = LibStub("AceDB-3.0"):New("InspectEquipItemDB", defaults_item, true)
+    self.ejDB = LibStub("AceDB-3.0"):New("InspectEquipEJItemDB", defaults_item, true)
 
     -- InspectEquip Manual Item Information DBObj
-    self.manDB = _table_.ManualItemSources
+    self.manDB = _table_.ManualItemDB
 end
 
 function IE:CheckDatabase()
