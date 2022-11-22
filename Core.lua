@@ -6,7 +6,7 @@ local _, _table_ = ...
 
 local IE = InspectEquip
 
-function IE:ResetFlags()
+function IE:RegisterFlags()
     IE.DatabaseChecked = false;
     IE.ItemTooltipHooked = false;
     IE.InspectFrame_UnitChangedHooked = false;

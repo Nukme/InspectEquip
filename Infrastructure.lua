@@ -23,12 +23,15 @@ function IE:OnInitialize()
         InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
     end)
 
+    -- Register Info Window
     self:SetParent(InspectFrame)
     WIN:Hide()
     TITLE:SetText("InspectEquip")
 
-    self:ResetFlags()
+    -- Register Control FLAGs
+    self:RegisterFlags()
 
+    -- Register Events to listen
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
     self:RegisterEvent("ADDON_LOADED")
 end
