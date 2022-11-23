@@ -13,8 +13,6 @@ local strformat = string.format
 local addSource, addItemData
 local unknownIcon = "Interface\\ICONS\\INV_Misc_QuestionMark"
 
-local _retail_ = select(4, GetBuildInfo()) >= 70000
-
 addSource = function(tip, item, source, level)
     local next_field = gmatch(source, "[^_]+")
 
