@@ -17,21 +17,16 @@ embeds.xml
 #@end-no-lib-strip@
 
 Locales\Locales.xml
-InfoWindow.xml
+Src\Modules\InfoWindow.xml
 
+Src\Modules\AceCallbacks.lua
+Src\Modules\Core.lua
+Src\Modules\Config.lua
+Src\Modules\Inspect.lua
+Src\Modules\Tooltips.lua
+Src\Modules\Database.lua
 
-AceCallbacks.lua
-Core.lua
-Config.lua
-Inspect.lua
-Tooltips.lua
-Database.lua
-
-
-Utilities\data\ManualItemDB.lua
-Utilities\data\primarystats.lua
-Utilities\data\classicons.lua
-Utilities\data\seasonaffixes.lua
-Utilities\func\ispvpitem.lua
-Utilities\func\getenchantmentcheckslots.lua
-Utilities\func\getitemsourcecategories.lua
+Src\Data\ManualItemDB.lua
+Src\Data\PrimaryStats.lua
+Src\Data\ClassIcons.lua
+Src\Data\SeasonAffixes.lua

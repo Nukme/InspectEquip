@@ -400,5 +400,8 @@ _table_.ManualItemDB = {
         [188943] = "cc", -- bracers
         [188944] = "cc", -- belt
         [188939] = "cc", -- boots
+
+        -- Sepulcher of the First Ones : Trash Loot
+        -- [xxxxxx] = "r_1200_15360_0",
     }
 }
