@@ -124,8 +124,8 @@ function IE:InspectPaperDollFrame_OnShow()
         self:SetParent(InspectFrame)
         IE.InfoWindow:Hide()
         if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
-            IE.InspectFrame_UnitChangedHooked = true
             self:SecureHook("InspectFrame_UnitChanged")
+            IE.InspectFrame_UnitChangedHooked = true
         end
 
         self:Inspect(InspectFrame.unit)
