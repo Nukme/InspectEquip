@@ -240,12 +240,12 @@ _table_.defaults = defaults
 _table_.introOptions = introOptions
 _table_.generalOptions = generalOptions
 
-function InspectEquip:RegisterConfigs()
+function IE:RegisterConfigs()
     -- General Settings Defaults DBObj
     self.configDB = LibStub("AceDB-3.0"):New("InspectEquipConfigDB", _table_.defaults, true)
 end
 
-function InspectEquip:RegisterMenus()
+function IE:RegisterMenus()
     LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", _table_.introOptions)
     self.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip", "InspectEquip")
 
