@@ -20,6 +20,7 @@ Locales\Locales.xml
 Src\Modules\InfoWindow.xml
 
 Src\Modules\AceCallbacks.lua
+Src\Modules\Meta.lua
 Src\Modules\Core.lua
 Src\Modules\Config.lua
 Src\Modules\Inspect.lua
