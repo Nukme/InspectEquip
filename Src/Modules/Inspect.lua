@@ -121,7 +121,7 @@ end
 ------------ TAINT REWORK ------------------
 function IE:InspectPaperDollFrame_OnShow()
     if IE.configDB.global.inspectWindow then
-        self:SetParent(InspectFrame)
+        self:InfoWindowSetParent(InspectFrame)
         IE.InfoWindow:Hide()
         if not IE.InspectFrame_UnitChangedHooked and InspectFrame_UnitChanged then
             self:SecureHook("InspectFrame_UnitChanged")
