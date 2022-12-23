@@ -253,6 +253,9 @@ function IE:GetItemSourceCategories(itemLink, unit)
             elseif cat == "cc" then
                 -- class tier set off-pieces
                 return { L["Creation Catalyst"] }
+            elseif cat == "ic" then
+                -- class tier set off-pieces
+                return { L["Inspiration Catalyst"] }
             end
         end
     end

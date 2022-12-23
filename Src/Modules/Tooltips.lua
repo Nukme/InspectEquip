@@ -349,9 +349,13 @@ addSource = function(tip, item, source, level)
             str = L["The Great Vault"]
         elseif acquisition == "cc" then
             str = L["Creation Catalyst"]
+        elseif acquisition == "ic" then
+            str = L["Inspiration Catalyst"]
         end
     elseif cat == "cc" then -- creation catalyst
         str = L["Creation Catalyst"]
+    elseif cat == "ic" then
+        str = L["Inspiration Catalyst"]
     end
 
     -- add line
