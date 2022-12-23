@@ -269,137 +269,137 @@ _table_.ManualItemDB = {
         -- Sepulcher of the First Ones : Tier set pieces
         -- Death Knight
         [188868] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188867] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188867] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188864] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188866] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188863] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Demon Hunter
         [188892] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188896] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188896] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188894] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188893] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188898] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Warlock
         [188889] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188888] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188888] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188884] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188887] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188890] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Druid
         [188847] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188851] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188851] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188849] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188848] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188853] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Hunter
         [188859] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188856] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188856] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188858] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188860] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188861] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Mage
         [188844] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188843] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188843] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188839] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188842] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188845] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Paladin
         [188933] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188932] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188932] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188929] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188931] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188928] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Priest
         [188880] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188879] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188879] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188875] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188878] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188881] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Shaman
         [188923] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188920] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188920] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188922] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188924] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188925] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Monk
         [188910] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188914] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188914] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188912] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188911] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188916] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Rogue
         [188901] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188905] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188905] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188903] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188902] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188907] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Warrior
         [188942] = "t_r_1195_15360_2469;t_tgv;t_cc", -- Head -  Anduin Wrynn
-        [188941] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulders - Lords of Dread
+        [188941] = "t_r_1195_15360_2457;t_tgv;t_cc", -- Shoulder - Lords of Dread
         [188938] = "t_r_1195_15360_2467;t_tgv;t_cc", -- Chest - Rygelon
         [188940] = "t_r_1195_15360_2463;t_tgv;t_cc", -- Legs - Halondrus
         [188937] = "t_r_1195_15360_2461;t_tgv;t_cc", -- Hands - Lihuvim
         -- Sepulcher of the First Ones : Tier set off-pieces
         -- Death Knight
-        [188873] = "cc", -- cloak
-        [188869] = "cc", -- bracers
-        [188870] = "cc", -- belt
-        [188865] = "cc", -- boots
+        [188873] = "cc", -- Back
+        [188869] = "cc", -- Wrist
+        [188870] = "cc", -- Waist
+        [188865] = "cc", -- Feet
         -- Demon Hunter
-        [188900] = "cc", -- cloak
-        [188895] = "cc", -- bracers
-        [188897] = "cc", -- belt
-        [188899] = "cc", -- boots
+        [188900] = "cc", -- Back
+        [188895] = "cc", -- Wrist
+        [188897] = "cc", -- Waist
+        [188899] = "cc", -- Feet
         -- Warlock
-        [188891] = "cc", -- cloak
-        [188885] = "cc", -- bracers
-        [188886] = "cc", -- belt
-        [188883] = "cc", -- boots
+        [188891] = "cc", -- Back
+        [188885] = "cc", -- Wrist
+        [188886] = "cc", -- Waist
+        [188883] = "cc", -- Feet
         -- Druid
-        [188871] = "cc", -- cloak
-        [188850] = "cc", -- bracers
-        [188852] = "cc", -- belt
-        [188854] = "cc", -- boots
+        [188871] = "cc", -- Back
+        [188850] = "cc", -- Wrist
+        [188852] = "cc", -- Waist
+        [188854] = "cc", -- Feet
         -- Hunter
-        [188872] = "cc", -- cloak
-        [188855] = "cc", -- bracers
-        [188857] = "cc", -- belt
-        [188862] = "cc", -- boots
+        [188872] = "cc", -- Back
+        [188855] = "cc", -- Wrist
+        [188857] = "cc", -- Waist
+        [188862] = "cc", -- Feet
         -- Mage
-        [188846] = "cc", -- cloak
-        [188840] = "cc", -- bracers
-        [188841] = "cc", -- belt
-        [188838] = "cc", -- boots
+        [188846] = "cc", -- Back
+        [188840] = "cc", -- Wrist
+        [188841] = "cc", -- Waist
+        [188838] = "cc", -- Feet
         -- Paladin
-        [188936] = "cc", -- cloak
-        [188934] = "cc", -- bracers
-        [188935] = "cc", -- belt
-        [188930] = "cc", -- boots
+        [188936] = "cc", -- Back
+        [188934] = "cc", -- Wrist
+        [188935] = "cc", -- Waist
+        [188930] = "cc", -- Feet
         -- Priest
-        [188882] = "cc", -- cloak
-        [188876] = "cc", -- bracers
-        [188877] = "cc", -- belt
-        [188874] = "cc", -- boots
+        [188882] = "cc", -- Back
+        [188876] = "cc", -- Wrist
+        [188877] = "cc", -- Waist
+        [188874] = "cc", -- Feet
         -- Shaman
-        [188927] = "cc", -- cloak
-        [188919] = "cc", -- bracers
-        [188921] = "cc", -- belt
-        [188926] = "cc", -- boots
+        [188927] = "cc", -- Back
+        [188919] = "cc", -- Wrist
+        [188921] = "cc", -- Waist
+        [188926] = "cc", -- Feet
         -- Monk
-        [188918] = "cc", -- cloak
-        [188913] = "cc", -- bracers
-        [188915] = "cc", -- belt
-        [188917] = "cc", -- boots
+        [188918] = "cc", -- Back
+        [188913] = "cc", -- Wrist
+        [188915] = "cc", -- Waist
+        [188917] = "cc", -- Feet
         -- Rogue
-        [188909] = "cc", -- cloak
-        [188904] = "cc", -- bracers
-        [188906] = "cc", -- belt
-        [188908] = "cc", -- boots
+        [188909] = "cc", -- Back
+        [188904] = "cc", -- Wrist
+        [188906] = "cc", -- Waist
+        [188908] = "cc", -- Feet
         -- Warrior
-        [188945] = "cc", -- cloak
-        [188943] = "cc", -- bracers
-        [188944] = "cc", -- belt
-        [188939] = "cc", -- boots
+        [188945] = "cc", -- Back
+        [188943] = "cc", -- Wrist
+        [188944] = "cc", -- Waist
+        [188939] = "cc", -- Feet
 
         -- Vault of the Incarnates : Trash Loot
         [202007] = "r_1200_15360_0",
@@ -415,149 +415,149 @@ _table_.ManualItemDB = {
         -- Vault of the Incarnates : Tier set main pieces
         -- Death Knight
         [200408] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200410] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200410] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200405] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200407] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200409] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Demon Hunter
         [200345] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200347] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200347] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200342] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200344] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200346] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Warlock
         [200336] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200338] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200338] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200333] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200335] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200337] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Druid
         [200354] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200356] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200356] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200351] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200353] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200355] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Hunter
         [200390] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200392] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200392] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200387] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200389] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200391] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Mage
         [200318] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200320] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200320] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200315] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200317] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200319] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Paladin
         [200417] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200419] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200419] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200414] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200416] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200418] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Priest
         [200327] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200329] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200329] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200324] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200326] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200328] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Shaman
         [200399] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200401] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200401] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200396] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200398] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200400] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Monk
         [200363] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200365] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200365] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200360] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200362] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200364] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Rogue
         [200372] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200374] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200374] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200369] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200371] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200373] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Warrior
         [200426] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200428] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200428] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200423] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200425] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200427] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Evoker
         [200381] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200383] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200383] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
         [200378] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
         [200380] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
         [200382] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
 
         -- Vault of the Incarnates : Tier set off pieces
         -- Death Knight
-        [188873] = "ic", -- cloak
-        [188869] = "ic", -- bracers
-        [188870] = "ic", -- belt
-        [188865] = "ic", -- boots
+        [200413] = "ic", -- Back
+        [200412] = "ic", -- Wrist
+        [200411] = "ic", -- Waist
+        [200406] = "ic", -- Feet
         -- Demon Hunter
-        [188900] = "ic", -- cloak
-        [188895] = "ic", -- bracers
-        [188897] = "ic", -- belt
-        [188899] = "ic", -- boots
+        [200350] = "ic", -- Back
+        [200349] = "ic", -- Wrist
+        [200348] = "ic", -- Waist
+        [200343] = "ic", -- Feet
         -- Warlock
-        [188891] = "ic", -- cloak
-        [188885] = "ic", -- bracers
-        [188886] = "ic", -- belt
-        [188883] = "ic", -- boots
+        [200341] = "ic", -- Back
+        [200340] = "ic", -- Wrist
+        [200339] = "ic", -- Waist
+        [200334] = "ic", -- Feet
         -- Druid
-        [188871] = "ic", -- cloak
-        [188850] = "ic", -- bracers
-        [188852] = "ic", -- belt
-        [188854] = "ic", -- boots
+        [200359] = "ic", -- Back
+        [200358] = "ic", -- Wrist
+        [200357] = "ic", -- Waist
+        [200352] = "ic", -- Feet
         -- Hunter
-        [188872] = "ic", -- cloak
-        [188855] = "ic", -- bracers
-        [188857] = "ic", -- belt
-        [188862] = "ic", -- boots
+        [200395] = "ic", -- Back
+        [200394] = "ic", -- Wrist
+        [200393] = "ic", -- Waist
+        [200388] = "ic", -- Feet
         -- Mage
-        [188846] = "ic", -- cloak
-        [188840] = "ic", -- bracers
-        [188841] = "ic", -- belt
-        [188838] = "ic", -- boots
+        [200323] = "ic", -- Back
+        [200322] = "ic", -- Wrist
+        [200321] = "ic", -- Waist
+        [200316] = "ic", -- Feet
         -- Paladin
-        [188936] = "ic", -- cloak
-        [188934] = "ic", -- bracers
-        [188935] = "ic", -- belt
-        [188930] = "ic", -- boots
+        [200422] = "ic", -- Back
+        [200421] = "ic", -- Wrist
+        [200420] = "ic", -- Waist
+        [200415] = "ic", -- Feet
         -- Priest
-        [188882] = "ic", -- cloak
-        [188876] = "ic", -- bracers
-        [188877] = "ic", -- belt
-        [188874] = "ic", -- boots
+        [200332] = "ic", -- Back
+        [200331] = "ic", -- Wrist
+        [200330] = "ic", -- Waist
+        [200325] = "ic", -- Feet
         -- Shaman
-        [188927] = "ic", -- cloak
-        [188919] = "ic", -- bracers
-        [188921] = "ic", -- belt
-        [188926] = "ic", -- boots
+        [200404] = "ic", -- Back
+        [200403] = "ic", -- Wrist
+        [200402] = "ic", -- Waist
+        [200397] = "ic", -- Feet
         -- Monk
-        [188918] = "ic", -- cloak
-        [188913] = "ic", -- bracers
-        [188915] = "ic", -- belt
-        [188917] = "ic", -- boots
+        [200368] = "ic", -- Back
+        [200367] = "ic", -- Wrist
+        [200366] = "ic", -- Waist
+        [200361] = "ic", -- Feet
         -- Rogue
-        [188909] = "ic", -- cloak
-        [188904] = "ic", -- bracers
-        [188906] = "ic", -- belt
-        [188908] = "ic", -- boots
+        [200377] = "ic", -- Back
+        [200376] = "ic", -- Wrist
+        [200375] = "ic", -- Waist
+        [200370] = "ic", -- Feet
         -- Warrior
-        [188945] = "ic", -- cloak
-        [188943] = "ic", -- bracers
-        [188944] = "ic", -- belt
-        [188939] = "ic", -- boots
+        [200431] = "ic", -- Back
+        [200430] = "ic", -- Wrist
+        [200429] = "ic", -- Waist
+        [200424] = "ic", -- Feet
         -- Evoker
-        [188945] = "ic", -- cloak
-        [188943] = "ic", -- bracers
-        [188944] = "ic", -- belt
-        [188939] = "ic", -- boots
+        [200386] = "ic", -- Back
+        [200385] = "ic", -- Wrist
+        [200384] = "ic", -- Waist
+        [200379] = "ic", -- Feet
 
     }
 }
