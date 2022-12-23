@@ -414,150 +414,150 @@ _table_.ManualItemDB = {
 
         -- Vault of the Incarnates : Tier set main pieces
         -- Death Knight
-        [200408] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200410] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200405] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200407] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200409] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200408] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200410] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200405] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200407] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200409] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Demon Hunter
-        [200345] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200347] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200342] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200344] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200346] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200345] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200347] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200342] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200344] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200346] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Warlock
-        [200336] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200338] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200333] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200335] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200337] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200336] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200338] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200333] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200335] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200337] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Druid
-        [200354] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200356] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200351] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200353] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200355] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200354] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200356] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200351] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200353] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200355] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Hunter
-        [200390] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200392] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200387] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200389] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200391] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200390] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200392] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200387] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200389] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200391] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Mage
-        [200318] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200320] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200315] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200317] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200319] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200318] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200320] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200315] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200317] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200319] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Paladin
-        [200417] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200419] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200414] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200416] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200418] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200417] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200419] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200414] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200416] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200418] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Priest
-        [200327] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200329] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200324] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200326] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200328] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200327] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200329] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200324] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200326] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200328] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Shaman
-        [200399] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200401] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200396] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200398] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200400] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200399] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200401] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200396] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200398] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200400] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Monk
-        [200363] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200365] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200360] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200362] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200364] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200363] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200365] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200360] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200362] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200364] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Rogue
-        [200372] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200374] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200369] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200371] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200373] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200372] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200374] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200369] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200371] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200373] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Warrior
-        [200426] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200428] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200423] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200425] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200427] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200426] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200428] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200423] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200425] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200427] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
         -- Evoker
-        [200381] = "t_r_1200_15360_2499;t_tgv;t_cc", -- Head - Raszageth the Storm-Eater
-        [200383] = "t_r_1200_15360_2493;t_tgv;t_cc", -- Shoulders - Broodkeeper Diurna
-        [200378] = "t_r_1200_15360_2491;t_tgv;t_cc", -- Chest - Kurog Grimtotem
-        [200380] = "t_r_1200_15360_2502;t_tgv;t_cc", -- Legs - Dathea, Ascended
-        [200382] = "t_r_1200_15360_2482;t_tgv;t_cc", -- Hands - Sennarath, the Cold Breath
+        [200381] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
+        [200383] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulders - Broodkeeper Diurna
+        [200378] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
+        [200380] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
+        [200382] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
 
         -- Vault of the Incarnates : Tier set off pieces
         -- Death Knight
-        [188873] = "cc", -- cloak
-        [188869] = "cc", -- bracers
-        [188870] = "cc", -- belt
-        [188865] = "cc", -- boots
+        [188873] = "ic", -- cloak
+        [188869] = "ic", -- bracers
+        [188870] = "ic", -- belt
+        [188865] = "ic", -- boots
         -- Demon Hunter
-        [188900] = "cc", -- cloak
-        [188895] = "cc", -- bracers
-        [188897] = "cc", -- belt
-        [188899] = "cc", -- boots
+        [188900] = "ic", -- cloak
+        [188895] = "ic", -- bracers
+        [188897] = "ic", -- belt
+        [188899] = "ic", -- boots
         -- Warlock
-        [188891] = "cc", -- cloak
-        [188885] = "cc", -- bracers
-        [188886] = "cc", -- belt
-        [188883] = "cc", -- boots
+        [188891] = "ic", -- cloak
+        [188885] = "ic", -- bracers
+        [188886] = "ic", -- belt
+        [188883] = "ic", -- boots
         -- Druid
-        [188871] = "cc", -- cloak
-        [188850] = "cc", -- bracers
-        [188852] = "cc", -- belt
-        [188854] = "cc", -- boots
+        [188871] = "ic", -- cloak
+        [188850] = "ic", -- bracers
+        [188852] = "ic", -- belt
+        [188854] = "ic", -- boots
         -- Hunter
-        [188872] = "cc", -- cloak
-        [188855] = "cc", -- bracers
-        [188857] = "cc", -- belt
-        [188862] = "cc", -- boots
+        [188872] = "ic", -- cloak
+        [188855] = "ic", -- bracers
+        [188857] = "ic", -- belt
+        [188862] = "ic", -- boots
         -- Mage
-        [188846] = "cc", -- cloak
-        [188840] = "cc", -- bracers
-        [188841] = "cc", -- belt
-        [188838] = "cc", -- boots
+        [188846] = "ic", -- cloak
+        [188840] = "ic", -- bracers
+        [188841] = "ic", -- belt
+        [188838] = "ic", -- boots
         -- Paladin
-        [188936] = "cc", -- cloak
-        [188934] = "cc", -- bracers
-        [188935] = "cc", -- belt
-        [188930] = "cc", -- boots
+        [188936] = "ic", -- cloak
+        [188934] = "ic", -- bracers
+        [188935] = "ic", -- belt
+        [188930] = "ic", -- boots
         -- Priest
-        [188882] = "cc", -- cloak
-        [188876] = "cc", -- bracers
-        [188877] = "cc", -- belt
-        [188874] = "cc", -- boots
+        [188882] = "ic", -- cloak
+        [188876] = "ic", -- bracers
+        [188877] = "ic", -- belt
+        [188874] = "ic", -- boots
         -- Shaman
-        [188927] = "cc", -- cloak
-        [188919] = "cc", -- bracers
-        [188921] = "cc", -- belt
-        [188926] = "cc", -- boots
+        [188927] = "ic", -- cloak
+        [188919] = "ic", -- bracers
+        [188921] = "ic", -- belt
+        [188926] = "ic", -- boots
         -- Monk
-        [188918] = "cc", -- cloak
-        [188913] = "cc", -- bracers
-        [188915] = "cc", -- belt
-        [188917] = "cc", -- boots
+        [188918] = "ic", -- cloak
+        [188913] = "ic", -- bracers
+        [188915] = "ic", -- belt
+        [188917] = "ic", -- boots
         -- Rogue
-        [188909] = "cc", -- cloak
-        [188904] = "cc", -- bracers
-        [188906] = "cc", -- belt
-        [188908] = "cc", -- boots
+        [188909] = "ic", -- cloak
+        [188904] = "ic", -- bracers
+        [188906] = "ic", -- belt
+        [188908] = "ic", -- boots
         -- Warrior
-        [188945] = "cc", -- cloak
-        [188943] = "cc", -- bracers
-        [188944] = "cc", -- belt
-        [188939] = "cc", -- boots
+        [188945] = "ic", -- cloak
+        [188943] = "ic", -- bracers
+        [188944] = "ic", -- belt
+        [188939] = "ic", -- boots
         -- Evoker
-        [188945] = "cc", -- cloak
-        [188943] = "cc", -- bracers
-        [188944] = "cc", -- belt
-        [188939] = "cc", -- boots
+        [188945] = "ic", -- cloak
+        [188943] = "ic", -- bracers
+        [188944] = "ic", -- belt
+        [188939] = "ic", -- boots
 
     }
 }
