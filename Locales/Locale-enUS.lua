@@ -108,3 +108,4 @@ L["NGA Feedback"] = true
 L["General Settings"] = true
 L["Crimson"] = true
 L["Inspiration Catalyst"] = true
+L["Mythic Keystone"] = true

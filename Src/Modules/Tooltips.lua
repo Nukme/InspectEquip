@@ -135,6 +135,8 @@ addSource = function(tip, item, source, level)
                     str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")" -- Mythic
                 elseif mode == 8 then
                     str = str .. " (" .. PLAYER_DIFFICULTY_TIMEWALKER .. ")" -- Timewalker
+                elseif mode == 32768 then
+                    str = str .. " (" .. L["Mythic Keystone"] .. ")" -- Mythic Keystone
                 end
             end
         end
