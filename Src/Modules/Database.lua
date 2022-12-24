@@ -236,6 +236,9 @@ local function DifficultyToMode(diff, raid)
     elseif diff == 33 then
         -- raid timewalker
         return 16384
+    elseif diff == 8 then
+        -- mythic keystone
+        return 32768
     end
 end
 
@@ -313,7 +316,7 @@ local function GetTotalLootCount()
                     if isRaid then
                         difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
                     else
-                        difficulties = { 1, 2, 23, 24 }
+                        difficulties = { 1, 2, 23, 24, 8 }
                     end
                 end
                 for _, diff in ipairs(difficulties) do
@@ -433,7 +436,7 @@ local function UpdateFunction(recursive)
                     if isRaid then
                         difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
                     else
-                        difficulties = { 1, 2, 23, 24 }
+                        difficulties = { 1, 2, 23, 24, 8 }
                     end
                 end
                 for _, diff in ipairs(difficulties) do
