@@ -31,7 +31,6 @@ local coUpdate
 local bar2
 
 
-
 local function createUpdateGUI()
 
     if not bar then
@@ -343,6 +342,40 @@ local function GetTotalLootCount()
     return lootCount
 end
 
+local function GetInstanceLootCount()
+    local tier_index = EJ_GetCurrentTier()
+    local tier_name = EJ_GetTierInfo(tier_index)
+
+    local instance_name = EJ_GetInstanceInfo()
+    local instance_difficulty = EJ_GetDifficulty()
+    local instance_lootnum = EJ_GetNumLoot()
+
+    -- if instance_lootnum == 0 then
+    --     for x = 1, 100 do
+    --         instance_lootnum = EJ_GetNumLoot()
+    --         print(x)
+    --     end
+    -- end
+
+    local loot_index = 1
+    local item_info = C_EncounterJournal.GetLootInfoByIndex(loot_index)
+    while item_info do
+        loot_index = loot_index + 1
+        item_info = C_EncounterJournal.GetLootInfoByIndex(loot_index)
+    end
+
+    local instance_loot_count = loot_index - 1
+
+    print("Tier: " .. tier_name)
+    -- print("ID: " .. EncounterJournal.instanceID)
+    print("Instance: " .. instance_name)
+    print("Difficulty: " .. instance_difficulty)
+    print("API Loot Number: " .. instance_lootnum)
+    print("FOR Loot Count: " .. instance_loot_count)
+
+    return instance_lootnum
+end
+
 local function UpdateFunction(recursive)
     local _, i, j, tier
 
@@ -350,12 +383,17 @@ local function UpdateFunction(recursive)
     DisableEJ()
     EJ_EndSearch()
     EJ_ClearSearch()
-    if _retail_ then
-        EJ_ResetLootFilter()
-        C_EncounterJournal.ResetSlotFilter()
-    else
-        EJ_SetClassLootFilter(0)
-    end
+    -- if EncounterJornal then
+    --     if EncounterJornal.instanceID then
+    --         EncounterJornal.instanceID = nil
+    --     end
+    -- end
+    -- EJ_SetDifficulty(0)
+    EncounterJournalNavBarHomeButton:Click()
+    NavBar_Reset(EncounterJournal.navBar);
+    EJ_ResetLootFilter()
+    C_EncounterJournal.ResetSlotFilter()
+
     newDataReceived = false
     IE:RegisterEvent("EJ_LOOT_DATA_RECIEVED")
 
@@ -408,6 +446,7 @@ local function UpdateFunction(recursive)
     for tier = 1, tierCount do
         if _retail_ then
             EJ_SelectTier(tier)
+            -- IE:Print(EJ_GetCurrentTier())
         end
 
         -- loop through all instances of this tier, dungeons first, then raids
@@ -430,6 +469,8 @@ local function UpdateFunction(recursive)
                 end
 
                 EJ_SelectInstance(insID)
+                local name = EJ_GetInstanceInfo(insID)
+                -- IE:Print(name)
                 local diff
                 local difficulties
                 if _retail_ then
@@ -439,7 +480,7 @@ local function UpdateFunction(recursive)
                         difficulties = { 1, 2, 23, 24, 8 }
                     end
                 end
-                for _, diff in ipairs(difficulties) do
+                for _, diff in pairs(difficulties) do
                     if EJ_IsValidInstanceDifficulty(diff) then
                         newDataCycles = DATA_RECEIVED_WC * 3
                         EJ_SetDifficulty(diff)
@@ -457,6 +498,15 @@ local function UpdateFunction(recursive)
                         -- again (at this point, the items are already cached, so the 2nd iteration is faster).
 
                         -- Not sure but it seems that Blizzard has made EJ pre-loaded and the loot count is stable in LEG.
+
+                        -- @20230121
+                        -- EJ_GetNumLoot() *ONLY* functions properly when Blizzard_EncounterJournal is loaded for the first time
+                        -- and *NO ACTION* is taken on the EJ GUI.
+                        -- Otherwise, for example, if one click an instance to see the loots in EJ GUI, and for some reason
+                        -- a re-scan of EJ is triggered (locales change or mannually reset in options), EJ_GetNumLoot() would
+                        -- *ALWAYS* return 0.
+                        -- Tried to reset things the I could think of about EJ, but to no avail. So the solution here is to do a
+                        -- ReloadUI() before scanning EJ for database.
 
                         local wc = 0
                         local wcMax = MAX_WC
@@ -531,6 +581,8 @@ local function UpdateFunction(recursive)
                         waitCycles = waitCycles + wc
 
                         totalLootCount = totalLootCount + n
+
+                        -- IE:Print(totalLootCount)
                         for j = 1, n do
                             -- get item info
                             -- local itemID, encID, itemName, _, _, _, itemLink = EJ_GetLootInfoByIndex(j)
@@ -636,5 +688,14 @@ function IE:CreateEJDatabase()
     end
 
     IE.DatabaseChecked = true;
+    if IE.metaDB.global.Reset then
+        IE.metaDB.global.Reset = false
+    end
 
+end
+
+function IE:RecreateEJDatabase()
+    IE:Print("Recreate Database")
+    IE.metaDB.global.Reset = true
+    ReloadUI()
 end

@@ -38,9 +38,9 @@ function IE:RegisterInfoWindow()
 end
 
 function IE:RegisterFlags()
-    IE.DatabaseChecked = false;
-    IE.ItemTooltipHooked = false;
-    IE.InspectFrame_UnitChangedHooked = false;
+    IE.DatabaseChecked = false
+    IE.ItemTooltipHooked = false
+    IE.InspectFrame_UnitChangedHooked = false
     IE.PlayerEntered = false
 end
 
@@ -72,12 +72,13 @@ function IE:CheckDatabase()
     local ieversion = GetAddOnMetadata("InspectEquip", "Version")
     local locale = GetLocale()
     local expansion = GetExpansionLevel()
+    local reset = false
 
-    if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
+    if self:AreMetasMatching(clientbuild, ieversion, locale, expansion, reset) then
         IE.DatabaseChecked = true
     else
         self:ScheduleTimer("CreateEJDatabase", 5)
-        self:UpdateMetas(clientbuild, ieversion, locale, expansion)
+        self:UpdateMetas(clientbuild, ieversion, locale, expansion, reset)
     end
 end
 

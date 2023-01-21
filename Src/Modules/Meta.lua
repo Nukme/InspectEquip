@@ -19,7 +19,7 @@ function IE:RegisterMetas()
     self.metaDB = LibStub("AceDB-3.0"):New("InspectEquipMetaDB", defaults_meta, true)
 end
 
-function IE:AreMetasMatching(clientbuild, ieversion, locale, expansion)
+function IE:AreMetasMatching(clientbuild, ieversion, locale, expansion, reset)
     -- game client build
     if self.metaDB.global.ClientBuild ~= clientbuild then
         return false
@@ -40,12 +40,18 @@ function IE:AreMetasMatching(clientbuild, ieversion, locale, expansion)
         return false
     end
 
+    -- datatbase reset flag
+    if self.metaDB.global.Reset ~= reset then
+        return false
+    end
+
     return true
 end
 
-function IE:UpdateMetas(clientbuild, ieversion, locale, expansion)
+function IE:UpdateMetas(clientbuild, ieversion, locale, expansion, reset)
     self.metaDB.global.ClientBuild = clientbuild
     self.metaDB.global.IEVersion = ieversion
     self.metaDB.global.Locale = locale
     self.metaDB.global.Expansion = expansion
+    self.metaDB.global.Reset = reset
 end
