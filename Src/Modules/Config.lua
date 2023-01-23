@@ -228,7 +228,7 @@ local generalOptions = {
                     name = L["Reset database"],
                     desc = L["Recreate the database"],
                     func = function()
-                        IE:RecreateEJDatabase()
+                        IE:CreateEJDatabase()
                     end
                 }
             }

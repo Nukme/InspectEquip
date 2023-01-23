@@ -28,7 +28,7 @@ local newDataCycles = 0
 -- GUI
 local bar, barText
 local coUpdate
-local bar2
+-- local bar2
 
 
 local function createUpdateGUI()
@@ -59,38 +59,38 @@ local function createUpdateGUI()
     bar:SetValue(0)
     bar:Hide()
 
-    if not bar2 then
-        bar2 = CreateFrame("STATUSBAR", nil, UIParent, "TextStatusBar, BackdropTemplate")
-    end
-    bar2:SetWidth(300)
-    bar2:SetHeight(10)
-    bar2:SetPoint("CENTER", 0, -130)
-    bar2:SetBackdrop({
-        bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-        tile = 1,
-        tileSize = 10,
-        edgeSize = 10,
-        insets = {
-            left = 1,
-            right = 1,
-            top = 1,
-            bottom = 1
-        }
-    })
-    bar2:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
-    bar2:SetBackdropColor(0, 0, 0, 1)
-    bar2:SetStatusBarColor(0, 1, 1, 0.6)
-    bar2:SetMinMaxValues(0, 100)
-    bar2:SetValue(0)
-    bar2:Hide()
+    -- if not bar2 then
+    --     bar2 = CreateFrame("STATUSBAR", nil, UIParent, "TextStatusBar, BackdropTemplate")
+    -- end
+    -- bar2:SetWidth(300)
+    -- bar2:SetHeight(10)
+    -- bar2:SetPoint("CENTER", 0, -130)
+    -- bar2:SetBackdrop({
+    --     bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+    --     edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+    --     tile = 1,
+    --     tileSize = 10,
+    --     edgeSize = 10,
+    --     insets = {
+    --         left = 1,
+    --         right = 1,
+    --         top = 1,
+    --         bottom = 1
+    --     }
+    -- })
+    -- bar2:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
+    -- bar2:SetBackdropColor(0, 0, 0, 1)
+    -- bar2:SetStatusBarColor(0, 1, 1, 0.6)
+    -- bar2:SetMinMaxValues(0, 100)
+    -- bar2:SetValue(0)
+    -- bar2:Hide()
 
     if not barText then
         barText = bar:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
     end
     barText:SetPoint("CENTER", bar, "CENTER")
     barText:SetJustifyH("CENTER")
-    barText:SetJustifyV("CENTER")
+    barText:SetJustifyV("MIDDLE")
     barText:SetTextColor(1, 1, 1)
     barText:SetText("InspectEquip: " .. L["Updating database..."])
 
@@ -145,23 +145,22 @@ end
 local function EndUpdate()
     bar:SetScript("OnUpdate", nil)
     bar:Hide()
-    bar2:Hide()
+    -- bar2:Hide()
     EnableEJ()
     coUpdate = nil
-    IE:UnregisterEvent("EJ_LOOT_DATA_RECIEVED")
 end
 
 local function UpdateTick()
     if coUpdate then
         -- wait for loot data
-        if newDataReceived then -- data received this frame
-            newDataCycles = newDataCycles + DATA_RECEIVED_WC
-            newDataReceived = false
-        end
-        if newDataCycles > 0 then
-            newDataCycles = newDataCycles - 1
-            return
-        end
+        -- if newDataReceived then -- data received this frame
+        --     newDataCycles = newDataCycles + DATA_RECEIVED_WC
+        --     newDataReceived = false
+        -- end
+        -- if newDataCycles > 0 then
+        --     newDataCycles = newDataCycles - 1
+        --     return
+        -- end
         local ok, msg = coroutine.resume(coUpdate)
         if not ok then
             EndUpdate()
@@ -238,47 +237,6 @@ local function DifficultyToMode(diff, raid)
     elseif diff == 8 then
         -- mythic keystone
         return 32768
-    end
-end
-
-local function AddToDB(tempDB, itemID, zoneID, bossID, mode)
-    local sources = tempDB[itemID]
-    local entry
-    if sources then
-        for _, entry in pairs(sources) do
-            if (entry[1] == zoneID) and (entry[2] == bossID) then
-                entry[3] = bor(entry[3], mode)
-                return
-            end
-        end
-        tinsert(sources, { zoneID, bossID, mode })
-    else
-        tempDB[itemID] = { { zoneID, bossID, mode } }
-    end
-end
-
-local function SaveToDB(tempDB, entryType)
-    local itemID, sources, entry
-    for itemID, sources in pairs(tempDB) do
-        local str = IE.ejDB.global.Items[itemID]
-        local isEntry = IE.manDB.Items[itemID]
-
-        -- loop through sources we found
-        for _, entry in pairs(sources) do
-            local entryStr = entryType .. "_" .. entry[1] .. "_" .. entry[3] .. "_" .. entry[2]
-
-            -- skip if already in IE.manDB DB
-            if not (isEntry and (strfind(";" .. isEntry .. ";", ";" .. entryStr .. ";"))) then
-                if str then
-                    str = str .. ";" .. entryStr
-                else
-                    str = entryStr
-                end
-            end
-
-        end
-
-        IE.ejDB.global.Items[itemID] = str
     end
 end
 
@@ -376,11 +334,7 @@ local function GetInstanceLootCount()
     return instance_lootnum
 end
 
-local function UpdateFunction(recursive)
-    local _, i, j, tier
-
-    -- reset EJ
-    DisableEJ()
+local function ResetEJ()
     EJ_EndSearch()
     EJ_ClearSearch()
     -- if EncounterJornal then
@@ -388,278 +342,196 @@ local function UpdateFunction(recursive)
     --         EncounterJornal.instanceID = nil
     --     end
     -- end
-    -- EJ_SetDifficulty(0)
-    EncounterJournalNavBarHomeButton:Click()
-    NavBar_Reset(EncounterJournal.navBar);
+    -- EncounterJournalNavBarHomeButton:Click()
+    -- NavBar_Reset(EncounterJournal.navBar)
     EJ_ResetLootFilter()
     C_EncounterJournal.ResetSlotFilter()
+end
 
-    newDataReceived = false
-    IE:RegisterEvent("EJ_LOOT_DATA_RECIEVED")
+local function GetInstanceTotalCount()
+    local instance_count = 0
+    local dungeon_count  = 0
+    local raid_count     = 0
+    local tier_count     = EJ_GetNumTiers()
 
-    -- init/reset database
-    local db = IE.ejDB.global
-    db.Zones = {}
-    db.Bosses = {}
-    db.Items = {}
-
-    -- count total number of instances
-    local insCount = 0
-    local tierCount = 1
-    if _retail_ then
-        -- as of 5.x there are multiple tiers (classic, bc, wotlk, cata, mop...)
-        tierCount = EJ_GetNumTiers()
-        for tier = 1, tierCount do
-            local tierName = EJ_GetTierInfo(tier)
-            EJ_SelectTier(tier)
-            -- IE:Print("Tier: " .. tostring(tier) .. " = " .. tierName)
-            local dungeonCount = GetInstanceCount(false)
-            local raidCount = GetInstanceCount(true)
-            -- IE:Print(" ==> " .. tostring(dungeonCount) .. " Dungeons, " .. tostring(raidCount) .. " Raids")
-            insCount = insCount + dungeonCount + raidCount
-        end
-    else
-        local dungeonCount = GetInstanceCount(false)
-        local raidCount = GetInstanceCount(true)
-        insCount = dungeonCount + raidCount
-        -- IE:Print(" ==> " .. tostring(dungeonCount) .. " Dungeons, " .. tostring(raidCount) .. " Raids")
+    for tier = 1, tier_count do
+        local tier_name = EJ_GetTierInfo(tier)
+        EJ_SelectTier(tier)
+        dungeon_count = GetInstanceCount(false)
+        raid_count = GetInstanceCount(true)
+        instance_count = instance_count + dungeon_count + raid_count
+        -- IE:Print("Tier: " .. tier_name)
+        -- IE:Print("Total: " .. instance_count)
     end
 
-    -- set bar max value
-    local startValue = bar:GetValue()
-    bar:SetMinMaxValues(0, startValue + insCount + 2)
-    bar2:SetMinMaxValues(0, startValue + insCount)
+    return instance_count
+end
 
-    -- get IE.manDB mapping for zone/boss name -> zone/boss id
-    local zoneMap = GetReverseMapping(IE.manDB.Zones)
-    local bossMap = GetReverseMapping(IE.manDB.Bosses)
+local function BLIZ_SelectInstance(instance_id)
+    -- Codes from Blizzard_EncounterJournal.lua
+    -- To make EJ_SelectInstance() work properly
+    -- so that EJ_GetNumLoot() could work properly
+    EJ_HideNonInstancePanels()
+    EncounterJournal.instanceSelect:Hide()
+    EncounterJournal.creatureDisplayID = 0
+    EncounterJournal.instanceID = instance_id;
+    EncounterJournal.encounterID = nil;
+    EJ_SelectInstance(instance_id)
+    EncounterJournal_LootUpdate();
+    EncounterJournal_ClearDetails();
+end
 
-    UpdateBar()
+local function UpdateEJDBZones(instance_id, instance_name)
+    IE.ejDB.global.Zones[instance_id] = instance_name
+end
 
-    -- temp db to allow for merging of modes
-    local tempDungeonDB = {}
-    local tempRaidDB = {}
-    local totalLootCount = 0
+local function UpdateEJDBBosses(encounter_id, encounter_name)
+    IE.ejDB.global.Bosses[encounter_id] = encounter_name
+end
 
-    local waitCycles = 0
-    -- get loot
-    for tier = 1, tierCount do
-        if _retail_ then
-            EJ_SelectTier(tier)
-            -- IE:Print(EJ_GetCurrentTier())
-        end
+local function UpdateEJDBItems(instance_id, encounter_id, item_id, diff, is_raid)
+    local mode = DifficultyToMode(diff, is_raid)
 
-        -- loop through all instances of this tier, dungeons first, then raids
-        local isRaid = false
-        while true do
-            i = 1
-            local insID, insName = EJ_GetInstanceByIndex(i, isRaid)
-            local tempDB = isRaid and tempRaidDB or tempDungeonDB
+    local item_source = IE.ejDB.global.Items[item_id]
 
-            while insID do
-                -- get zone id for db
-                local zoneID = zoneMap[insName]
-                if not zoneID then
-                    -- zone is not in db
-                    -- zoneID = db.NextZoneID
-                    zoneID = insID
-                    db.Zones[zoneID] = insName
-                    zoneMap[insName] = zoneID
-                    -- db.NextZoneID = db.NextZoneID + 1
-                end
-
-                EJ_SelectInstance(insID)
-                local name = EJ_GetInstanceInfo(insID)
-                -- IE:Print(name)
-                local diff
-                local difficulties
-                if _retail_ then
-                    if isRaid then
-                        difficulties = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
-                    else
-                        difficulties = { 1, 2, 23, 24, 8 }
-                    end
-                end
-                for _, diff in pairs(difficulties) do
-                    if EJ_IsValidInstanceDifficulty(diff) then
-                        newDataCycles = DATA_RECEIVED_WC * 3
-                        EJ_SetDifficulty(diff)
-                        local mode = DifficultyToMode(diff, isRaid)
-                        local n = EJ_GetNumLoot()
-
-                        -- the problem here is that when the items are not in the cache, EJ_GetNumLoot() will not
-                        -- return the correct number. it returns the number of items that are cached, which may be
-                        -- 0 or a number lower than the correct number. it seems to be impossible to determine the
-                        -- correct number without waiting. EJ_LOOT_DATA_RECIEVED events are received, but we don't
-                        -- know which event is the last one. also, no EJ_LOOT_DATA_RECIEVED are received if all
-                        -- items are already in the cache. so we try to wait a couple of frames until we have a
-                        -- number that is somehow stable.
-                        -- at the end we count all items again, and if we then have more items, we start all over
-                        -- again (at this point, the items are already cached, so the 2nd iteration is faster).
-
-                        -- Not sure but it seems that Blizzard has made EJ pre-loaded and the loot count is stable in LEG.
-
-                        -- @20230121
-                        -- EJ_GetNumLoot() *ONLY* functions properly when Blizzard_EncounterJournal is loaded for the first time
-                        -- and *NO ACTION* is taken on the EJ GUI.
-                        -- Otherwise, for example, if one click an instance to see the loots in EJ GUI, and for some reason
-                        -- a re-scan of EJ is triggered (locales change or mannually reset in options), EJ_GetNumLoot() would
-                        -- *ALWAYS* return 0.
-                        -- Tried to reset things the I could think of about EJ, but to no avail. So the solution here is to do a
-                        -- ReloadUI() before scanning EJ for database.
-
-                        local wc = 0
-                        local wcMax = MAX_WC
-                        while wc < wcMax do
-                            coroutine.yield()
-                            wc = wc + 1
-                            local nNew = EJ_GetNumLoot()
-                            if n ~= nNew then
-                                wcMax = wc + MAX_WC
-                            end
-                            n = nNew
-                        end
-                        waitCycles = waitCycles + wc
-
-                        totalLootCount = totalLootCount + n
-
-                        -- IE:Print("T=" .. tostring(tier) .. " I=" .. insName .. " D=" .. diff .. " M=" .. mode .. " ! #loot = " .. n .. " [wc = " .. wc .. "]")
-
-                        for j = 1, n do
-                            -- get item info
-                            -- local itemID, encID, itemName, _, _, _, itemLink = C_EncounterJournal.GetLootInfoByIndex(j)
-                            local t = C_EncounterJournal.GetLootInfoByIndex(j)
-                            local itemID = t.itemID
-                            local encID = t.encounterID
-                            local itemName = t.name
-                            local itemLink = t.link
-
-                            -- wait until data has arrived
-                            -- this doesn't seem necessary
-                            -- while not itemID do
-                            --	coroutine.yield()
-                            --	waitCycles = waitCycles + 1
-                            --	itemName, _, _, _, itemID, itemLink, encID = EJ_GetLootInfoByIndex(j)
-                            -- end
-
-                            local encName = EJ_GetEncounterInfo(encID)
-
-                            -- if not encName then
-                            --	IE:Print("no encounter name! encID = " .. encID)
-                            -- end
-
-                            -- get boss id for db
-                            local bossID = bossMap[encName]
-                            if not bossID then
-                                -- boss is not in db
-                                -- bossID = db.NextBossID
-                                bossID = encID -- unique ID of the encounter
-                                db.Bosses[bossID] = encName
-                                bossMap[encName] = bossID
-                                -- db.NextBossID = db.NextBossID + 1
-                            end
-
-                            -- add item to db
-                            AddToDB(tempDB, itemID, zoneID, bossID, mode)
-                        end
-                    elseif (insID == 741 or insID == 742 or insID == 744) and diff == 9 then
-                        newDataCycles = DATA_RECEIVED_WC * 3
-                        EJ_SetDifficulty(diff)
-                        local mode = DifficultyToMode(diff, isRaid)
-                        local n = EJ_GetNumLoot()
-                        local wc = 0
-                        local wcMax = MAX_WC
-                        while wc < wcMax do
-                            coroutine.yield()
-                            wc = wc + 1
-                            local nNew = EJ_GetNumLoot()
-                            if n ~= nNew then
-                                wcMax = wc + MAX_WC
-                            end
-                            n = nNew
-                        end
-                        waitCycles = waitCycles + wc
-
-                        totalLootCount = totalLootCount + n
-
-                        -- IE:Print(totalLootCount)
-                        for j = 1, n do
-                            -- get item info
-                            -- local itemID, encID, itemName, _, _, _, itemLink = EJ_GetLootInfoByIndex(j)
-
-                            local t = C_EncounterJournal.GetLootInfoByIndex(j)
-                            local itemID = t.itemID
-                            local encID = t.encounterID
-                            local itemName = t.name
-                            local itemLink = t.link
-
-                            local encName = EJ_GetEncounterInfo(encID)
-
-                            -- get boss id for db
-                            local bossID = bossMap[encName]
-                            if not bossID then
-                                -- boss is not in db
-                                -- bossID = db.NextBossID
-                                bossID = encID -- unique ID of the encounter
-                                db.Bosses[bossID] = encName
-                                bossMap[encName] = bossID
-                                -- db.NextBossID = db.NextBossID + 1
-                            end
-
-                            -- add item to db
-                            AddToDB(tempDB, itemID, zoneID, bossID, mode)
-                        end
-                    end
-                end
-
-                -- next instance
-                UpdateBar()
-                i = i + 1
-                insID, insName = EJ_GetInstanceByIndex(i, isRaid)
+    if not item_source then
+        IE.ejDB.global.Items[item_id] = { { instance_id, encounter_id, mode, is_raid } }
+    else
+        for _, entry in pairs(item_source) do
+            if (entry[1] == instance_id) and (entry[2] == encounter_id) then
+                entry[3] = bit.bor(entry[3], mode)
+                return
             end
+        end
+        table.insert(item_source, { instance_id, encounter_id, mode, is_raid })
+    end
+end
 
-            if isRaid then
-                -- done with dungeons + raids, next tier
-                break
+local function ReorganizeEJDBItems()
+    local item_table = IE.ejDB.global.Items
+    IE.ejDB.global.Items = {}
+
+    for item_id, item_source in pairs(item_table) do
+        for _, entry in pairs(item_source) do
+            local instance_id = entry[1]
+            local encounter_id = entry[2]
+            local mode = entry[3]
+            local type = entry[4] and "r" or "d"
+            local item_str = type .. "_" .. instance_id .. "_" .. mode .. "_" .. encounter_id
+
+            if IE.ejDB.global.Items[item_id] then
+                IE.ejDB.global.Items[item_id] = IE.ejDB.global.Items[item_id] .. ";" .. item_str
             else
-                -- done with dungeons, now do it again for raids
-                isRaid = true
+                IE.ejDB.global.Items[item_id] = item_str
             end
         end
-    end
-
-    -- save to db
-
-    SaveToDB(tempDungeonDB, "d")
-    SaveToDB(tempRaidDB, "r")
-
-    UpdateBar()
-
-    -- Check loot count
-    local lootCountVerification = GetTotalLootCount()
-
-    -- IE:Print("totalLootCount = " .. totalLootCount .. " / lootCountVerification = " .. lootCountVerification)
-
-    -- Check if EJ db is stable
-    if totalLootCount < lootCountVerification then
-        -- We missed some items, retry...
-        -- IE:Print("Restarting update...")
-        UpdateFunction((recursive and recursive or 0) + 1)
-    else
-        -- Done
-        EndUpdate()
-        -- IE:Print("Wait cycles = " .. waitCycles)
     end
 
 end
 
-function IE:EJ_LOOT_DATA_RECIEVED(event, itemID)
-    -- self:Print("LOOT_DATA_RECEIVED [" .. (itemID and itemID or "nil") .. "]")
-    newDataReceived = true
+local function GetInstanceDifficultyList(is_raid)
+    local list
+    if is_raid then
+        list = { 3, 4, 5, 6, 7, 9, 14, 15, 16, 17, 33 }
+    else
+        list = { 1, 2, 23, 24, 8 }
+    end
+    return list
+end
+
+local function UpdatePerLoot(instance_id, loot_index, diff, is_raid)
+    local t = C_EncounterJournal.GetLootInfoByIndex(loot_index)
+    local item_id = t.itemID
+    local encounter_id = t.encounterID
+    local encounter_name = EJ_GetEncounterInfo(encounter_id)
+
+    UpdateEJDBBosses(encounter_id, encounter_name)
+    UpdateEJDBItems(instance_id, encounter_id, item_id, diff, is_raid)
+end
+
+local function UpdatePerDifficulty(instance_id, diff, is_raid)
+    local loot_count = EJ_GetNumLoot()
+
+    -- loop through all eligible loots
+    for loot_index = 1, loot_count do
+        UpdatePerLoot(instance_id, loot_index, diff, is_raid)
+    end
+end
+
+local function UpdatePerInstance(instance_id, is_raid)
+    local diff_list = GetInstanceDifficultyList(is_raid)
+
+    -- Exceptions: MC BWL TAQ, since they don't have valid difficulty returns from EJ API
+    if instance_id == 741 or instance_id == 742 or instance_id == 744 then
+        local diff = 9
+        EJ_SetDifficulty(diff)
+        UpdatePerDifficulty(instance_id, diff, is_raid)
+        return
+    end
+
+    -- loop through valid difficulties
+    for _, diff in pairs(diff_list) do
+        if EJ_IsValidInstanceDifficulty(diff) then
+            EJ_SetDifficulty(diff)
+            UpdatePerDifficulty(instance_id, diff, is_raid)
+        end
+    end
+end
+
+local function UpdatePerTier(is_raid)
+    local instance_count = GetInstanceCount(is_raid)
+
+    -- loop through instances
+    for instance_index = 1, instance_count do
+        local instance_id, instance_name = EJ_GetInstanceByIndex(instance_index, is_raid)
+        BLIZ_SelectInstance(instance_id)
+        UpdateEJDBZones(instance_id, instance_name)
+        UpdatePerInstance(instance_id, is_raid)
+
+        UpdateBar()
+    end
+end
+
+local function UpdateEJDB()
+    local tier_count = EJ_GetNumTiers()
+
+    -- loop through tiers
+    for tier = 1, tier_count do
+        EJ_SelectTier(tier)
+        UpdatePerTier(false) -- dungeon
+        UpdatePerTier(true) -- raid
+    end
+end
+
+local function ResetEJDB()
+    IE.ejDB.global.Items = {}
+    IE.ejDB.global.Zones = {}
+    IE.ejDB.global.Bosses = {}
+end
+
+local function UpdateFunction(recursive)
+    DisableEJ()
+    ResetEJ()
+    ResetEJDB()
+
+    -- set bar max value
+    local instance_total_count = GetInstanceTotalCount()
+    bar:SetMinMaxValues(0, instance_total_count + 2)
+    -- bar2:SetMinMaxValues(0, instance_total_count)
+
+    UpdateBar()
+
+    local totalLootCount = 0
+
+    UpdateEJDB()
+    ReorganizeEJDBItems()
+
+    UpdateBar()
+
+    EndUpdate()
 end
 
 function IE:CreateEJDatabase()
-
     if coUpdate then
         -- update already in progress
         return
@@ -688,14 +560,4 @@ function IE:CreateEJDatabase()
     end
 
     IE.DatabaseChecked = true;
-    if IE.metaDB.global.Reset then
-        IE.metaDB.global.Reset = false
-    end
-
-end
-
-function IE:RecreateEJDatabase()
-    IE:Print("Recreate Database")
-    IE.metaDB.global.Reset = true
-    ReloadUI()
 end
