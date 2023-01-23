@@ -1,3 +1,6 @@
+# Announcement
+**Due to the withdrawn of Blizzard games from Mainland China, I couldn't keep maintaining this project during this period. I'll be back working on this project as soon as a new deal is struck between Activision and a Chinese proxy company**
+
 # InspectEquip
 InspectEquip is a WoW addon which could summarize and show a player's gear info based on item drop sources.
 
@@ -57,8 +60,12 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
     - Update valid slots according to current game expansion
     - Distinguish between main-hand and off-hand pieces
     - Detect specializations for strength/agility/intellect enchantments
+- Refactor Addon
+    - Rewrite the structure of the addon
+    - Rewrite the database module
 - UI Updates
     - Fix and restore gear info frame border style due to `SetBackDrop()` API changes
     - Fix the tainting which prevents player from inspecting others while in combat
     - Fix for 10.0.2 Tooltip API change
+    - Workaroudn unstable EJ API
 
