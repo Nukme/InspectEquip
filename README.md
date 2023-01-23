@@ -1,5 +1,5 @@
 # Announcement
-**Due to the withdrawn of Blizzard games from Mainland China, I couldn't keep maintaining this project during this period. I'll be back working on this project as soon as a new deal is struck between Activision and a Chinese proxy company**
+**Due to the withdrawn of Blizzard games from Mainland China, I couldn't keep maintaining this project during this period. I'll be back working on this project as soon as a new deal is struck between Activision and a Chinese proxy company.**
 
 # InspectEquip
 InspectEquip is a WoW addon which could summarize and show a player's gear info based on item drop sources.
