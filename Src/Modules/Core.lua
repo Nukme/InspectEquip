@@ -85,10 +85,12 @@ function IE:IsPvPItem(item)
     for i, affix1 in pairs(_table_.seasonAffix) do
         for j, affix2 in pairs(_table_.subAffix) do
             local item_name = GetItemInfo(item)
-            local match1 = string.match(item_name, affix1)
-            local match2 = string.match(item_name, affix2)
-            if match1 and match2 then
-                return true
+            if item_name then
+                local match1 = string.match(item_name, affix1)
+                local match2 = string.match(item_name, affix2)
+                if match1 and match2 then
+                    return true
+                end
             end
         end
     end
@@ -245,8 +247,8 @@ function IE:GetItemSourceCategories(itemLink, unit)
                 if IE.configDB.global._StylizeClassTierCategory_ then
                     local className, classFilename = UnitClass(unit)
                     return { "|T" ..
-                        _table_.CLASS_ICONS[classFilename] ..
-                        ":0|t " .. "|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r" }
+                    _table_.CLASS_ICONS[classFilename] ..
+                    ":0|t " .. "|c" .. RAID_CLASS_COLORS[classFilename].colorStr .. L["Class Tier Set"] .. "|r" }
                 else
                     return { L["Class Tier Set"] }
                 end

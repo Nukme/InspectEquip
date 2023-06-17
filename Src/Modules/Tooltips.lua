@@ -55,25 +55,25 @@ addSource = function(tip, item, source, level)
                     end
                     if sum == 1 then
                         if mode == 16 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 10)" -- 10 Normal
+                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 10)"        -- 10 Normal
                         elseif mode == 32 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 25)" -- 25 Normal
+                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 25)"        -- 25 Normal
                         elseif mode == 64 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 10)" -- 10 Heroic
+                            str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 10)"        -- 10 Heroic
                         elseif mode == 128 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 25)" -- 25 Heroic
+                            str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 25)"        -- 25 Heroic
                         elseif mode == 256 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")" -- LFR
+                            str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")"           -- LFR
                         elseif mode == 512 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 40)" -- 40 Normal
+                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 40)"        -- 40 Normal
                         elseif mode == 1024 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")" --  Normal
+                            str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")"           --  Normal
                         elseif mode == 2048 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")" --  Heroic
+                            str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")"           --  Heroic
                         elseif mode == 4096 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")" -- Mythic
+                            str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")"           -- Mythic
                         elseif mode == 8192 then
-                            str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")" -- LFR
+                            str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")"           -- LFR
                         elseif mode == 16384 then
                             str = str .. " (" .. PLAYER_DIFFICULTY_TIMEWALKER .. ")" -- Timewalker
                         end
@@ -128,19 +128,18 @@ addSource = function(tip, item, source, level)
             else
                 -- dungeon
                 if mode == 1 then
-                    str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")" -- Normal
+                    str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")"           -- Normal
                 elseif mode == 2 then
-                    str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")" -- Heroic
+                    str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")"           -- Heroic
                 elseif mode == 4 then
-                    str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")" -- Mythic
+                    str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")"           -- Mythic
                 elseif mode == 8 then
                     str = str .. " (" .. PLAYER_DIFFICULTY_TIMEWALKER .. ")" -- Timewalker
                 elseif mode == 32768 then
-                    str = str .. " (" .. L["Mythic Keystone"] .. ")" -- Mythic Keystone
+                    str = str .. " (" .. L["Mythic Keystone"] .. ")"         -- Mythic Keystone
                 end
             end
         end
-
     elseif cat == "v" or cat == "g" then
         -- vendor item
         if cat == "v" then
@@ -153,7 +152,6 @@ addSource = function(tip, item, source, level)
         if typ then
             str = str .. ": "
             while typ do
-
                 if typ == "c" then
                     -- currency
                     local currency = tonumber(next_field())
@@ -208,25 +206,22 @@ addSource = function(tip, item, source, level)
 		return addSource(tip, item, "v_c_392_" .. next_field(), level)
 	elseif cat == "C" then -- Conquest Points
 		return addSource(tip, item, "v_c_390_" .. next_field(), level)
-	]]      --
-
+	]]
+        --
     elseif cat == "f" then -- Reputation rewards
         str = L["Reputation rewards"]
     elseif cat == "m" then -- Darkmoon Faire
         str = L["Darkmoon Faire"]
     elseif cat == "w" then -- World drops
         str = L["World drops"]
-
     elseif cat == "c" then -- Crafted
         str = L["Crafted"]
         local prof = GetSpellInfo(tonumber(next_field() or 0))
         if prof then
             str = str .. " - " .. prof
         end
-
     elseif cat == "q" then -- Quest Reward
         str = L["Quest Reward"]
-
     elseif cat == 'p' then -- PvP Reward
         str = L["PvP Reward"]
     elseif cat == 't' then -- Class Tier Set
@@ -264,25 +259,25 @@ addSource = function(tip, item, source, level)
                         end
                         if sum == 1 then
                             if mode == 16 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 10)" -- 10 Normal
+                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 10)"        -- 10 Normal
                             elseif mode == 32 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 25)" -- 25 Normal
+                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 25)"        -- 25 Normal
                             elseif mode == 64 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 10)" -- 10 Heroic
+                                str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 10)"        -- 10 Heroic
                             elseif mode == 128 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 25)" -- 25 Heroic
+                                str = str .. " (" .. PLAYER_DIFFICULTY2 .. " 25)"        -- 25 Heroic
                             elseif mode == 256 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")" -- LFR
+                                str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")"           -- LFR
                             elseif mode == 512 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 40)" -- 40 Normal
+                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. " 40)"        -- 40 Normal
                             elseif mode == 1024 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")" --  Normal
+                                str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")"           --  Normal
                             elseif mode == 2048 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")" --  Heroic
+                                str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")"           --  Heroic
                             elseif mode == 4096 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")" -- Mythic
+                                str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")"           -- Mythic
                             elseif mode == 8192 then
-                                str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")" -- LFR
+                                str = str .. " (" .. PLAYER_DIFFICULTY3 .. ")"           -- LFR
                             elseif mode == 16384 then
                                 str = str .. " (" .. PLAYER_DIFFICULTY_TIMEWALKER .. ")" -- Timewalker
                             end
@@ -337,11 +332,11 @@ addSource = function(tip, item, source, level)
                 else
                     -- dungeon
                     if mode == 1 then
-                        str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")" -- Normal
+                        str = str .. " (" .. PLAYER_DIFFICULTY1 .. ")"           -- Normal
                     elseif mode == 2 then
-                        str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")" -- Heroic
+                        str = str .. " (" .. PLAYER_DIFFICULTY2 .. ")"           -- Heroic
                     elseif mode == 4 then
-                        str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")" -- Mythic
+                        str = str .. " (" .. PLAYER_DIFFICULTY6 .. ")"           -- Mythic
                     elseif mode == 8 then
                         str = str .. " (" .. PLAYER_DIFFICULTY_TIMEWALKER .. ")" -- Timewalker
                     end
@@ -391,7 +386,6 @@ addItemData = function(tip, item, level)
     local data = IE:GetItemData(item)
 
     if data then
-
         local sourceCount = 0
         local skippedSourceCount = 0
         local maxSourceCount = IE.configDB.global.maxSourceCount
@@ -409,7 +403,6 @@ addItemData = function(tip, item, level)
             local r, g, b = IE.configDB.global.ttR, IE.configDB.global.ttG, IE.configDB.global.ttB
             tip:AddLine(strformat(L["... and %d other sources"], skippedSourceCount), r, g, b)
         end
-
     end
 end
 
@@ -441,6 +434,9 @@ function IE:HookTooltips()
     end
 
     TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(tooltip, data)
+        if not data then
+            return
+        end
         self:ParseItem(tooltip, data)
     end)
 
