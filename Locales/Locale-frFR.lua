@@ -4,7 +4,8 @@ if not L then return end
 L["Accessories"] = "Accessoires"
 L["Add drop information to tooltips"] = "Ajouter les information de loot au tooltip"
 L["Add item drop information to all item tooltips"] = "Ajouter les information de loot à tous les tooltips d'objets"
-L["Also show the InspectEquip panel when opening the character window"] = "Afficher InspectEquip à l'ouverture du panneau de Personnage"
+L["Also show the InspectEquip panel when opening the character window"] =
+"Afficher InspectEquip à l'ouverture du panneau de Personnage"
 -- L["... and %d other sources"] = ""
 L["Argent Tournament"] = "Tournoi d'argent"
 L["Attach to character window"] = "Lier au panneau de Personnage"
@@ -46,8 +47,8 @@ L["Recreate the database"] = "Recréer la base de données" -- Needs review
 L["Reputation rewards"] = "Récompenses de réputation"
 L["Reset database"] = "Réinitialiser la base de données" -- Needs review
 L["Season 1"] = "Saison 1"
-L["Season 10"] = "Saison 10" -- Needs review
-L["Season 11"] = "Saison 11" -- Needs review
+L["Season 10"] = "Saison 10"                              -- Needs review
+L["Season 11"] = "Saison 11"                              -- Needs review
 L["Season 2"] = "Saison 2"
 L["Season 3"] = "Saison 3"
 L["Season 4"] = "Saison 4"
@@ -58,10 +59,14 @@ L["Season 8"] = "Saison 8"
 L["Season 9"] = "Saison 9"
 L["Show average item level in equipment list"] = "Afficher le niveau d'objet moyen dans la liste d'équipement"
 L["Show item level in equipment list"] = "Voir le niveau de l'objet dans la liste d'équipement"
-L["Show items that cannot be categorized in a seperate category"] = "Montrer les objets qui ne peuvent pas être classés en catégorie séparée"
-L["Show the average item level of all items in the equipment panel"] = "Afficher le niveau d'objet moyen de tous les objets dans le panneau d'équipement"
-L["Show the equipment list when inspecting other characters"] = "Afficher la liste d'équipement lors de l'inspection d'autres personnages"
-L["Show the item level of each item in the equipment panel"] = "Voir le niveau de l'objet pour chaque objet dans le panneau d'équipement"
+L["Show items that cannot be categorized in a seperate category"] =
+"Montrer les objets qui ne peuvent pas être classés en catégorie séparée"
+L["Show the average item level of all items in the equipment panel"] =
+"Afficher le niveau d'objet moyen de tous les objets dans le panneau d'équipement"
+L["Show the equipment list when inspecting other characters"] =
+"Afficher la liste d'équipement lors de l'inspection d'autres personnages"
+L["Show the item level of each item in the equipment panel"] =
+"Voir le niveau de l'objet pour chaque objet dans le panneau d'équipement"
 L["Source"] = "Source"
 -- L["The maximum amount of sources that are displayed in item tooltips"] = ""
 L["Tooltip text color"] = "Couleur des informations ajoutées aux infobulles"
@@ -109,3 +114,4 @@ L["Wrath of the Lich King"] = "Wrath of the Lich King"
 -- L["Crimson"] = ""
 -- L["Inspiration Catalyst"] = ""
 -- L["Mythic Keystone"] = ""
+-- L["Obsidian"] = ""

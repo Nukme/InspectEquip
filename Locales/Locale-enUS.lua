@@ -4,7 +4,8 @@ local L = LibStub("AceLocale-3.0"):NewLocale("InspectEquip", "enUS", true)
 L["Accessories"] = "Accessories"
 L["Add drop information to tooltips"] = "Add drop information to tooltips"
 L["Add item drop information to all item tooltips"] = "Add item drop information to all item tooltips"
-L["Also show the InspectEquip panel when opening the character window"] = "Also show the InspectEquip panel when opening the character window"
+L["Also show the InspectEquip panel when opening the character window"] =
+"Also show the InspectEquip panel when opening the character window"
 L["... and %d other sources"] = "... and %d other sources"
 L["Argent Tournament"] = "Argent Tournament"
 L["Attach to character window"] = "Attach to character window"
@@ -58,12 +59,16 @@ L["Season 8"] = "Season 8"
 L["Season 9"] = "Season 9"
 L["Show average item level in equipment list"] = "Show average item level in equipment list"
 L["Show item level in equipment list"] = "Show item level in equipment list"
-L["Show items that cannot be categorized in a seperate category"] = "Show items that cannot be categorized in a seperate category"
-L["Show the average item level of all items in the equipment panel"] = "Show the average item level of all items in the equipment panel"
-L["Show the equipment list when inspecting other characters"] = "Show the equipment list when inspecting other characters"
+L["Show items that cannot be categorized in a seperate category"] =
+"Show items that cannot be categorized in a seperate category"
+L["Show the average item level of all items in the equipment panel"] =
+"Show the average item level of all items in the equipment panel"
+L["Show the equipment list when inspecting other characters"] =
+"Show the equipment list when inspecting other characters"
 L["Show the item level of each item in the equipment panel"] = "Show the item level of each item in the equipment panel"
 L["Source"] = "Source"
-L["The maximum amount of sources that are displayed in item tooltips"] = "The maximum amount of sources that are displayed in item tooltips"
+L["The maximum amount of sources that are displayed in item tooltips"] =
+"The maximum amount of sources that are displayed in item tooltips"
 L["Tooltip text color"] = "Tooltip text color"
 L["Trash"] = "Trash"
 L["Unknown"] = "Unknown"
@@ -109,3 +114,4 @@ L["General Settings"] = true
 L["Crimson"] = true
 L["Inspiration Catalyst"] = true
 L["Mythic Keystone"] = true
+L["Obsidian"] = true

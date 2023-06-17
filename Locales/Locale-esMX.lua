@@ -3,7 +3,8 @@ if not L then return end
 -- Translation by LigthSora
 L["Accessories"] = "Accesorios"
 L["Add drop information to tooltips"] = "Añadir información del % de despojo en los objetos"
-L["Add item drop information to all item tooltips"] = "Añade información del porcentaje de despojo en las ventanas emergentes de los objetos"
+L["Add item drop information to all item tooltips"] =
+"Añade información del porcentaje de despojo en las ventanas emergentes de los objetos"
 -- L["Also show the InspectEquip panel when opening the character window"] = ""
 -- L["... and %d other sources"] = ""
 L["Argent Tournament"] = "Torneo Argenta"
@@ -58,7 +59,8 @@ L["Season 8"] = "Temporada 8"
 L["Season 9"] = "Temporada 9" -- Needs review
 -- L["Show average item level in equipment list"] = ""
 -- L["Show item level in equipment list"] = ""
-L["Show items that cannot be categorized in a seperate category"] = "Muestra objetos que no pueden ser categorizados en una categoría separada"
+L["Show items that cannot be categorized in a seperate category"] =
+"Muestra objetos que no pueden ser categorizados en una categoría separada"
 -- L["Show the average item level of all items in the equipment panel"] = ""
 -- L["Show the equipment list when inspecting other characters"] = ""
 -- L["Show the item level of each item in the equipment panel"] = ""
@@ -109,3 +111,4 @@ L["Wrath of the Lich King"] = "Wrath of the Lich King"
 -- L["Crimson"] = ""
 -- L["Inspiration Catalyst"] = ""
 -- L["Mythic Keystone"] = ""
+-- L["Obsidian"] = ""

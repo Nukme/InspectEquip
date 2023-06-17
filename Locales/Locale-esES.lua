@@ -3,21 +3,23 @@ if not L then return end
 -- Translation by LigthSora + StiviS + yllelder
 L["Accessories"] = "Accesorios"
 L["Add drop information to tooltips"] = "Añadir información del % de despojo en los objetos"
-L["Add item drop information to all item tooltips"] = "Añade información del porcentaje de despojo en las ventanas emergentes de los objetos"
-L["Also show the InspectEquip panel when opening the character window"] = "También mostrar el panel de InspectEquip cuando se abre la ventana del personaje"
+L["Add item drop information to all item tooltips"] =
+"Añade información del porcentaje de despojo en las ventanas emergentes de los objetos"
+L["Also show the InspectEquip panel when opening the character window"] =
+"También mostrar el panel de InspectEquip cuando se abre la ventana del personaje"
 L["... and %d other sources"] = "... y %d otras fuentes" -- Needs review
 L["Argent Tournament"] = "Torneo Argenta"
 L["Attach to character window"] = "Anclar a la ventana del personaje"
 L["Attach to inspect window"] = "Adjuntar a la ventana de inspeccionar"
 L["Avg. Item Level"] = "Med. Nivel de Objeto"
 L["Badge of Justice rewards"] = "Recompensas de Distintivo de justicia"
-L["Bosses"] = "Jefes" -- Needs review
+L["Bosses"] = "Jefes"                                  -- Needs review
 L["Check for missing gems"] = "Check for missing gems" -- Needs review
 L["Check for unenchanted items"] = "Comprobar objetos sin encantar"
 L["Conquest Points"] = "Puntos de Conquista"
 L["Crafted"] = "Creado"
 L["Darkmoon Faire"] = "Feria de la Luna Negra"
-L["Database"] = "Base de Datos" -- Needs review
+L["Database"] = "Base de Datos"                                                                      -- Needs review
 L["Display a warning for items with missing gems"] = "Display a warning for items with missing gems" -- Needs review
 L["Display a warning for unenchanted items"] = "Mostrar una alerta si hay objetos sin encantar"
 L["Emblem of Conquest rewards"] = "Recompensas de Emblema de Conquista"
@@ -41,10 +43,10 @@ L["PvP"] = "JcJ"
 L["Quest"] = "Misión"
 L["Quest Reward"] = "Recompensas de Misión"
 L["Raid"] = "Banda"
-L["Raid Finder"] = "Buscador de Bandas" -- Needs review
+L["Raid Finder"] = "Buscador de Bandas"              -- Needs review
 L["Recreate the database"] = "Recrear Base de datos" -- Needs review
 L["Reputation rewards"] = "Recompensas por reputación"
-L["Reset database"] = "Borra Base de Datos" -- Needs review
+L["Reset database"] = "Borra Base de Datos"          -- Needs review
 L["Season 1"] = "Temporada 1"
 L["Season 10"] = "S10"
 L["Season 11"] = "S11"
@@ -58,16 +60,21 @@ L["Season 8"] = "Temporada 8"
 L["Season 9"] = "Temporada 9"
 L["Show average item level in equipment list"] = "Mostrar la media del nivel de objeto en la lista de equipamiento"
 L["Show item level in equipment list"] = "Mostrar nivel de objeto en la lista de equipamiento"
-L["Show items that cannot be categorized in a seperate category"] = "Muestra objetos que no pueden ser categorizados en una categoría separada"
-L["Show the average item level of all items in the equipment panel"] = "Mostrar la media del nivel de objeto de todos los objetos en el panel de equipamiento"
-L["Show the equipment list when inspecting other characters"] = "Mostrar la lista de equipamiento cuando inspeccionas a otros jugadores"
-L["Show the item level of each item in the equipment panel"] = "Mostrar el nivel de objeto para cada objeto en el panel de equipamiento"
+L["Show items that cannot be categorized in a seperate category"] =
+"Muestra objetos que no pueden ser categorizados en una categoría separada"
+L["Show the average item level of all items in the equipment panel"] =
+"Mostrar la media del nivel de objeto de todos los objetos en el panel de equipamiento"
+L["Show the equipment list when inspecting other characters"] =
+"Mostrar la lista de equipamiento cuando inspeccionas a otros jugadores"
+L["Show the item level of each item in the equipment panel"] =
+"Mostrar el nivel de objeto para cada objeto en el panel de equipamiento"
 L["Source"] = "Fuente"
-L["The maximum amount of sources that are displayed in item tooltips"] = "The maximum amount of sources that are displayed in item tooltips" -- Needs review
+L["The maximum amount of sources that are displayed in item tooltips"] =
+"The maximum amount of sources that are displayed in item tooltips"                                                                          -- Needs review
 L["Tooltip text color"] = "Color del texto en el tootip"
-L["Trash"] = "Basura" -- Needs review
+L["Trash"] = "Basura"                                                                                                                        -- Needs review
 L["Unknown"] = "Desconocido"
-L["Updating database..."] = "Actualizando Base de datos..." -- Needs review
+L["Updating database..."] = "Actualizando Base de datos..."                                                                                  -- Needs review
 L["Valor Points"] = "Puntos de Valor"
 L["Vendor"] = "Vendedor"
 L["World drops"] = "Drops del Mundo"
@@ -109,3 +116,4 @@ L["Wrath of the Lich King"] = "Wrath of the Lich King"
 -- L["Crimson"] = ""
 -- L["Inspiration Catalyst"] = ""
 -- L["Mythic Keystone"] = ""
+-- L["Obsidian"] = ""

@@ -3,22 +3,26 @@ if not L then return end
 -- Translation by Hemathio + Ingdruid + RustamIrzaev
 L["Accessories"] = "Аксессуары" -- Needs review
 L["Add drop information to tooltips"] = "Отображать информацию о добыче во всплывающих подсказках"
-L["Add item drop information to all item tooltips"] = "Отображать информацию о добыче во всех всплывающих подсказках к предметам"
-L["Also show the InspectEquip panel when opening the character window"] = "Также показывать окно InspectEquip, когда открыто окно героя"
+L["Add item drop information to all item tooltips"] =
+"Отображать информацию о добыче во всех всплывающих подсказках к предметам"
+L["Also show the InspectEquip panel when opening the character window"] =
+"Также показывать окно InspectEquip, когда открыто окно героя"
 L["... and %d other sources"] = "... и %d других источников" -- Needs review
 L["Argent Tournament"] = "Серебряный турнир"
 L["Attach to character window"] = "Прекрепить к окну героя" -- Needs review
 L["Attach to inspect window"] = "Прекрепить к окну осмотра." -- Needs review
 L["Avg. Item Level"] = "Сред. значение уровня вещей"
 L["Badge of Justice rewards"] = "за Знаки справедливости"
-L["Bosses"] = "Боссы" -- Needs review
+L["Bosses"] = "Боссы"                                                   -- Needs review
 L["Check for missing gems"] = "Проверять на пропущенные камни" -- Needs review
 L["Check for unenchanted items"] = "Проводить проверку на зачарование вещей" -- Needs review
 L["Conquest Points"] = "Очки завоевания"
 L["Crafted"] = "Ремесло"
 L["Darkmoon Faire"] = "Ярмарка Новолуния"
-L["Database"] = "База данных" -- Needs review
-L["Display a warning for items with missing gems"] = "Показывать предупреждения для предметов с пропущенными камнями" -- Needs review
+L["Database"] =
+"База данных"                                          -- Needs review
+L["Display a warning for items with missing gems"] =
+"Показывать предупреждения для предметов с пропущенными камнями" -- Needs review
 L["Display a warning for unenchanted items"] = "Показать предупреждение о незачарованых предметах"
 L["Emblem of Conquest rewards"] = "за Значки завоевания" -- Needs review
 L["Emblem of Heroism rewards"] = "за Эмблемы героизма"
@@ -41,7 +45,7 @@ L["PvP"] = "PvP"
 L["Quest"] = "за Задания"
 L["Quest Reward"] = "Награды за задание"
 L["Raid"] = "Рейды"
-L["Raid Finder"] = "Искатель рейда" -- Needs review
+L["Raid Finder"] = "Искатель рейда"       -- Needs review
 L["Recreate the database"] = "Пересоздать базу данных" -- Needs review
 L["Reputation rewards"] = " за Репутацию"
 L["Reset database"] = "Сброс базы данных" -- Needs review
@@ -58,16 +62,22 @@ L["Season 8"] = "Арена: Сезон 8"
 L["Season 9"] = "Арена-9"
 L["Show average item level in equipment list"] = "Показывать сред. значение ур. предмета в окне героя" -- Needs review
 L["Show item level in equipment list"] = "Отображать ур. вещи в списке надетого"
-L["Show items that cannot be categorized in a seperate category"] = "Отображать предметы, которые нельзя отнести к какой-либо категории"
-L["Show the average item level of all items in the equipment panel"] = "Показать общее среднее значение уровня вещей в окне панели" -- Needs review
+L["Show items that cannot be categorized in a seperate category"] =
+"Отображать предметы, которые нельзя отнести к какой-либо категории"
+L["Show the average item level of all items in the equipment panel"] =
+"Показать общее среднее значение уровня вещей в окне панели" -- Needs review
 L["Show the equipment list when inspecting other characters"] = "Показывать эквип при просмотре других персонажей."
-L["Show the item level of each item in the equipment panel"] = "Отображать ур. вещи для каждой вещи в списке надетого" -- Needs review
+L["Show the item level of each item in the equipment panel"] =
+"Отображать ур. вещи для каждой вещи в списке надетого" -- Needs review
 L["Source"] = "|cFFD00000Источник"
-L["The maximum amount of sources that are displayed in item tooltips"] = "Максимальное кол-во источников отображаемых в подсказках" -- Needs review
+L["The maximum amount of sources that are displayed in item tooltips"] =
+"Максимальное кол-во источников отображаемых в подсказках" -- Needs review
 L["Tooltip text color"] = "Цвет текста подсказки."
-L["Trash"] = "Хлам" -- Needs review
+L["Trash"] =
+"Хлам"                                                 -- Needs review
 L["Unknown"] = "Неизвестно"
-L["Updating database..."] = "Обновление базы данных..." -- Needs review
+L["Updating database..."] =
+"Обновление базы данных..."            -- Needs review
 L["Valor Points"] = "Очки доблести"
 L["Vendor"] = "Продавец"
 L["World drops"] = "Мировое выпадание" -- Needs review
@@ -109,3 +119,4 @@ L["Wrath of the Lich King"] = "ВоЛК"
 -- L["Crimson"] = ""
 -- L["Inspiration Catalyst"] = ""
 -- L["Mythic Keystone"] = ""
+-- L["Obsidian"] = ""
