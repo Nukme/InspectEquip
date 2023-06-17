@@ -559,5 +559,162 @@ _table_.ManualItemDB = {
         [200384] = "ic", -- Waist
         [200379] = "ic", -- Feet
 
+        -- Aberrus, the Shadowed Crucible : Trash Loot
+        [204430] = "r_1208_15360_0",
+        [204422] = "r_1208_15360_0",
+        [204411] = "r_1208_15360_0",
+        [204423] = "r_1208_15360_0",
+        [204429] = "r_1208_15360_0",
+        [204414] = "r_1208_15360_0",
+        [204410] = "r_1208_15360_0",
+        [204415] = "r_1208_15360_0",
+
+        -- Aberrus, the Shadowed Crucible : Tier set main pieces
+        -- Death Knight
+        [202461] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202459] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202464] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202460] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202462] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Demon Hunter
+        [202524] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202522] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202527] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202523] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202525] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Warlock
+        [202533] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202531] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202536] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202532] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202534] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Druid
+        [202515] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202513] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202518] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202514] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202516] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Hunter
+        [202479] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202477] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202482] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202478] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202480] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Mage
+        [202551] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202549] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202554] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202550] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202552] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Paladin
+        [202452] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202450] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202455] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202451] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202453] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Priest
+        [202542] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202540] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202545] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202541] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202543] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Shaman
+        [202470] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202468] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202473] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202469] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202471] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Monk
+        [202506] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202504] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202509] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202505] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202507] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Rogue
+        [202497] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202495] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202500] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202496] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202498] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Warrior
+        [202443] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202441] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202446] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202442] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202444] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        -- Evoker
+        [202488] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
+        [202486] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
+        [202491] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
+        [202487] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
+        [202489] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+
+        -- Aberrus, the Shadowed Crucible : Tier set off pieces
+        -- Death Knight
+        [202456] = "ic", -- Back
+        [202457] = "ic", -- Wrist
+        [202458] = "ic", -- Waist
+        [202463] = "ic", -- Feet
+        -- Demon Hunter
+        [202519] = "ic", -- Back
+        [202520] = "ic", -- Wrist
+        [202521] = "ic", -- Waist
+        [202526] = "ic", -- Feet
+        -- Warlock
+        [202528] = "ic", -- Back
+        [202529] = "ic", -- Wrist
+        [202530] = "ic", -- Waist
+        [202535] = "ic", -- Feet
+        -- Druid
+        [202510] = "ic", -- Back
+        [202511] = "ic", -- Wrist
+        [202512] = "ic", -- Waist
+        [202517] = "ic", -- Feet
+        -- Hunter
+        [202474] = "ic", -- Back
+        [202475] = "ic", -- Wrist
+        [202476] = "ic", -- Waist
+        [202481] = "ic", -- Feet
+        -- Mage
+        [202546] = "ic", -- Back
+        [202547] = "ic", -- Wrist
+        [202548] = "ic", -- Waist
+        [202553] = "ic", -- Feet
+        -- Paladin
+        [202447] = "ic", -- Back
+        [202448] = "ic", -- Wrist
+        [202449] = "ic", -- Waist
+        [202454] = "ic", -- Feet
+        -- Priest
+        [202537] = "ic", -- Back
+        [202538] = "ic", -- Wrist
+        [202539] = "ic", -- Waist
+        [202544] = "ic", -- Feet
+        -- Shaman
+        [202465] = "ic", -- Back
+        [202466] = "ic", -- Wrist
+        [202467] = "ic", -- Waist
+        [202472] = "ic", -- Feet
+        -- Monk
+        [202501] = "ic", -- Back
+        [202502] = "ic", -- Wrist
+        [202503] = "ic", -- Waist
+        [202508] = "ic", -- Feet
+        -- Rogue
+        [202492] = "ic", -- Back
+        [202493] = "ic", -- Wrist
+        [202494] = "ic", -- Waist
+        [202499] = "ic", -- Feet
+        -- Warrior
+        [202438] = "ic", -- Back
+        [202439] = "ic", -- Wrist
+        [202440] = "ic", -- Waist
+        [202445] = "ic", -- Feet
+        -- Evoker
+        [202483] = "ic", -- Back
+        [202484] = "ic", -- Wrist
+        [202485] = "ic", -- Waist
+        [202490] = "ic", -- Feet
+
     }
 }
