@@ -69,7 +69,7 @@ function IE:CheckDatabase()
     end
 
     local _, clientbuild = GetBuildInfo()
-    local ieversion = GetAddOnMetadata("InspectEquip", "Version")
+    local ieversion = C_AddOns.GetAddOnMetadata("InspectEquip", "Version")
     local locale = GetLocale()
     local expansion = GetExpansionLevel()
 

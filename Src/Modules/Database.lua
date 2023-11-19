@@ -19,7 +19,7 @@ local _retail_ = select(4, GetBuildInfo()) >= 70000
 
 
 -- Max wait cycles for database update
-local MAX_WC = 1 -- 5
+local MAX_WC = 1           -- 5
 local DATA_RECEIVED_WC = 1 -- 7
 
 local newDataReceived
@@ -32,7 +32,6 @@ local coUpdate
 
 
 local function createUpdateGUI()
-
     if not bar then
         bar = CreateFrame("STATUSBAR", nil, UIParent, "TextStatusBar, BackdropTemplate")
     end
@@ -93,7 +92,6 @@ local function createUpdateGUI()
     barText:SetJustifyV("MIDDLE")
     barText:SetTextColor(1, 1, 1)
     barText:SetText("InspectEquip: " .. L["Updating database..."])
-
 end
 
 local ejDisabled = false
@@ -426,7 +424,6 @@ local function ReorganizeEJDBItems()
             end
         end
     end
-
 end
 
 local function GetInstanceDifficultyList(is_raid)
@@ -499,7 +496,7 @@ local function UpdateEJDB()
     for tier = 1, tier_count do
         EJ_SelectTier(tier)
         UpdatePerTier(false) -- dungeon
-        UpdatePerTier(true) -- raid
+        UpdatePerTier(true)  -- raid
     end
 end
 
@@ -538,8 +535,8 @@ function IE:CreateEJDatabase()
     end
 
     -- load encounter journal
-    if not IsAddOnLoaded("Blizzard_EncounterJournal") then
-        local loaded, reason = LoadAddOn("Blizzard_EncounterJournal")
+    if not C_AddOns.IsAddOnLoaded("Blizzard_EncounterJournal") then
+        local loaded, reason = C_AddOns.LoadAddOn("Blizzard_EncounterJournal")
         if not loaded then
             message("[InspectEquip] Could not load encounter journal: " .. reason)
         end

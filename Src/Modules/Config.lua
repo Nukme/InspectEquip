@@ -45,7 +45,7 @@ local introOptions = {
             order = 1,
             type = "description",
             name = string.format("%s\n    %s\n\n", "|cFFFFD700" .. L["Version"] .. "|r",
-                GetAddOnMetadata("InspectEquip", "Version"))
+                C_AddOns.GetAddOnMetadata("InspectEquip", "Version"))
         },
         author = {
             order = 2,
@@ -58,7 +58,7 @@ local introOptions = {
             name = L["Github Repo"],
             width = "double",
             get = function()
-                return GetAddOnMetadata("InspectEquip", "X-Repository")
+                return C_AddOns.GetAddOnMetadata("InspectEquip", "X-Repository")
             end
         },
         feedback = {
@@ -67,7 +67,7 @@ local introOptions = {
             name = L["NGA Feedback"],
             width = "double",
             get = function()
-                return GetAddOnMetadata("InspectEquip", "X-NGA_Feedback")
+                return C_AddOns.GetAddOnMetadata("InspectEquip", "X-NGA_Feedback")
             end
         }
     }
