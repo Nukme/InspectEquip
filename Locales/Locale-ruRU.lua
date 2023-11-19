@@ -13,14 +13,14 @@ L["Attach to character window"] = "Прекрепить к окну героя" 
 L["Attach to inspect window"] = "Прекрепить к окну осмотра." -- Needs review
 L["Avg. Item Level"] = "Сред. значение уровня вещей"
 L["Badge of Justice rewards"] = "за Знаки справедливости"
-L["Bosses"] = "Боссы"                                                   -- Needs review
+L["Bosses"] = "Боссы" -- Needs review
 L["Check for missing gems"] = "Проверять на пропущенные камни" -- Needs review
 L["Check for unenchanted items"] = "Проводить проверку на зачарование вещей" -- Needs review
 L["Conquest Points"] = "Очки завоевания"
 L["Crafted"] = "Ремесло"
 L["Darkmoon Faire"] = "Ярмарка Новолуния"
 L["Database"] =
-"База данных"                                          -- Needs review
+"База данных" -- Needs review
 L["Display a warning for items with missing gems"] =
 "Показывать предупреждения для предметов с пропущенными камнями" -- Needs review
 L["Display a warning for unenchanted items"] = "Показать предупреждение о незачарованых предметах"
@@ -45,7 +45,7 @@ L["PvP"] = "PvP"
 L["Quest"] = "за Задания"
 L["Quest Reward"] = "Награды за задание"
 L["Raid"] = "Рейды"
-L["Raid Finder"] = "Искатель рейда"       -- Needs review
+L["Raid Finder"] = "Искатель рейда" -- Needs review
 L["Recreate the database"] = "Пересоздать базу данных" -- Needs review
 L["Reputation rewards"] = " за Репутацию"
 L["Reset database"] = "Сброс базы данных" -- Needs review
@@ -74,10 +74,10 @@ L["The maximum amount of sources that are displayed in item tooltips"] =
 "Максимальное кол-во источников отображаемых в подсказках" -- Needs review
 L["Tooltip text color"] = "Цвет текста подсказки."
 L["Trash"] =
-"Хлам"                                                 -- Needs review
+"Хлам" -- Needs review
 L["Unknown"] = "Неизвестно"
 L["Updating database..."] =
-"Обновление базы данных..."            -- Needs review
+"Обновление базы данных..." -- Needs review
 L["Valor Points"] = "Очки доблести"
 L["Vendor"] = "Продавец"
 L["World drops"] = "Мировое выпадание" -- Needs review
@@ -120,3 +120,4 @@ L["Wrath of the Lich King"] = "ВоЛК"
 -- L["Inspiration Catalyst"] = ""
 -- L["Mythic Keystone"] = ""
 -- L["Obsidian"] = ""
+-- L["Verdant"] = ""

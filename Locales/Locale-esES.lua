@@ -70,11 +70,13 @@ L["Show the item level of each item in the equipment panel"] =
 "Mostrar el nivel de objeto para cada objeto en el panel de equipamiento"
 L["Source"] = "Fuente"
 L["The maximum amount of sources that are displayed in item tooltips"] =
-"The maximum amount of sources that are displayed in item tooltips"                                                                          -- Needs review
+"The maximum amount of sources that are displayed in item tooltips" -- Needs review
 L["Tooltip text color"] = "Color del texto en el tootip"
-L["Trash"] = "Basura"                                                                                                                        -- Needs review
+L["Trash"] =
+"Basura"                                                            -- Needs review
 L["Unknown"] = "Desconocido"
-L["Updating database..."] = "Actualizando Base de datos..."                                                                                  -- Needs review
+L["Updating database..."] =
+"Actualizando Base de datos..."                                     -- Needs review
 L["Valor Points"] = "Puntos de Valor"
 L["Vendor"] = "Vendedor"
 L["World drops"] = "Drops del Mundo"
@@ -117,3 +119,4 @@ L["Wrath of the Lich King"] = "Wrath of the Lich King"
 -- L["Inspiration Catalyst"] = ""
 -- L["Mythic Keystone"] = ""
 -- L["Obsidian"] = ""
+-- L["Verdant"] = ""
