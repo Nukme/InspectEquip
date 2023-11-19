@@ -109,7 +109,7 @@ local function DisableEJ()
     -- hide EJ
     if EncounterJournal then
         if EncounterJournal:IsShown() then
-            EncounterJournal:Hide()
+            ToggleFrame(EncounterJournal)
         end
     end
 
@@ -123,7 +123,7 @@ local function DisableEJ()
     -- ejToggle = ToggleEncounterJournal
     -- ToggleEncounterJournal = function() end
     IE:SecureHook("ToggleEncounterJournal", function()
-        EncounterJournal:Hide()
+        ToggleFrame(EncounterJournal)
     end)
     EJMicroButton:Disable()
 end
@@ -369,14 +369,25 @@ local function BLIZ_SelectInstance(instance_id)
     -- Codes from Blizzard_EncounterJournal.lua
     -- To make EJ_SelectInstance() work properly
     -- so that EJ_GetNumLoot() could work properly
-    EJ_HideNonInstancePanels()
-    EncounterJournal.instanceSelect:Hide()
-    EncounterJournal.creatureDisplayID = 0
-    EncounterJournal.instanceID = instance_id;
-    EncounterJournal.encounterID = nil;
+
+    -- EJ_HideNonInstancePanels()
+    -- EncounterJournal.instanceSelect:Hide()
+    -- EncounterJournal.creatureDisplayID = 0
+    -- EncounterJournal.instanceID = instance_id;
+    -- EncounterJournal.encounterID = nil;
+    -- EJ_SelectInstance(instance_id)
+    -- EncounterJournal_LootUpdate();
+    -- EncounterJournal_ClearDetails();
+
+    -- 20231119
+    -- I have known there is a taint which would entice a error pop up saying "... tried to call protected function "OnOpen"" since 10.1.
+    -- I tried to locate the cause of the bug but only in vain.
+    -- This function is made during 10.0 game patch, and I found the lines above in the Blizzard_EncounterJournal.lua file.
+    -- But when I revisit the file today, those lines are gone.
+    -- EJ_SelectInstance seems to work fine without those line around it.
+    -- And by commenting out thoese lines, the taint is gone too.
+    -- So be it. F**k.
     EJ_SelectInstance(instance_id)
-    EncounterJournal_LootUpdate();
-    EncounterJournal_ClearDetails();
 end
 
 local function UpdateEJDBZones(instance_id, instance_name)
