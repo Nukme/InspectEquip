@@ -716,5 +716,156 @@ _table_.ManualItemDB = {
         [202485] = "ic", -- Waist
         [202490] = "ic", -- Feet
 
+        -- Amirdrassil, the Dream's Hope : Trash Loot
+
+        -- Amirdrassil, the Dream's Hope : Tier set main pieces
+        -- Death Knight
+        [207200] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207198] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207203] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207199] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207201] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Demon Hunter
+        [207263] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207261] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207266] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207262] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207264] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Warlock
+        [207272] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207270] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207275] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207271] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207273] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Druid
+        [207254] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207252] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207257] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207253] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207255] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Hunter
+        [207218] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207216] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207221] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207217] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207219] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Mage
+        [207290] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207288] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207293] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207289] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207291] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Paladin
+        [207191] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207189] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207194] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207190] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207192] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Priest
+        [207281] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207279] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207284] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207280] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207282] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Shaman
+        [207209] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207207] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207212] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207208] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207210] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Monk
+        [207245] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207243] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207248] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207244] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207246] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Rogue
+        [207236] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207234] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207239] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207235] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207237] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Warrior
+        [207182] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207180] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207185] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207181] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207183] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        -- Evoker
+        [207227] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
+        [207225] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
+        [207230] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
+        [207226] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
+        [207228] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+
+        -- Amirdrassil, the Dream's Hope : Tier set off pieces
+        -- Death Knight
+        [207195] = "ic", -- Back
+        [207196] = "ic", -- Wrist
+        [207197] = "ic", -- Waist
+        [207202] = "ic", -- Feet
+        -- Demon Hunter
+        [207258] = "ic", -- Back
+        [207259] = "ic", -- Wrist
+        [207260] = "ic", -- Waist
+        [207265] = "ic", -- Feet
+        -- Warlock
+        [207267] = "ic", -- Back
+        [207268] = "ic", -- Wrist
+        [207269] = "ic", -- Waist
+        [207274] = "ic", -- Feet
+        -- Druid
+        [207249] = "ic", -- Back
+        [207250] = "ic", -- Wrist
+        [207251] = "ic", -- Waist
+        [207256] = "ic", -- Feet
+        -- Hunter
+        [207213] = "ic", -- Back
+        [207214] = "ic", -- Wrist
+        [207215] = "ic", -- Waist
+        [207220] = "ic", -- Feet
+        -- Mage
+        [207285] = "ic", -- Back
+        [207286] = "ic", -- Wrist
+        [207287] = "ic", -- Waist
+        [207292] = "ic", -- Feet
+        -- Paladin
+        [207186] = "ic", -- Back
+        [207187] = "ic", -- Wrist
+        [207188] = "ic", -- Waist
+        [207193] = "ic", -- Feet
+        -- Priest
+        [207276] = "ic", -- Back
+        [207277] = "ic", -- Wrist
+        [207278] = "ic", -- Waist
+        [207283] = "ic", -- Feet
+        -- Shaman
+        [207204] = "ic", -- Back
+        [207205] = "ic", -- Wrist
+        [207206] = "ic", -- Waist
+        [207211] = "ic", -- Feet
+        -- Monk
+        [207240] = "ic", -- Back
+        [207241] = "ic", -- Wrist
+        [207242] = "ic", -- Waist
+        [207247] = "ic", -- Feet
+        -- Rogue
+        [207231] = "ic", -- Back
+        [207232] = "ic", -- Wrist
+        [207233] = "ic", -- Waist
+        [207238] = "ic", -- Feet
+        -- Warrior
+        [207176] = "ic", -- Back
+        [207177] = "ic", -- Wrist
+        [207179] = "ic", -- Waist
+        [207184] = "ic", -- Feet
+        -- Evoker
+        [207222] = "ic", -- Back
+        [207223] = "ic", -- Wrist
+        [207224] = "ic", -- Waist
+        [207229] = "ic", -- Feet
+
+
+
     }
 }
