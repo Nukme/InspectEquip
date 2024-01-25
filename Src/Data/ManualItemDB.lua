@@ -716,8 +716,6 @@ _table_.ManualItemDB = {
         [202485] = "ic", -- Waist
         [202490] = "ic", -- Feet
 
-        -- Amirdrassil, the Dream's Hope : Trash Loot
-
         -- Amirdrassil, the Dream's Hope : Tier set main pieces
         -- Death Knight
         [207200] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
@@ -865,6 +863,16 @@ _table_.ManualItemDB = {
         [207224] = "ic", -- Waist
         [207229] = "ic", -- Feet
 
+        -- Amirdrassil, the Dream's Hope : Trash Loot
+        [208430] = "r_1207_15360_0",
+        [208431] = "r_1207_15360_0",
+        [208432] = "r_1207_15360_0",
+        [208420] = "r_1207_15360_0",
+        [208428] = "r_1207_15360_0",
+        [208434] = "r_1207_15360_0",
+        [208427] = "r_1207_15360_0",
+        [208426] = "r_1207_15360_0",
+        [208442] = "r_1207_15360_0",
 
 
     }
