@@ -247,7 +247,7 @@ end
 
 function IE:RegisterMenus()
     LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip", _table_.introOptions)
-    self.ConfigPanel = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip", "InspectEquip")
+    self.ConfigPanel, self.CategoryId = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip", "InspectEquip")
 
     LibStub("AceConfig-3.0"):RegisterOptionsTable("InspectEquip General Settings", _table_.generalOptions)
     self.GeneralSettings = LibStub("AceConfigDialog-3.0"):AddToBlizOptions("InspectEquip General Settings",

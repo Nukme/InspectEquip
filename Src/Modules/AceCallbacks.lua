@@ -20,7 +20,7 @@ function IE:OnInitialize()
     self:RegisterEvent("ADDON_LOADED")
 
     self:RegisterChatCommand("inspectequip", function()
-        InterfaceOptionsFrame_OpenToCategory(InspectEquip.ConfigPanel)
+        Settings.OpenToCategory(self.CategoryId)
     end)
 end
 
