@@ -116,3 +116,4 @@ L["Inspiration Catalyst"] = true
 L["Mythic Keystone"] = true
 L["Obsidian"] = true
 L["Verdant"] = true
+L["Draconic"] = true
