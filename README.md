@@ -23,7 +23,7 @@ Also, feel free to open up an [issue](https://github.com/Nukme/InspectEquip/issu
     - Revise the formula to calculate average-item-level to make it the same as the one shown in character panel.
         - Fixes for off-piece artifact item level.
         - Fixes for dual-wielding two-handed weapons.
-    - Use API `GetDetailedItemLevelInfo()` to retrieve item level info instead of functions provided by `LibItemUpgradeInfo-1.0`
+    - Use API `C_Item.GetDetailedItemLevelInfo()` to retrieve item level info instead of functions provided by `LibItemUpgradeInfo-1.0`
 - Update item categories system
     - Add `Legendary` category
     - Add `Artifact` category

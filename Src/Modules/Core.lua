@@ -84,7 +84,7 @@ end
 function IE:IsPvPItem(item)
     for i, affix1 in pairs(_table_.seasonAffix) do
         for j, affix2 in pairs(_table_.subAffix) do
-            local item_name = GetItemInfo(item)
+            local item_name = C_Item.GetItemInfo(item)
             if item_name then
                 local match1 = string.match(item_name, affix1)
                 local match2 = string.match(item_name, affix2)

@@ -158,8 +158,8 @@ addSource = function(tip, item, source, level)
                     -- leg compatible
                     if currency == 390 or currency == 392 then
                         -- mark of honor : 137642
-                        local curName = GetItemInfo(137642)
-                        local curTexture = select(10, GetItemInfo(137642))
+                        local curName = C_Item.GetItemInfo(137642)
+                        local curTexture = select(10, C_Item.GetItemInfo(137642))
                         str = str .. "|T" .. curTexture .. ":0|t " .. " " .. curName .. " "
                     elseif currency == 395 then
                         local curTexture = GetCoinIcon(10000)
@@ -177,7 +177,7 @@ addSource = function(tip, item, source, level)
                 elseif typ == "i" then
                     -- item
                     local subItemId = tonumber(next_field())
-                    local _, subItemLink, _, _, _, _, _, _, _, subItemTexture = GetItemInfo(subItemId)
+                    local _, subItemLink, _, _, _, _, _, _, _, subItemTexture = C_Item.GetItemInfo(subItemId)
                     if not subItemLink then
                         subItemLink = "#" .. subItemId
                     end
@@ -362,7 +362,7 @@ addSource = function(tip, item, source, level)
         if level == 0 then
             label = L["Source"] .. ": "
         else
-            local _, subItemLink, _, _, _, _, _, _, _, subItemTexture = GetItemInfo(item)
+            local _, subItemLink, _, _, _, _, _, _, _, subItemTexture = C_Item.GetItemInfo(item)
             if subItemTexture then
                 label = "    " .. L["Source"] .. "(|T" .. subItemTexture .. ":0|t):"
             else
@@ -422,7 +422,7 @@ function IE:ParseItem(tooltip, data)
         return
     end
 
-    if data and data.id and GetItemInfo(data.id) then
+    if data and data.id and C_Item.GetItemInfo(data.id) then
         IE:AddToTooltip(tooltip, data.id)
         tooltip:Show()
     end
