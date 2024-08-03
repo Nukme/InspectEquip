@@ -6,7 +6,6 @@ local _, _table_ = ...
 
 local IE = InspectEquip
 local L = LibStub("AceLocale-3.0"):GetLocale("InspectEquip")
-local ItemUpgradeInfo = LibStub("LibItemUpgradeInfo-1.0")
 
 local slots = { "HeadSlot", "NeckSlot", "ShoulderSlot", "BackSlot", "ChestSlot", "WristSlot", "HandsSlot", "WaistSlot",
     "LegsSlot", "FeetSlot", "Finger0Slot", "Finger1Slot", "Trinket0Slot", "Trinket1Slot", "MainHandSlot",

@@ -8,7 +8,7 @@
 ## X-Maintainer: Nukme 
 ## X-Repository: https://github.com/Nukme/InspectEquip
 ## X-NGA_Feedback: https://bbs.nga.cn/read.php?tid=8749947
-## OptionalDeps: Ace3, LibBabble-SubZone-3.0, LibBabble-Boss-3.0, LibItemUpgradeInfo-1.0
+## OptionalDeps: Ace3, LibBabble-SubZone-3.0, LibBabble-Boss-3.0
 ## SavedVariables: InspectEquipConfigDB, InspectEquipMetaDB, InspectEquipEJItemDB
 
 
