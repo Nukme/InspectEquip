@@ -40,6 +40,10 @@ local band = bit.band
 local tooltipTimer = nil
 local retryTimer = nil
 
+function IsArtifact(item_link)
+    local item_quality = select(3, C_Item.GetItemInfo(item_link))
+    return item_quality == Enum.ItemQuality.Artifact
+end
 
 function IE:InfoWindowSetParent(frame)
     IE.InfoWindow:SetParent(frame)
@@ -346,13 +350,12 @@ function IE:Inspect(unit, entry)
 
             -- Accumulate total item level w/o weapons
             if calciv then
-                -- local lvl = ItemUpgradeInfo:GetUpgradedItemLevel(itemLink)
                 local lvl = C_Item.GetDetailedItemLevelInfo(itemLink)
                 local isArtifactWeapon = false
                 if lvl then
                     if slot == "MainHandSlot" then
                         mainhandEquipped = true
-                        isArtifactWeapon = ItemUpgradeInfo:IsArtifact(itemLink)
+                        isArtifactWeapon = IsArtifact(itemLink)
                         if isArtifactWeapon then
                             if lvl >= ArtifactWeaponLevel then
                                 ArtifactWeaponLevel = lvl
@@ -362,7 +365,7 @@ function IE:Inspect(unit, entry)
                         end
                     elseif slot == "SecondaryHandSlot" then
                         offhandEquipped = true
-                        isArtifactWeapon = ItemUpgradeInfo:IsArtifact(itemLink)
+                        isArtifactWeapon = IsArtifact(itemLink)
                         if isArtifactWeapon then
                             if lvl >= ArtifactWeaponLevel then
                                 ArtifactWeaponLevel = lvl
@@ -466,13 +469,12 @@ function IE:AddItems(tab, padding, extra)
         local isArtifactWeapon = false
         local itemClassID = select(12, C_Item.GetItemInfo(item.link))
         if IE.configDB.global.listItemLevels then
-            -- local ilvl = ItemUpgradeInfo:GetUpgradedItemLevel(item.link)
             local ilvl, plvl = C_Item.GetDetailedItemLevelInfo(item.link)
             if item.slot == "MainHandSlot" then
-                isArtifactWeapon = ItemUpgradeInfo:IsArtifact(item.link)
+                isArtifactWeapon = IsArtifact(item.link)
             end
             if item.slot == "SecondaryHandSlot" then
-                isArtifactWeapon = ItemUpgradeInfo:IsArtifact(item.link)
+                isArtifactWeapon = IsArtifact(item.link)
             end
             if isArtifactWeapon then
                 ilvl = extra.ArtifactWeaponLevel
@@ -549,7 +551,7 @@ end
 
 function IE.Line_OnEnter(row)
     if row.link then
-        local isArtifactWeapon = ItemUpgradeInfo:IsArtifact(row.link)
+        local isArtifactWeapon = IsArtifact(row.link)
         local itemClassID = select(12, C_Item.GetItemInfo(row.link))
         -- anchor on the correct side based on where there's more room
         --[[
