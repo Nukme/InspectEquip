@@ -421,6 +421,15 @@ function IE:Inspect(unit, entry)
             ((GearManagerDialog and GearManagerDialog:IsVisible()) or (OutfitterFrame and OutfitterFrame:IsVisible())) then
             autoHidden = true
         else
+            -- 20240808 Fix for CharacterFrameBg width discrepency
+            if IE.InfoWindow:GetParent() == CharacterFrame then
+                local offset_x = CharacterFrameBg:GetWidth() - CharacterFrame:GetWidth()
+                if offset_x > 10 then
+                    IE.InfoWindow:ClearAllPoints()
+                    IE.InfoWindow:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", offset_x + 5, 0)
+                end
+            end
+
             IE.InfoWindow:Show()
         end
     else
