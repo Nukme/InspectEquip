@@ -258,6 +258,8 @@ function IE:GetItemSourceCategories(itemLink, unit)
             elseif cat == "ic" then
                 -- class tier set off-pieces
                 return { L["Inspiration Catalyst"] }
+            elseif cat == "cata" then
+                return { L["Catalyst Console"] }
             end
         end
     end

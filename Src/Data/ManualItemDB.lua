@@ -401,6 +401,7 @@ _table_.ManualItemDB = {
         [188944] = "cc", -- Waist
         [188939] = "cc", -- Feet
 
+
         -- Vault of the Incarnates : Trash Loot
         [202007] = "r_1200_15360_0",
         [202003] = "r_1200_15360_0",
@@ -414,150 +415,150 @@ _table_.ManualItemDB = {
 
         -- Vault of the Incarnates : Tier set main pieces
         -- Death Knight
-        [200408] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200410] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200405] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200407] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200409] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200408] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200410] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200405] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200407] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200409] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Demon Hunter
-        [200345] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200347] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200342] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200344] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200346] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200345] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200347] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200342] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200344] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200346] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Warlock
-        [200336] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200338] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200333] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200335] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200337] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200336] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200338] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200333] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200335] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200337] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Druid
-        [200354] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200356] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200351] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200353] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200355] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200354] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200356] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200351] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200353] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200355] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Hunter
-        [200390] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200392] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200387] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200389] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200391] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200390] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200392] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200387] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200389] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200391] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Mage
-        [200318] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200320] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200315] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200317] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200319] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200318] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200320] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200315] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200317] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200319] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Paladin
-        [200417] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200419] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200414] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200416] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200418] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200417] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200419] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200414] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200416] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200418] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Priest
-        [200327] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200329] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200324] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200326] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200328] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200327] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200329] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200324] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200326] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200328] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Shaman
-        [200399] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200401] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200396] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200398] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200400] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200399] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200401] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200396] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200398] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200400] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Monk
-        [200363] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200365] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200360] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200362] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200364] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200363] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200365] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200360] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200362] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200364] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Rogue
-        [200372] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200374] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200369] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200371] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200373] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200372] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200374] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200369] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200371] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200373] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Warrior
-        [200426] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200428] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200423] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200425] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200427] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200426] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200428] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200423] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200425] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200427] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
         -- Evoker
-        [200381] = "t_r_1200_15360_2499;t_tgv;t_ic", -- Head - Raszageth the Storm-Eater
-        [200383] = "t_r_1200_15360_2493;t_tgv;t_ic", -- Shoulder - Broodkeeper Diurna
-        [200378] = "t_r_1200_15360_2491;t_tgv;t_ic", -- Chest - Kurog Grimtotem
-        [200380] = "t_r_1200_15360_2502;t_tgv;t_ic", -- Legs - Dathea, Ascended
-        [200382] = "t_r_1200_15360_2482;t_tgv;t_ic", -- Hands - Sennarath, the Cold Breath
+        [200381] = "t_r_1200_15360_2499;t_tgv;t_cata", -- Head - Raszageth the Storm-Eater
+        [200383] = "t_r_1200_15360_2493;t_tgv;t_cata", -- Shoulder - Broodkeeper Diurna
+        [200378] = "t_r_1200_15360_2491;t_tgv;t_cata", -- Chest - Kurog Grimtotem
+        [200380] = "t_r_1200_15360_2502;t_tgv;t_cata", -- Legs - Dathea, Ascended
+        [200382] = "t_r_1200_15360_2482;t_tgv;t_cata", -- Hands - Sennarath, the Cold Breath
 
         -- Vault of the Incarnates : Tier set off pieces
         -- Death Knight
-        [200413] = "ic", -- Back
-        [200412] = "ic", -- Wrist
-        [200411] = "ic", -- Waist
-        [200406] = "ic", -- Feet
+        [200413] = "cata", -- Back
+        [200412] = "cata", -- Wrist
+        [200411] = "cata", -- Waist
+        [200406] = "cata", -- Feet
         -- Demon Hunter
-        [200350] = "ic", -- Back
-        [200349] = "ic", -- Wrist
-        [200348] = "ic", -- Waist
-        [200343] = "ic", -- Feet
+        [200350] = "cata", -- Back
+        [200349] = "cata", -- Wrist
+        [200348] = "cata", -- Waist
+        [200343] = "cata", -- Feet
         -- Warlock
-        [200341] = "ic", -- Back
-        [200340] = "ic", -- Wrist
-        [200339] = "ic", -- Waist
-        [200334] = "ic", -- Feet
+        [200341] = "cata", -- Back
+        [200340] = "cata", -- Wrist
+        [200339] = "cata", -- Waist
+        [200334] = "cata", -- Feet
         -- Druid
-        [200359] = "ic", -- Back
-        [200358] = "ic", -- Wrist
-        [200357] = "ic", -- Waist
-        [200352] = "ic", -- Feet
+        [200359] = "cata", -- Back
+        [200358] = "cata", -- Wrist
+        [200357] = "cata", -- Waist
+        [200352] = "cata", -- Feet
         -- Hunter
-        [200395] = "ic", -- Back
-        [200394] = "ic", -- Wrist
-        [200393] = "ic", -- Waist
-        [200388] = "ic", -- Feet
+        [200395] = "cata", -- Back
+        [200394] = "cata", -- Wrist
+        [200393] = "cata", -- Waist
+        [200388] = "cata", -- Feet
         -- Mage
-        [200323] = "ic", -- Back
-        [200322] = "ic", -- Wrist
-        [200321] = "ic", -- Waist
-        [200316] = "ic", -- Feet
+        [200323] = "cata", -- Back
+        [200322] = "cata", -- Wrist
+        [200321] = "cata", -- Waist
+        [200316] = "cata", -- Feet
         -- Paladin
-        [200422] = "ic", -- Back
-        [200421] = "ic", -- Wrist
-        [200420] = "ic", -- Waist
-        [200415] = "ic", -- Feet
+        [200422] = "cata", -- Back
+        [200421] = "cata", -- Wrist
+        [200420] = "cata", -- Waist
+        [200415] = "cata", -- Feet
         -- Priest
-        [200332] = "ic", -- Back
-        [200331] = "ic", -- Wrist
-        [200330] = "ic", -- Waist
-        [200325] = "ic", -- Feet
+        [200332] = "cata", -- Back
+        [200331] = "cata", -- Wrist
+        [200330] = "cata", -- Waist
+        [200325] = "cata", -- Feet
         -- Shaman
-        [200404] = "ic", -- Back
-        [200403] = "ic", -- Wrist
-        [200402] = "ic", -- Waist
-        [200397] = "ic", -- Feet
+        [200404] = "cata", -- Back
+        [200403] = "cata", -- Wrist
+        [200402] = "cata", -- Waist
+        [200397] = "cata", -- Feet
         -- Monk
-        [200368] = "ic", -- Back
-        [200367] = "ic", -- Wrist
-        [200366] = "ic", -- Waist
-        [200361] = "ic", -- Feet
+        [200368] = "cata", -- Back
+        [200367] = "cata", -- Wrist
+        [200366] = "cata", -- Waist
+        [200361] = "cata", -- Feet
         -- Rogue
-        [200377] = "ic", -- Back
-        [200376] = "ic", -- Wrist
-        [200375] = "ic", -- Waist
-        [200370] = "ic", -- Feet
+        [200377] = "cata", -- Back
+        [200376] = "cata", -- Wrist
+        [200375] = "cata", -- Waist
+        [200370] = "cata", -- Feet
         -- Warrior
-        [200431] = "ic", -- Back
-        [200430] = "ic", -- Wrist
-        [200429] = "ic", -- Waist
-        [200424] = "ic", -- Feet
+        [200431] = "cata", -- Back
+        [200430] = "cata", -- Wrist
+        [200429] = "cata", -- Waist
+        [200424] = "cata", -- Feet
         -- Evoker
-        [200386] = "ic", -- Back
-        [200385] = "ic", -- Wrist
-        [200384] = "ic", -- Waist
-        [200379] = "ic", -- Feet
+        [200386] = "cata", -- Back
+        [200385] = "cata", -- Wrist
+        [200384] = "cata", -- Waist
+        [200379] = "cata", -- Feet
 
         -- Aberrus, the Shadowed Crucible : Trash Loot
         [204430] = "r_1208_15360_0",
@@ -571,299 +572,299 @@ _table_.ManualItemDB = {
 
         -- Aberrus, the Shadowed Crucible : Tier set main pieces
         -- Death Knight
-        [202461] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202459] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202464] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202460] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202462] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202461] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202459] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202464] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202460] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202462] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Demon Hunter
-        [202524] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202522] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202527] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202523] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202525] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202524] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202522] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202527] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202523] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202525] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Warlock
-        [202533] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202531] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202536] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202532] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202534] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202533] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202531] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202536] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202532] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202534] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Druid
-        [202515] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202513] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202518] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202514] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202516] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202515] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202513] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202518] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202514] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202516] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Hunter
-        [202479] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202477] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202482] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202478] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202480] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202479] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202477] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202482] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202478] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202480] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Mage
-        [202551] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202549] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202554] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202550] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202552] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202551] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202549] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202554] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202550] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202552] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Paladin
-        [202452] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202450] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202455] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202451] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202453] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202452] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202450] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202455] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202451] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202453] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Priest
-        [202542] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202540] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202545] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202541] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202543] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202542] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202540] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202545] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202541] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202543] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Shaman
-        [202470] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202468] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202473] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202469] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202471] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202470] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202468] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202473] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202469] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202471] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Monk
-        [202506] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202504] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202509] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202505] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202507] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202506] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202504] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202509] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202505] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202507] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Rogue
-        [202497] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202495] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202500] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202496] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202498] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202497] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202495] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202500] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202496] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202498] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Warrior
-        [202443] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202441] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202446] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202442] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202444] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202443] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202441] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202446] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202442] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202444] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
         -- Evoker
-        [202488] = "t_r_1208_15360_2527;t_tgv;t_ic", -- Head - Magmorax
-        [202486] = "t_r_1208_15360_2523;t_tgv;t_ic", -- Shoulder - Neltharion
-        [202491] = "t_r_1208_15360_2532;t_tgv;t_ic", -- Chest - Zskarn
-        [202487] = "t_r_1208_15360_2525;t_tgv;t_ic", -- Legs - Rashok
-        [202489] = "t_r_1208_15360_2530;t_tgv;t_ic", -- Hands - The Forgotten Experiments
+        [202488] = "t_r_1208_15360_2527;t_tgv;t_cata", -- Head - Magmorax
+        [202486] = "t_r_1208_15360_2523;t_tgv;t_cata", -- Shoulder - Neltharion
+        [202491] = "t_r_1208_15360_2532;t_tgv;t_cata", -- Chest - Zskarn
+        [202487] = "t_r_1208_15360_2525;t_tgv;t_cata", -- Legs - Rashok
+        [202489] = "t_r_1208_15360_2530;t_tgv;t_cata", -- Hands - The Forgotten Experiments
 
         -- Aberrus, the Shadowed Crucible : Tier set off pieces
         -- Death Knight
-        [202456] = "ic", -- Back
-        [202457] = "ic", -- Wrist
-        [202458] = "ic", -- Waist
-        [202463] = "ic", -- Feet
+        [202456] = "cata", -- Back
+        [202457] = "cata", -- Wrist
+        [202458] = "cata", -- Waist
+        [202463] = "cata", -- Feet
         -- Demon Hunter
-        [202519] = "ic", -- Back
-        [202520] = "ic", -- Wrist
-        [202521] = "ic", -- Waist
-        [202526] = "ic", -- Feet
+        [202519] = "cata", -- Back
+        [202520] = "cata", -- Wrist
+        [202521] = "cata", -- Waist
+        [202526] = "cata", -- Feet
         -- Warlock
-        [202528] = "ic", -- Back
-        [202529] = "ic", -- Wrist
-        [202530] = "ic", -- Waist
-        [202535] = "ic", -- Feet
+        [202528] = "cata", -- Back
+        [202529] = "cata", -- Wrist
+        [202530] = "cata", -- Waist
+        [202535] = "cata", -- Feet
         -- Druid
-        [202510] = "ic", -- Back
-        [202511] = "ic", -- Wrist
-        [202512] = "ic", -- Waist
-        [202517] = "ic", -- Feet
+        [202510] = "cata", -- Back
+        [202511] = "cata", -- Wrist
+        [202512] = "cata", -- Waist
+        [202517] = "cata", -- Feet
         -- Hunter
-        [202474] = "ic", -- Back
-        [202475] = "ic", -- Wrist
-        [202476] = "ic", -- Waist
-        [202481] = "ic", -- Feet
+        [202474] = "cata", -- Back
+        [202475] = "cata", -- Wrist
+        [202476] = "cata", -- Waist
+        [202481] = "cata", -- Feet
         -- Mage
-        [202546] = "ic", -- Back
-        [202547] = "ic", -- Wrist
-        [202548] = "ic", -- Waist
-        [202553] = "ic", -- Feet
+        [202546] = "cata", -- Back
+        [202547] = "cata", -- Wrist
+        [202548] = "cata", -- Waist
+        [202553] = "cata", -- Feet
         -- Paladin
-        [202447] = "ic", -- Back
-        [202448] = "ic", -- Wrist
-        [202449] = "ic", -- Waist
-        [202454] = "ic", -- Feet
+        [202447] = "cata", -- Back
+        [202448] = "cata", -- Wrist
+        [202449] = "cata", -- Waist
+        [202454] = "cata", -- Feet
         -- Priest
-        [202537] = "ic", -- Back
-        [202538] = "ic", -- Wrist
-        [202539] = "ic", -- Waist
-        [202544] = "ic", -- Feet
+        [202537] = "cata", -- Back
+        [202538] = "cata", -- Wrist
+        [202539] = "cata", -- Waist
+        [202544] = "cata", -- Feet
         -- Shaman
-        [202465] = "ic", -- Back
-        [202466] = "ic", -- Wrist
-        [202467] = "ic", -- Waist
-        [202472] = "ic", -- Feet
+        [202465] = "cata", -- Back
+        [202466] = "cata", -- Wrist
+        [202467] = "cata", -- Waist
+        [202472] = "cata", -- Feet
         -- Monk
-        [202501] = "ic", -- Back
-        [202502] = "ic", -- Wrist
-        [202503] = "ic", -- Waist
-        [202508] = "ic", -- Feet
+        [202501] = "cata", -- Back
+        [202502] = "cata", -- Wrist
+        [202503] = "cata", -- Waist
+        [202508] = "cata", -- Feet
         -- Rogue
-        [202492] = "ic", -- Back
-        [202493] = "ic", -- Wrist
-        [202494] = "ic", -- Waist
-        [202499] = "ic", -- Feet
+        [202492] = "cata", -- Back
+        [202493] = "cata", -- Wrist
+        [202494] = "cata", -- Waist
+        [202499] = "cata", -- Feet
         -- Warrior
-        [202438] = "ic", -- Back
-        [202439] = "ic", -- Wrist
-        [202440] = "ic", -- Waist
-        [202445] = "ic", -- Feet
+        [202438] = "cata", -- Back
+        [202439] = "cata", -- Wrist
+        [202440] = "cata", -- Waist
+        [202445] = "cata", -- Feet
         -- Evoker
-        [202483] = "ic", -- Back
-        [202484] = "ic", -- Wrist
-        [202485] = "ic", -- Waist
-        [202490] = "ic", -- Feet
+        [202483] = "cata", -- Back
+        [202484] = "cata", -- Wrist
+        [202485] = "cata", -- Waist
+        [202490] = "cata", -- Feet
 
         -- Amirdrassil, the Dream's Hope : Tier set main pieces
         -- Death Knight
-        [207200] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207198] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207203] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207199] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207201] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207200] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207198] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207203] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207199] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207201] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Demon Hunter
-        [207263] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207261] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207266] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207262] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207264] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207263] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207261] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207266] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207262] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207264] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Warlock
-        [207272] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207270] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207275] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207271] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207273] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207272] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207270] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207275] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207271] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207273] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Druid
-        [207254] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207252] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207257] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207253] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207255] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207254] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207252] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207257] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207253] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207255] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Hunter
-        [207218] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207216] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207221] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207217] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207219] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207218] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207216] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207221] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207217] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207219] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Mage
-        [207290] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207288] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207293] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207289] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207291] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207290] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207288] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207293] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207289] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207291] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Paladin
-        [207191] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207189] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207194] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207190] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207192] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207191] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207189] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207194] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207190] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207192] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Priest
-        [207281] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207279] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207284] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207280] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207282] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207281] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207279] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207284] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207280] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207282] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Shaman
-        [207209] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207207] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207212] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207208] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207210] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207209] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207207] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207212] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207208] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207210] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Monk
-        [207245] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207243] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207248] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207244] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207246] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207245] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207243] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207248] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207244] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207246] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Rogue
-        [207236] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207234] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207239] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207235] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207237] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207236] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207234] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207239] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207235] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207237] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Warrior
-        [207182] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207180] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207185] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207181] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207183] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207182] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207180] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207185] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207181] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207183] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
         -- Evoker
-        [207227] = "t_r_1207_15360_2565;t_tgv;t_ic", -- Head - Tindral
-        [207225] = "t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder - Smolderon
-        [207230] = "t_r_1207_15360_2556;t_tgv;t_ic", -- Chest - Nymue
-        [207226] = "t_r_1207_15360_2553;t_tgv;t_ic", -- Legs - Larodar
-        [207228] = "t_r_1207_15360_2554;t_tgv;t_ic", -- Hands - Igira
+        [207227] = "t_r_1207_15360_2565;t_tgv;t_cata", -- Head - Tindral
+        [207225] = "t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder - Smolderon
+        [207230] = "t_r_1207_15360_2556;t_tgv;t_cata", -- Chest - Nymue
+        [207226] = "t_r_1207_15360_2553;t_tgv;t_cata", -- Legs - Larodar
+        [207228] = "t_r_1207_15360_2554;t_tgv;t_cata", -- Hands - Igira
 
 
 
         -- Amirdrassil, the Dream's Hope : Tier set off pieces
         -- Death Knight
-        [207195] = "ic", -- Back
-        [207196] = "ic", -- Wrist
-        [207197] = "ic", -- Waist
-        [207202] = "ic", -- Feet
+        [207195] = "cata", -- Back
+        [207196] = "cata", -- Wrist
+        [207197] = "cata", -- Waist
+        [207202] = "cata", -- Feet
         -- Demon Hunter
-        [207258] = "ic", -- Back
-        [207259] = "ic", -- Wrist
-        [207260] = "ic", -- Waist
-        [207265] = "ic", -- Feet
+        [207258] = "cata", -- Back
+        [207259] = "cata", -- Wrist
+        [207260] = "cata", -- Waist
+        [207265] = "cata", -- Feet
         -- Warlock
-        [207267] = "ic", -- Back
-        [207268] = "ic", -- Wrist
-        [207269] = "ic", -- Waist
-        [207274] = "ic", -- Feet
+        [207267] = "cata", -- Back
+        [207268] = "cata", -- Wrist
+        [207269] = "cata", -- Waist
+        [207274] = "cata", -- Feet
         -- Druid
-        [207249] = "ic", -- Back
-        [207250] = "ic", -- Wrist
-        [207251] = "ic", -- Waist
-        [207256] = "ic", -- Feet
+        [207249] = "cata", -- Back
+        [207250] = "cata", -- Wrist
+        [207251] = "cata", -- Waist
+        [207256] = "cata", -- Feet
         -- Hunter
-        [207213] = "ic", -- Back
-        [207214] = "ic", -- Wrist
-        [207215] = "ic", -- Waist
-        [207220] = "ic", -- Feet
+        [207213] = "cata", -- Back
+        [207214] = "cata", -- Wrist
+        [207215] = "cata", -- Waist
+        [207220] = "cata", -- Feet
         -- Mage
-        [207285] = "ic", -- Back
-        [207286] = "ic", -- Wrist
-        [207287] = "ic", -- Waist
-        [207292] = "ic", -- Feet
+        [207285] = "cata", -- Back
+        [207286] = "cata", -- Wrist
+        [207287] = "cata", -- Waist
+        [207292] = "cata", -- Feet
         -- Paladin
-        [207186] = "ic", -- Back
-        [207187] = "ic", -- Wrist
-        [207188] = "ic", -- Waist
-        [207193] = "ic", -- Feet
+        [207186] = "cata", -- Back
+        [207187] = "cata", -- Wrist
+        [207188] = "cata", -- Waist
+        [207193] = "cata", -- Feet
         -- Priest
-        [207276] = "ic", -- Back
-        [207277] = "ic", -- Wrist
-        [207278] = "ic", -- Waist
-        [207283] = "ic", -- Feet
+        [207276] = "cata", -- Back
+        [207277] = "cata", -- Wrist
+        [207278] = "cata", -- Waist
+        [207283] = "cata", -- Feet
         -- Shaman
-        [207204] = "ic", -- Back
-        [207205] = "ic", -- Wrist
-        [207206] = "ic", -- Waist
-        [207211] = "ic", -- Feet
+        [207204] = "cata", -- Back
+        [207205] = "cata", -- Wrist
+        [207206] = "cata", -- Waist
+        [207211] = "cata", -- Feet
         -- Monk
-        [207240] = "ic", -- Back
-        [207241] = "ic", -- Wrist
-        [207242] = "ic", -- Waist
-        [207247] = "ic", -- Feet
+        [207240] = "cata", -- Back
+        [207241] = "cata", -- Wrist
+        [207242] = "cata", -- Waist
+        [207247] = "cata", -- Feet
         -- Rogue
-        [207231] = "ic", -- Back
-        [207232] = "ic", -- Wrist
-        [207233] = "ic", -- Waist
-        [207238] = "ic", -- Feet
+        [207231] = "cata", -- Back
+        [207232] = "cata", -- Wrist
+        [207233] = "cata", -- Waist
+        [207238] = "cata", -- Feet
         -- Warrior
-        [207176] = "ic", -- Back
-        [207177] = "ic", -- Wrist
-        [207179] = "ic", -- Waist
-        [207184] = "ic", -- Feet
+        [207176] = "cata", -- Back
+        [207177] = "cata", -- Wrist
+        [207179] = "cata", -- Waist
+        [207184] = "cata", -- Feet
         -- Evoker
-        [207222] = "ic", -- Back
-        [207223] = "ic", -- Wrist
-        [207224] = "ic", -- Waist
-        [207229] = "ic", -- Feet
+        [207222] = "cata", -- Back
+        [207223] = "cata", -- Wrist
+        [207224] = "cata", -- Waist
+        [207229] = "cata", -- Feet
 
         -- Amirdrassil, the Dream's Hope : Trash Loot
         [208430] = "r_1207_15360_0",
@@ -878,83 +879,83 @@ _table_.ManualItemDB = {
 
         -- DragonFlight Season 4 : Tier set main pieces
         -- Death Knight
-        [217223] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217225] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217221] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217224] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217222] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217223] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217225] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217221] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217224] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217222] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Demon Hunter
-        [217228] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217230] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217226] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217229] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217227] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217228] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217230] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217226] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217229] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217227] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Warlock
-        [217212] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217214] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217215] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217213] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217211] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217212] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217214] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217215] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217213] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217211] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Druid
-        [217193] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217195] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217191] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217194] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217192] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217193] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217195] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217191] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217194] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217192] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Hunter
-        [217183] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217185] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217181] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217184] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217182] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217183] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217185] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217181] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217184] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217182] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Mage
-        [217232] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217234] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217235] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217233] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217231] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217232] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217234] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217235] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217233] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217231] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Paladin
-        [217198] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217200] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217196] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217199] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217197] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217198] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217200] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217196] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217199] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217197] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Priest
-        [217202] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217204] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217205] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217203] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217201] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217202] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217204] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217205] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217203] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217201] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Shaman
-        [217238] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217240] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217236] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217239] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217237] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217238] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217240] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217236] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217239] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217237] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Monk
-        [217188] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217190] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217186] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217189] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217187] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217188] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217190] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217186] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217189] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217187] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Rogue
-        [217208] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217210] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217206] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217209] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217207] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217208] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217210] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217206] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217209] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217207] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Warrior
-        [217218] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217220] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217216] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217219] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217217] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217218] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217220] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217216] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217219] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217217] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
         -- Evoker
-        [217178] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_ic", -- Head
-        [217180] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_ic", -- Shoulder
-        [217176] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_ic", -- Chest
-        [217179] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_ic", -- Legs
-        [217177] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_ic", -- Hands
+        [217178] = "t_r_1200_15360_2499;t_r_1208_15360_2527;t_r_1207_15360_2565;t_tgv;t_cata", -- Head
+        [217180] = "t_r_1200_15360_2493;t_r_1208_15360_2523;t_r_1207_15360_2563;t_tgv;t_cata", -- Shoulder
+        [217176] = "t_r_1200_15360_2491;t_r_1208_15360_2532;t_r_1207_15360_2556;t_tgv;t_cata", -- Chest
+        [217179] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
+        [217177] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
 
     }
 }

@@ -117,3 +117,4 @@ L["Mythic Keystone"] = true
 L["Obsidian"] = true
 L["Verdant"] = true
 L["Draconic"] = true
+L["Catalyst Console"] = true

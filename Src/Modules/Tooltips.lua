@@ -348,11 +348,15 @@ addSource = function(tip, item, source, level)
             str = L["Creation Catalyst"]
         elseif acquisition == "ic" then
             str = L["Inspiration Catalyst"]
+        elseif acquisition == "cata" then
+            str = L["Catalyst Console"]
         end
     elseif cat == "cc" then -- creation catalyst
         str = L["Creation Catalyst"]
     elseif cat == "ic" then
         str = L["Inspiration Catalyst"]
+    elseif cat == "cata" then
+        str = L["Catalyst Console"]
     end
 
     -- add line
