@@ -387,35 +387,43 @@ end
 
 addItemData = function(tip, item, level)
     -- get source information
-    local data = IE:GetItemData(item)
+    local item_data = IE:GetItemData(item)
 
-    if data then
-        local sourceCount = 0
-        local skippedSourceCount = 0
-        local maxSourceCount = IE.configDB.global.maxSourceCount
+    -- 20240811 guard for "string expected, got table" error, root cause unknown
 
-        for entry in gmatch(data, "[^;]+") do
-            if sourceCount < maxSourceCount then
-                addSource(tip, item, entry, level)
-            else
-                skippedSourceCount = skippedSourceCount + 1
-            end
-            sourceCount = sourceCount + 1
+    if not item_data then
+        return
+    end
+
+    if type(item_data) ~= "string" then
+        return
+    end
+
+    local sourceCount = 0
+    local skippedSourceCount = 0
+    local maxSourceCount = IE.configDB.global.maxSourceCount
+
+    for entry in gmatch(item_data, "[^;]+") do
+        if sourceCount < maxSourceCount then
+            addSource(tip, item, entry, level)
+        else
+            skippedSourceCount = skippedSourceCount + 1
         end
+        sourceCount = sourceCount + 1
+    end
 
-        if skippedSourceCount > 0 then
-            local r, g, b = IE.configDB.global.ttR, IE.configDB.global.ttG, IE.configDB.global.ttB
-            tip:AddLine(strformat(L["... and %d other sources"], skippedSourceCount), r, g, b)
-        end
+    if skippedSourceCount > 0 then
+        local r, g, b = IE.configDB.global.ttR, IE.configDB.global.ttG, IE.configDB.global.ttB
+        tip:AddLine(strformat(L["... and %d other sources"], skippedSourceCount), r, g, b)
     end
 end
 
-function IE:AddToTooltip(tip, itemLink)
+function IE:AddToTooltip(tip, item)
     if IE.configDB.global.tooltips == false then
         return
     end
 
-    addItemData(tip, itemLink, 0)
+    addItemData(tip, item, 0)
 end
 
 -- Fix for DF 10.0.2 api change @ 20221117
