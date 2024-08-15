@@ -220,7 +220,7 @@ function IE:GetItemSourceCategories(itemLink, unit)
                     -- currency
                     local currency = tonumber(next_field())
                     next_field()
-                    local curName = GetCurrencyInfo(currency)
+                    local curName = C_CurrencyInfo.GetCurrencyInfo(currency).name
                     return { mainCat, curName }
                 elseif typ == "i" then
                     -- item

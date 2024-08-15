@@ -162,18 +162,9 @@ addSource = function(tip, item, source, level)
                         local curTexture = select(10, C_Item.GetItemInfo(137642))
                         str = str .. "|T" .. curTexture .. ":0|t " .. " " .. curName .. " "
                     elseif currency == 395 then
-                        local curTexture = GetCoinIcon(10000)
+                        local curTexture = C_CurrencyInfo.GetCoinIcon(10000)
                         str = str .. "|T" .. curTexture .. ":0|t " .. " " .. " "
                     end
-
-                    --[[
-					local cost = tonumber(next_field())
-					local curName, _, curTexture = GetCurrencyInfo(currency)
-					if not leg then
-						curTexture = "Interface\\Icons\\" .. curTexture
-					end
-					str = str .. "|T" .. curTexture .. ":0|t " .. cost .. " " .. curName .. " "
-					--]]
                 elseif typ == "i" then
                     -- item
                     local subItemId = tonumber(next_field())
@@ -189,7 +180,7 @@ addSource = function(tip, item, source, level)
                 elseif typ == "m" then
                     -- money
                     local cost = tonumber(next_field())
-                    str = str .. GetCoinTextureString(cost) .. " "
+                    str = str .. C_CurrencyInfo.GetCoinTextureString(cost) .. " "
                 end
 
                 typ = next_field()
@@ -216,7 +207,7 @@ addSource = function(tip, item, source, level)
         str = L["World drops"]
     elseif cat == "c" then -- Crafted
         str = L["Crafted"]
-        local prof = GetSpellInfo(tonumber(next_field() or 0))
+        local prof = C_Spell.GetSpellInfo(tonumber(next_field() or 0)).name
         if prof then
             str = str .. " - " .. prof
         end
