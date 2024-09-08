@@ -957,5 +957,152 @@ _table_.ManualItemDB = {
         [217179] = "t_r_1200_15360_2502;t_r_1208_15360_2525;t_r_1207_15360_2553;t_tgv;t_cata", -- Legs
         [217177] = "t_r_1200_15360_2482;t_r_1208_15360_2530;t_r_1207_15360_2554;t_tgv;t_cata", -- Hands
 
+        -- Nerub-ar Palace : Tier set main pieces
+        -- Death Knight
+        [212002] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212000] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212005] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212001] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212003] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Demon Hunter
+        [212065] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212063] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212068] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212064] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212066] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Warlock
+        [212074] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212072] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212077] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212073] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212075] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Druid
+        [212056] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212054] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212059] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212055] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212057] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Hunter
+        [212020] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212018] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212023] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212019] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212021] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Mage
+        [212092] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212090] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212095] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212091] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212093] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Paladin
+        [211993] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [211991] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [211996] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [211992] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [211994] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Priest
+        [212083] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212081] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212086] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212082] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212084] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Shaman
+        [212011] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212009] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212014] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212010] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212012] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Monk
+        [212047] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212045] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212050] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212046] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212048] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Rogue
+        [212038] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212036] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212041] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212037] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212039] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Warrior
+        [211984] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [211982] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [211987] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [211983] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [211985] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+        -- Evoker
+        [212029] = "t_r_1273_15360_2608;t_tgv;t_cata", -- Head - The Silken Court
+        [212027] = "t_r_1273_15360_2609;t_tgv;t_cata", -- Shoulder - Rasha'nan
+        [212032] = "t_r_1273_15360_2612;t_tgv;t_cata", -- Chest - Broodtwister Ovi'nax
+        [212028] = "t_r_1273_15360_2601;t_tgv;t_cata", -- Legs - Nexus-Princess Ky'veza
+        [212030] = "t_r_1273_15360_2599;t_tgv;t_cata", -- Hands - Sikran
+
+        -- Nerub-ar Palace : Tier set off pieces
+        -- Death Knight
+        [211997] = "cata", -- Back
+        [211998] = "cata", -- Wrist
+        [211999] = "cata", -- Waist
+        [212004] = "cata", -- Feet
+        -- Demon Hunter
+        [212060] = "cata", -- Back
+        [212061] = "cata", -- Wrist
+        [212062] = "cata", -- Waist
+        [212067] = "cata", -- Feet
+        -- Warlock
+        [212069] = "cata", -- Back
+        [212070] = "cata", -- Wrist
+        [212071] = "cata", -- Waist
+        [212076] = "cata", -- Feet
+        -- Druid
+        [212051] = "cata", -- Back
+        [212052] = "cata", -- Wrist
+        [212053] = "cata", -- Waist
+        [212058] = "cata", -- Feet
+        -- Hunter
+        [212015] = "cata", -- Back
+        [212016] = "cata", -- Wrist
+        [212017] = "cata", -- Waist
+        [212022] = "cata", -- Feet
+        -- Mage
+        [212087] = "cata", -- Back
+        [212088] = "cata", -- Wrist
+        [212089] = "cata", -- Waist
+        [212094] = "cata", -- Feet
+        -- Paladin
+        [211988] = "cata", -- Back
+        [211989] = "cata", -- Wrist
+        [211990] = "cata", -- Waist
+        [211995] = "cata", -- Feet
+        -- Priest
+        [212078] = "cata", -- Back
+        [212079] = "cata", -- Wrist
+        [212080] = "cata", -- Waist
+        [212085] = "cata", -- Feet
+        -- Shaman
+        [212006] = "cata", -- Back
+        [212007] = "cata", -- Wrist
+        [212008] = "cata", -- Waist
+        [212013] = "cata", -- Feet
+        -- Monk
+        [212042] = "cata", -- Back
+        [212043] = "cata", -- Wrist
+        [212044] = "cata", -- Waist
+        [212049] = "cata", -- Feet
+        -- Rogue
+        [212033] = "cata", -- Back
+        [212034] = "cata", -- Wrist
+        [212035] = "cata", -- Waist
+        [212040] = "cata", -- Feet
+        -- Warrior
+        [211979] = "cata", -- Back
+        [211980] = "cata", -- Wrist
+        [211981] = "cata", -- Waist
+        [211986] = "cata", -- Feet
+        -- Evoker
+        [212024] = "cata", -- Back
+        [212025] = "cata", -- Wrist
+        [212026] = "cata", -- Waist
+        [212031] = "cata", -- Feet
+
     }
 }
