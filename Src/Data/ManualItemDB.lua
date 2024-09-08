@@ -1104,5 +1104,8 @@ _table_.ManualItemDB = {
         [212026] = "cata", -- Waist
         [212031] = "cata", -- Feet
 
+        -- Nerub-ar Palace : Trash Loot
+        -- [] = "r_1273_15360_0",
+
     }
 }
