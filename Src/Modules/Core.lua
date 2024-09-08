@@ -175,6 +175,19 @@ function IE:GetEnchantmentCheckSlots(unit)
         noEnchantWarningSlots["LegsSlot"] = true
 
         WeaponEnchantOnly = true
+    elseif expansionLevel == 10 then
+        -- The War Within: Weapon, Offhand(weapon only), Finger0, Finger1, Chest, Cloak, Boots, Bracers, Legs
+        noEnchantWarningSlots["MainHandSlot"] = true
+        noEnchantWarningSlots["SecondaryHandSlot"] = true
+        noEnchantWarningSlots["Finger0Slot"] = true
+        noEnchantWarningSlots["Finger1Slot"] = true
+        noEnchantWarningSlots["BackSlot"] = true
+        noEnchantWarningSlots["ChestSlot"] = true
+        noEnchantWarningSlots["FeetSlot"] = true
+        noEnchantWarningSlots["WristSlot"] = true
+        noEnchantWarningSlots["LegsSlot"] = true
+
+        WeaponEnchantOnly = true
     end
 
     return noEnchantWarningSlots, WeaponEnchantOnly
