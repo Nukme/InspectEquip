@@ -15,6 +15,7 @@ local seasonAffix = {
     L["Obsidian"],  -- Dragonflight Season 2
     L["Verdant"],   -- Dragonflight Season 3
     L["Draconic"],  -- Dragonflight Season 4
+    L["Forged"],    -- TWW Season 1
 }
 
 local subAffix = {
