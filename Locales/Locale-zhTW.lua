@@ -114,3 +114,4 @@ L["Mythic"] = "史詩"
 -- L["Draconic"] = ""
 -- L["Catalyst Console"] = ""
 -- L["Forged"] = true
+-- L["Prized"] = ""
