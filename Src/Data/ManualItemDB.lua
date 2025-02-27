@@ -1115,5 +1115,163 @@ _table_.ManualItemDB = {
         [225727] = "r_1273_15360_0",
         [225744] = "r_1273_15360_0",
 
+        -- Liberation of Undermine : Tier set main pieces
+        -- Death Knight
+        [229253] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229251] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229256] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229252] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229254] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Demon Hunter
+        [229316] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229314] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229319] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229315] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229317] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Warlock
+        [229325] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229323] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229328] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229324] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229326] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Druid
+        [229307] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229305] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229310] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229306] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229308] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Hunter
+        [229271] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229269] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229274] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229270] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229272] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Mage
+        [229343] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229341] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229346] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229342] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229344] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Paladin
+        [229244] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229242] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229247] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229243] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229245] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Priest
+        [229334] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229332] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229337] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229333] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229335] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Shaman
+        [229262] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229260] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229265] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229261] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229263] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Monk
+        [229298] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229296] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229301] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229297] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229299] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Rogue
+        [229289] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229287] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229292] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229288] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229290] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Warrior
+        [229235] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229233] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229238] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229234] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229236] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+        -- Evoker
+        [229280] = "t_r_1296_15360_2608;t_tgv;t_cata", -- Head      - One-Armed Bandit
+        [229278] = "t_r_1296_15360_2609;t_tgv;t_cata", -- Shoulder  - Rik Reverb
+        [229283] = "t_r_1296_15360_2612;t_tgv;t_cata", -- Chest     - Sprocketmonger Lockenstock
+        [229279] = "t_r_1296_15360_2601;t_tgv;t_cata", -- Legs      - Stix Bunkjunker
+        [229281] = "t_r_1296_15360_2599;t_tgv;t_cata", -- Hands     - Cauldron of Carnage
+
+        -- Liberation of Undermine : Tier set off pieces
+        -- Death Knight
+        [229248] = "cata", -- Back
+        [229249] = "cata", -- Wrist
+        [229250] = "cata", -- Waist
+        [229255] = "cata", -- Feet
+        -- Demon Hunter
+        [229311] = "cata", -- Back
+        [229312] = "cata", -- Wrist
+        [229313] = "cata", -- Waist
+        [229318] = "cata", -- Feet
+        -- Warlock
+        [229320] = "cata", -- Back
+        [229321] = "cata", -- Wrist
+        [229322] = "cata", -- Waist
+        [229327] = "cata", -- Feet
+        -- Druid
+        [229302] = "cata", -- Back
+        [229303] = "cata", -- Wrist
+        [229304] = "cata", -- Waist
+        [229309] = "cata", -- Feet
+        -- Hunter
+        [229266] = "cata", -- Back
+        [229267] = "cata", -- Wrist
+        [229268] = "cata", -- Waist
+        [229273] = "cata", -- Feet
+        -- Mage
+        [229338] = "cata", -- Back
+        [229339] = "cata", -- Wrist
+        [229340] = "cata", -- Waist
+        [229345] = "cata", -- Feet
+        -- Paladin
+        [229239] = "cata", -- Back
+        [229240] = "cata", -- Wrist
+        [229241] = "cata", -- Waist
+        [229246] = "cata", -- Feet
+        -- Priest
+        [229329] = "cata", -- Back
+        [229330] = "cata", -- Wrist
+        [229331] = "cata", -- Waist
+        [229336] = "cata", -- Feet
+        -- Shaman
+        [229257] = "cata", -- Back
+        [229258] = "cata", -- Wrist
+        [229259] = "cata", -- Waist
+        [229264] = "cata", -- Feet
+        -- Monk
+        [229293] = "cata", -- Back
+        [229294] = "cata", -- Wrist
+        [229295] = "cata", -- Waist
+        [229300] = "cata", -- Feet
+        -- Rogue
+        [229284] = "cata", -- Back
+        [229285] = "cata", -- Wrist
+        [229286] = "cata", -- Waist
+        [229291] = "cata", -- Feet
+        -- Warrior
+        [229230] = "cata", -- Back
+        [229231] = "cata", -- Wrist
+        [229232] = "cata", -- Waist
+        [229237] = "cata", -- Feet
+        -- Evoker
+        [229275] = "cata", -- Back
+        [229276] = "cata", -- Wrist
+        [229277] = "cata", -- Waist
+        [229282] = "cata", -- Feet
+
+        -- Liberation of Undermine : Trash Loot
+        [232663] = "r_1296_15360_0",
+        [232656] = "r_1296_15360_0",
+        [232655] = "r_1296_15360_0",
+        [232657] = "r_1296_15360_0",
+        [232658] = "r_1296_15360_0",
+        [232659] = "r_1296_15360_0",
+        [232660] = "r_1296_15360_0",
+        [232661] = "r_1296_15360_0",
+        [232662] = "r_1296_15360_0",
+
     }
 }
