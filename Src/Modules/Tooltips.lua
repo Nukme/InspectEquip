@@ -207,10 +207,10 @@ addSource = function(tip, item, source, level)
         str = L["World drops"]
     elseif cat == "c" then -- Crafted
         str = L["Crafted"]
-        local prof = C_Spell.GetSpellInfo(tonumber(next_field() or 0)).name
-        if prof then
-            str = str .. " - " .. prof
-        end
+        -- local prof = C_Spell.GetSpellInfo(tonumber(next_field() or 0)).name
+        -- if prof then
+        --     str = str .. " - " .. prof
+        -- end
     elseif cat == "q" then -- Quest Reward
         str = L["Quest Reward"]
     elseif cat == 'p' then -- PvP Reward
@@ -414,6 +414,7 @@ function IE:AddToTooltip(tip, item)
         return
     end
 
+
     addItemData(tip, item, 0)
 end
 
@@ -426,7 +427,26 @@ function IE:ParseItem(tooltip, data)
     end
 
     if data and data.id and C_Item.GetItemInfo(data.id) then
-        IE:AddToTooltip(tooltip, data.id)
+        -- 20250322
+        -- for dev purpose
+        -- for k, v in pairs(data) do
+        --     print(k, ",", v)
+        -- end
+
+        -- 20250322
+        -- Try to pass in item hyperlink string first, which would help determine if an item is crafted
+        -- If not possible, pass in the item id
+
+        local item_info = nil
+        if data.hyperlink then
+            item_info = data.hyperlink
+        elseif data.guid then
+            item_info = C_Item.GetItemLinkByGUID(data.guid)
+        else
+            item_info = data.id
+        end
+
+        IE:AddToTooltip(tooltip, item_info)
         tooltip:Show()
     end
 end

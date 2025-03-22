@@ -97,6 +97,17 @@ function IE:IsPvPItem(item)
     return false
 end
 
+-- 20250322
+-- First attemp to determin if an item is crafted
+-- The Blizzard API only seems to work with item string
+-- hyperlink or guid
+function IE:IsCraftedItem(item_string)
+    local retval = C_TradeSkillUI.GetItemCraftedQualityByItemInfo(item_string) or
+        C_TradeSkillUI.GetOriginalCraftRecipeID(item_string)
+
+    return (retval ~= nil)
+end
+
 function IE:GetEnchantmentCheckSlots(unit)
     -- slots with combat related enchants change over expansions
     local expansionLevel = GetExpansionLevel()

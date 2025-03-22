@@ -510,7 +510,9 @@ function IE:AddItems(tab, padding, extra)
 end
 
 function IE:GetItemData(item)
-    local id
+    local result = nil
+
+    local id = nil
     if type(item) == "number" then
         id = item
     else -- item string/link
@@ -520,17 +522,37 @@ function IE:GetItemData(item)
     if id then
         local isSrc = IE.manDB.Items[id]
         local locSrc = IE.ejDB.global.Items[id]
-        if isSrc and locSrc then
-            -- combine results
-            return locSrc .. ";" .. isSrc
-        elseif isSrc or locSrc then
-            return isSrc or locSrc
-        elseif IE:IsPvPItem(id) then
-            return "p"
+
+        if isSrc then
+            result = isSrc
         end
-    else
-        return nil
+
+        if locSrc then
+            if result then
+                result = result .. ";" .. locSrc
+            else
+                result = locSrc
+            end
+        end
+
+        if IE:IsPvPItem(id) then
+            if result then
+                result = result .. ";p"
+            else
+                result = "p"
+            end
+        end
     end
+
+    if not result then
+        if type(item) == "string" then
+            if IE:IsCraftedItem(item) then
+                result = "c"
+            end
+        end
+    end
+
+    return result
 end
 
 function IE:GetZoneName(id)
