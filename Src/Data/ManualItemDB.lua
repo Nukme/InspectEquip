@@ -1273,5 +1273,163 @@ _table_.ManualItemDB = {
         [232661] = "r_1296_15360_0",
         [232662] = "r_1296_15360_0",
 
+        -- Manaforge Omega : Tier set main pieces
+        -- Death Knight
+        [237628] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237626] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237631] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237627] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237629] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Demon Hunter
+        [237691] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237689] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237694] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237690] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237692] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Warlock
+        [237700] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237698] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237703] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237699] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237701] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Druid
+        [237682] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237680] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237685] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237681] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237683] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Hunter
+        [237646] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237644] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237649] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237645] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237647] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Mage
+        [237718] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237716] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237721] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237717] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237719] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Paladin
+        [237619] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237617] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237622] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237618] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237620] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Priest
+        [237709] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237707] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237712] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237708] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237710] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Shaman
+        [237637] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237635] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237640] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237636] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237638] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Monk
+        [237673] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237671] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237676] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237672] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237674] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Rogue
+        [237664] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237662] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237667] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237663] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237665] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Warrior
+        [237610] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237608] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237613] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237609] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237611] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+        -- Evoker
+        [237655] = "t_r_1302_15360_2687;t_tgv;t_cata", -- Head      - Forgeweaver Araz
+        [237653] = "t_r_1302_15360_2688;t_tgv;t_cata", -- Shoulder  - The Soul Hunters
+        [237658] = "t_r_1302_15360_2747;t_tgv;t_cata", -- Chest     - Fractillus
+        [237654] = "t_r_1302_15360_2686;t_tgv;t_cata", -- Legs      - Loom'ithar
+        [237656] = "t_r_1302_15360_2685;t_tgv;t_cata", -- Hands     - Soulbinder Naazindhri
+
+        -- Manaforge Omega : Tier set off pieces
+        -- Death Knight
+        [237623] = "cata", -- Back
+        [237624] = "cata", -- Wrist
+        [237625] = "cata", -- Waist
+        [237630] = "cata", -- Feet
+        -- Demon Hunter
+        [237686] = "cata", -- Back
+        [237687] = "cata", -- Wrist
+        [237688] = "cata", -- Waist
+        [237693] = "cata", -- Feet
+        -- Warlock
+        [237695] = "cata", -- Back
+        [237696] = "cata", -- Wrist
+        [237697] = "cata", -- Waist
+        [237702] = "cata", -- Feet
+        -- Druid
+        [237677] = "cata", -- Back
+        [237678] = "cata", -- Wrist
+        [237679] = "cata", -- Waist
+        [237684] = "cata", -- Feet
+        -- Hunter
+        [237641] = "cata", -- Back
+        [237642] = "cata", -- Wrist
+        [237643] = "cata", -- Waist
+        [237648] = "cata", -- Feet
+        -- Mage
+        [237713] = "cata", -- Back
+        [237714] = "cata", -- Wrist
+        [237715] = "cata", -- Waist
+        [237720] = "cata", -- Feet
+        -- Paladin
+        [237614] = "cata", -- Back
+        [237615] = "cata", -- Wrist
+        [237616] = "cata", -- Waist
+        [237621] = "cata", -- Feet
+        -- Priest
+        [237704] = "cata", -- Back
+        [237705] = "cata", -- Wrist
+        [237706] = "cata", -- Waist
+        [237711] = "cata", -- Feet
+        -- Shaman
+        [237632] = "cata", -- Back
+        [237633] = "cata", -- Wrist
+        [237634] = "cata", -- Waist
+        [237639] = "cata", -- Feet
+        -- Monk
+        [237668] = "cata", -- Back
+        [237669] = "cata", -- Wrist
+        [237670] = "cata", -- Waist
+        [237675] = "cata", -- Feet
+        -- Rogue
+        [237659] = "cata", -- Back
+        [237660] = "cata", -- Wrist
+        [237661] = "cata", -- Waist
+        [237666] = "cata", -- Feet
+        -- Warrior
+        [237605] = "cata", -- Back
+        [237606] = "cata", -- Wrist
+        [237607] = "cata", -- Waist
+        [237612] = "cata", -- Feet
+        -- Evoker
+        [237650] = "cata", -- Back
+        [237651] = "cata", -- Wrist
+        [237652] = "cata", -- Waist
+        [237657] = "cata", -- Feet
+
+        -- Manaforge Omega : Trash Loot
+        [238033] = "r_1302_15360_0",
+        [243048] = "r_1302_15360_0",
+        [238031] = "r_1302_15360_0",
+        [238027] = "r_1302_15360_0",
+        [238032] = "r_1302_15360_0",
+        [238030] = "r_1302_15360_0",
+        [238028] = "r_1302_15360_0",
+        [238034] = "r_1302_15360_0",
+        [238036] = "r_1302_15360_0",
+
     }
 }
