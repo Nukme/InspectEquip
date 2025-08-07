@@ -125,3 +125,4 @@ L["Wrath of the Lich King"] = "ВоЛК"
 -- L["Catalyst Console"] = ""
 -- L["Forged"] = true
 -- L["Prized"] = ""
+-- L["Astral"] = ""

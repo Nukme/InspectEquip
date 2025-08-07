@@ -120,3 +120,4 @@ L["Draconic"] = true
 L["Catalyst Console"] = true
 L["Forged"] = true
 L["Prized"] = true
+L["Astral"] = true
