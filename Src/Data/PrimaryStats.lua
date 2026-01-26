@@ -14,6 +14,7 @@ local primaryStats = {
     -- Demon Hunter
     ["577"] = LE_UNIT_STAT_AGILITY,    -- Havoc
     ["581"] = LE_UNIT_STAT_AGILITY,    -- Vengeance
+    ["1480"] = LE_UNIT_STAT_INTELLECT, -- Devourer
     -- Druid
     ["102"] = LE_UNIT_STAT_INTELLECT,  -- Balance
     ["103"] = LE_UNIT_STAT_AGILITY,    -- Feral
