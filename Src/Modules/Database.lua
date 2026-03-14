@@ -162,7 +162,7 @@ local function UpdateTick()
         local ok, msg = coroutine.resume(coUpdate)
         if not ok then
             EndUpdate()
-            message("[InspectEquip] Could not update database: " .. msg)
+            SetBasicMessageDialogText("[InspectEquip] Could not update database: " .. msg, true)
         end
     end
 end
@@ -549,7 +549,7 @@ function IE:CreateEJDatabase()
     if not C_AddOns.IsAddOnLoaded("Blizzard_EncounterJournal") then
         local loaded, reason = C_AddOns.LoadAddOn("Blizzard_EncounterJournal")
         if not loaded then
-            message("[InspectEquip] Could not load encounter journal: " .. reason)
+            SetBasicMessageDialogText("[InspectEquip] Could not load encounter journal: " .. reason, true)
         end
     end
 
@@ -564,7 +564,7 @@ function IE:CreateEJDatabase()
         bar:SetScript("OnUpdate", UpdateTick)
     else
         EndUpdate()
-        message("[InspectEquip] Could not update database: " .. msg)
+        SetBasicMessageDialogText("[InspectEquip] Could not update database: " .. msg, true)
     end
 
     IE.DatabaseChecked = true;
