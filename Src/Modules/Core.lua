@@ -76,7 +76,9 @@ function IE:CheckDatabase()
     if self:AreMetasMatching(clientbuild, ieversion, locale, expansion) then
         IE.DatabaseChecked = true
     else
-        self:ScheduleTimer("CreateEJDatabase", 5)
+        -- 20260314
+        -- increase the delay so that EJ_GetInstanceByIndex are less likely to return nil
+        self:ScheduleTimer("CreateEJDatabase", 10)
         self:UpdateMetas(clientbuild, ieversion, locale, expansion)
     end
 end

@@ -159,6 +159,7 @@ local function UpdateTick()
         --     newDataCycles = newDataCycles - 1
         --     return
         -- end
+
         local ok, msg = coroutine.resume(coUpdate)
         if not ok then
             EndUpdate()
@@ -487,16 +488,20 @@ local function UpdatePerInstance(instance_id, is_raid)
 end
 
 local function UpdatePerTier(is_raid)
-    local instance_count = GetInstanceCount(is_raid)
-
     -- loop through instances
+    local instance_count = GetInstanceCount(is_raid)
     for instance_index = 1, instance_count do
+        -- 20260314
+        -- in Midnight 12.0.1, something weird happens:
+        -- EJ_GetInstanceByIndex returns nil, nil for tier1, index 17-23 dungeon instances if CreateEJDatabase is called seconds too early
         local instance_id, instance_name = EJ_GetInstanceByIndex(instance_index, is_raid)
-        BLIZ_SelectInstance(instance_id)
-        UpdateEJDBZones(instance_id, instance_name)
-        UpdatePerInstance(instance_id, is_raid)
+        if instance_id and instance_name then
+            BLIZ_SelectInstance(instance_id)
+            UpdateEJDBZones(instance_id, instance_name)
+            UpdatePerInstance(instance_id, is_raid)
 
-        UpdateBar()
+            UpdateBar()
+        end
     end
 end
 
@@ -506,7 +511,9 @@ local function UpdateEJDB()
     -- loop through tiers
     for tier = 1, tier_count do
         EJ_SelectTier(tier)
+        IE:Print("Tier[" .. tier .. "]: Updating dungeons")
         UpdatePerTier(false) -- dungeon
+        IE:Print("Tier[" .. tier .. "]: Updating raids")
         UpdatePerTier(true)  -- raid
     end
 end
