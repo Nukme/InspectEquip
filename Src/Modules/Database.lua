@@ -506,14 +506,11 @@ local function UpdatePerTier(is_raid)
 end
 
 local function UpdateEJDB()
-    local tier_count = EJ_GetNumTiers()
-
     -- loop through tiers
+    local tier_count = EJ_GetNumTiers()
     for tier = 1, tier_count do
         EJ_SelectTier(tier)
-        IE:Print("Tier[" .. tier .. "]: Updating dungeons")
         UpdatePerTier(false) -- dungeon
-        IE:Print("Tier[" .. tier .. "]: Updating raids")
         UpdatePerTier(true)  -- raid
     end
 end
