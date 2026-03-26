@@ -116,3 +116,4 @@ L["Mythic"] = "史詩"
 -- L["Forged"] = true
 -- L["Prized"] = ""
 -- L["Astral"] = ""
+-- L["Galactic"] = ""

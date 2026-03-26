@@ -126,3 +126,4 @@ L["Wrath of the Lich King"] = "ВоЛК"
 -- L["Forged"] = true
 -- L["Prized"] = ""
 -- L["Astral"] = ""
+-- L["Galactic"] = ""
