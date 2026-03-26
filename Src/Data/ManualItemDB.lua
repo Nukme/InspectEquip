@@ -1431,5 +1431,162 @@ _table_.ManualItemDB = {
         [238034] = "r_1302_15360_0",
         [238036] = "r_1302_15360_0",
 
+        -- Midnight Season 1 : Tier set main pieces
+        -- Death Knight
+        [249970] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [249968] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [249973] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [249969] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [249971] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Demon Hunter
+        [250033] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250031] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250036] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250032] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250034] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Warlock
+        [250042] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250040] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250045] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250041] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250043] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Druid
+        [250024] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250022] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250027] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250023] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250025] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Hunter
+        [249988] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [249986] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [249991] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [249987] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [249989] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Mage
+        [250060] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250058] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250063] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250059] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250061] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Paladin
+        [249961] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [249959] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [249964] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [249960] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [249962] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Priest
+        [250051] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250049] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250054] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250050] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250052] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Shaman
+        [249979] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [249977] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [249982] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [249978] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [249980] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Monk
+        [250015] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250013] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250018] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250014] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250016] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Rogue
+        [250006] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [250004] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250009] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [250005] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [250007] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Warrior
+        [249952] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [249950] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [249955] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [249951] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [249953] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+        -- Evoker
+        [249997] = "t_r_1307_15360_2737;t_tgv;t_cata", -- Head      - Lightblinded Vanguard
+        [249995] = "t_r_1307_15360_2736;t_tgv;t_cata", -- Shoulder  - Fallen-King Salhadaar
+        [250000] = "t_r_1314_15360_2795;t_tgv;t_cata", -- Chest     - Chimaerus, the Undreamt God
+        [249996] = "t_r_1307_15360_2735;t_tgv;t_cata", -- Legs      - Vaelgor & Ezzorak
+        [249998] = "t_r_1307_15360_2734;t_tgv;t_cata", -- Hands     - Vorasius
+
+        -- Midnight Season 1 : Tier set off pieces
+        -- Death Knight
+        [249965] = "cata", -- Back
+        [249966] = "cata", -- Wrist
+        [249967] = "cata", -- Waist
+        [249972] = "cata", -- Feet
+        -- Demon Hunter
+        [250028] = "cata", -- Back
+        [250029] = "cata", -- Wrist
+        [250030] = "cata", -- Waist
+        [250035] = "cata", -- Feet
+        -- Warlock
+        [250037] = "cata", -- Back
+        [250038] = "cata", -- Wrist
+        [250039] = "cata", -- Waist
+        [250044] = "cata", -- Feet
+        -- Druid
+        [250019] = "cata", -- Back
+        [250020] = "cata", -- Wrist
+        [250021] = "cata", -- Waist
+        [250026] = "cata", -- Feet
+        -- Hunter
+        [249983] = "cata", -- Back
+        [249984] = "cata", -- Wrist
+        [249985] = "cata", -- Waist
+        [249990] = "cata", -- Feet
+        -- Mage
+        [250055] = "cata", -- Back
+        [250056] = "cata", -- Wrist
+        [250057] = "cata", -- Waist
+        [250062] = "cata", -- Feet
+        -- Paladin
+        [249956] = "cata", -- Back
+        [249957] = "cata", -- Wrist
+        [249958] = "cata", -- Waist
+        [249963] = "cata", -- Feet
+        -- Priest
+        [250046] = "cata", -- Back
+        [250047] = "cata", -- Wrist
+        [250048] = "cata", -- Waist
+        [250053] = "cata", -- Feet
+        -- Shaman
+        [249974] = "cata", -- Back
+        [249975] = "cata", -- Wrist
+        [249976] = "cata", -- Waist
+        [249981] = "cata", -- Feet
+        -- Monk
+        [250010] = "cata", -- Back
+        [250011] = "cata", -- Wrist
+        [250012] = "cata", -- Waist
+        [250017] = "cata", -- Feet
+        -- Rogue
+        [250001] = "cata", -- Back
+        [250002] = "cata", -- Wrist
+        [250003] = "cata", -- Waist
+        [250008] = "cata", -- Feet
+        -- Warrior
+        [249947] = "cata", -- Back
+        [249948] = "cata", -- Wrist
+        [249949] = "cata", -- Waist
+        [249954] = "cata", -- Feet
+        -- Evoker
+        [249992] = "cata", -- Back
+        [249993] = "cata", -- Wrist
+        [249994] = "cata", -- Waist
+        [249999] = "cata", -- Feet
+
+        -- Midnight Season 1 : Trash Loot
+        [260371] = "r_1307_15360_0",
+        [260370] = "r_1307_15360_0",
+        [260372] = "r_1307_15360_0",
+        [260373] = "r_1307_15360_0",
+        [260375] = "r_1307_15360_0",
+        [260374] = "r_1307_15360_0",
+        [260377] = "r_1307_15360_0",
+        [260376] = "r_1307_15360_0",
+
     }
 }
