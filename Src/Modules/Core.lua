@@ -201,6 +201,19 @@ function IE:GetEnchantmentCheckSlots(unit)
         noEnchantWarningSlots["LegsSlot"] = true
 
         WeaponEnchantOnly = true
+    elseif expansionLevel == 11 then
+        -- Midnight: Weapon, Offhand(weapon only), Finger0, Finger1, Helm, Shoulder, Chest, Boots, Legs
+        noEnchantWarningSlots["MainHandSlot"] = true
+        noEnchantWarningSlots["SecondaryHandSlot"] = true
+        noEnchantWarningSlots["Finger0Slot"] = true
+        noEnchantWarningSlots["Finger1Slot"] = true
+        noEnchantWarningSlots["HeadSlot"] = true
+        noEnchantWarningSlots["ChestSlot"] = true
+        noEnchantWarningSlots["ShoulderSlot"] = true
+        noEnchantWarningSlots["FeetSlot"] = true
+        noEnchantWarningSlots["LegsSlot"] = true
+
+        WeaponEnchantOnly = true
     end
 
     return noEnchantWarningSlots, WeaponEnchantOnly
