@@ -122,3 +122,4 @@ L["Forged"] = true
 L["Prized"] = true
 L["Astral"] = true
 L["Galactic"] = true
+L["Venomous"] = true

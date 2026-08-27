@@ -19,6 +19,7 @@ local seasonAffix = {
     L["Prized"],    -- TWW Season 2
     L["Astral"],    -- TWW Season 3
     L["Galactic"],  -- MN Season 1
+    L["Venomous"],  -- MN Season 2
 }
 
 local subAffix = {
