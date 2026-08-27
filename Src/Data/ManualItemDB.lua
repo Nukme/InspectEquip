@@ -1588,5 +1588,164 @@ _table_.ManualItemDB = {
         [260377] = "r_1307_15360_0",
         [260376] = "r_1307_15360_0",
 
+        -- Midnight Season 2 : Tier set main pieces
+
+        -- Death Knight
+        [271474] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271472] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271477] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271473] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271475] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Demon Hunter
+        [271537] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271535] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271540] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271536] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271538] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Warlock
+        [271546] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271544] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271549] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271545] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271547] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Druid
+        [271528] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271526] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271531] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271527] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271529] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Hunter
+        [271492] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271490] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271495] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271491] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271493] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Mage
+        [271564] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271562] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271567] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271563] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271565] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Paladin
+        [271465] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271463] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271468] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271464] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271466] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Priest
+        [271555] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271553] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271558] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271554] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271556] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Shaman
+        [271483] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271481] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271486] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271482] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271484] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Monk
+        [271519] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271517] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271522] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271518] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271520] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Rogue
+        [271510] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271508] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271513] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271509] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271511] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Warrior
+        [271456] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271454] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271459] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271455] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271457] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+        -- Evoker
+        [271501] = "t_r_1320_15360_2887;t_tgv;t_cata", -- Head      - The Twin Fangs
+        [271499] = "t_r_1320_15360_2894;t_tgv;t_cata", -- Shoulder  - The Lost Explorers
+        [271504] = "t_r_1320_15360_2882;t_tgv;t_cata", -- Chest     - Vashnik the Malignant
+        [271500] = "t_r_1320_15360_2871;t_tgv;t_cata", -- Legs      - Sszorak
+        [271502] = "t_r_1320_15360_2874;t_tgv;t_cata", -- Hands     - Entombed Sentinels
+
+        -- Midnight Season 2 : Tier set off pieces
+        -- Death Knight
+        [271469] = "cata", -- Back
+        [271470] = "cata", -- Wrist
+        [271471] = "cata", -- Waist
+        [271476] = "cata", -- Feet
+        -- Demon Hunter
+        [271532] = "cata", -- Back
+        [271533] = "cata", -- Wrist
+        [271534] = "cata", -- Waist
+        [271539] = "cata", -- Feet
+        -- Warlock
+        [271541] = "cata", -- Back
+        [271542] = "cata", -- Wrist
+        [271543] = "cata", -- Waist
+        [271548] = "cata", -- Feet
+        -- Druid
+        [271523] = "cata", -- Back
+        [271524] = "cata", -- Wrist
+        [271525] = "cata", -- Waist
+        [271530] = "cata", -- Feet
+        -- Hunter
+        [271487] = "cata", -- Back
+        [271488] = "cata", -- Wrist
+        [271489] = "cata", -- Waist
+        [271494] = "cata", -- Feet
+        -- Mage
+        [271559] = "cata", -- Back
+        [271560] = "cata", -- Wrist
+        [271561] = "cata", -- Waist
+        [271566] = "cata", -- Feet
+        -- Paladin
+        [271460] = "cata", -- Back
+        [271461] = "cata", -- Wrist
+        [271462] = "cata", -- Waist
+        [271467] = "cata", -- Feet
+        -- Priest
+        [271550] = "cata", -- Back
+        [271551] = "cata", -- Wrist
+        [271552] = "cata", -- Waist
+        [271557] = "cata", -- Feet
+        -- Shaman
+        [271478] = "cata", -- Back
+        [271479] = "cata", -- Wrist
+        [271480] = "cata", -- Waist
+        [271485] = "cata", -- Feet
+        -- Monk
+        [271514] = "cata", -- Back
+        [271515] = "cata", -- Wrist
+        [271516] = "cata", -- Waist
+        [271521] = "cata", -- Feet
+        -- Rogue
+        [271505] = "cata", -- Back
+        [271506] = "cata", -- Wrist
+        [271507] = "cata", -- Waist
+        [271512] = "cata", -- Feet
+        -- Warrior
+        [271451] = "cata", -- Back
+        [271452] = "cata", -- Wrist
+        [271453] = "cata", -- Waist
+        [271458] = "cata", -- Feet
+        -- Evoker
+        [271496] = "cata", -- Back
+        [271497] = "cata", -- Wrist
+        [271498] = "cata", -- Waist
+        [271503] = "cata", -- Feet
+
+        -- Midnight Season 2 : Trash Loot
+        [271434] = "r_1320_15360_0",
+        [271435] = "r_1320_15360_0",
+        [271438] = "r_1320_15360_0",
+        [271436] = "r_1320_15360_0",
+        [271441] = "r_1320_15360_0",
+        [271440] = "r_1320_15360_0",
+        [271444] = "r_1320_15360_0",
+        [271445] = "r_1320_15360_0",
+        [271638] = "r_1320_15360_0",
+
     }
 }
